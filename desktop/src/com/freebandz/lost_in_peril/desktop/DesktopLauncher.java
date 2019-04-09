@@ -11,6 +11,7 @@ public class DesktopLauncher {
 		config.title = "Lost in Peril";
 		config.width = 800;
 		config.height = 480;
+		config.foregroundFPS = 60;
 		new LwjglApplication(new Lost_In_Peril(), config);
 	}
 }
