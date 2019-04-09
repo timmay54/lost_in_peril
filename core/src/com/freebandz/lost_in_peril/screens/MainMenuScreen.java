@@ -11,6 +11,8 @@ public class MainMenuScreen implements Screen{
 	
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
+		//5min Video 4
+		
 	}
 	
 	@Override
