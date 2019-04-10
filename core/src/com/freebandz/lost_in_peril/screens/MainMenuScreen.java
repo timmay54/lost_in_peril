@@ -3,16 +3,40 @@ package com.freebandz.lost_in_peril.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 
 public class MainMenuScreen implements Screen{
 
+	private static final int EXIT_BUTTON_WIDTH = 300;
+	private static final int EXIT_BUTTON_HEIGHT = 150;
+	private static final int PLAY_BUTTON_WIDTH = 330;
+	private static final int PLAY_BUTTON_HEIGHT = 150;
+	private static final int SCORE_BUTTON_WIDTH = 270;
+	private static final int SCORE_BUTTON_HEIGHT = 90;
+	private static final int SETTINGS_BUTTON_WIDTH = 10;
+	private static final int SETTINGS_BUTTON_HEIGHT = 10;
+	private static final int EXIT_BUTTON_Y = 75;
+	private static final int PLAY_BUTTON_Y = 350;
+	private static final int SCORE_BUTTON_Y = 210;
+	private static final int SETTINGS_BUTTON_Y = 30;
+	
 	Lost_In_Peril game;
+	Texture exitButtonActive;
+	Texture exitButtonInactive;
+	Texture playButtonActive;
+	Texture playButtonInactive;
+	Texture scoreButton;
+	Texture settingsButton;
 	
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
-		//5min Video 4
-		
+		playButtonActive = new Texture("play_button_active.png");
+		playButtonInactive = new Texture("play_button_inactive.png");
+		exitButtonActive = new Texture("exit_button_active.png");
+		exitButtonInactive = new Texture("exit_button_inactive.png");
+		scoreButton = new Texture("score.png");
+		settingsButton= new Texture("settingsButton.png");
 	}
 	
 	@Override
@@ -22,10 +46,45 @@ public class MainMenuScreen implements Screen{
 
 	@Override
 	public void render(float delta) {
-		Gdx.gl.glClearColor(1, 0, 0, 1);
+		Gdx.gl.glClearColor(0, 0, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		
 		game.batch.begin();
+		
+		//PLAY BUTTON:
+		int play_x = Lost_In_Peril.WIDTH / 2 - PLAY_BUTTON_WIDTH / 2;
+		if(Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT && 
+				Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y) {
+			game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
+			if(Gdx.input.isTouched()) {
+				this.dispose();
+				game.setScreen(new GameScreen(game));
+			}
+		}
+		else{
+			game.batch.draw(playButtonInactive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
+		}
+		
+		//SCORE BUTTON:
+		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2)-65;
+		game.batch.draw(scoreButton, score_x, SCORE_BUTTON_Y /*, width, height, srcX, srcY, srcWidth, srcHeight*/);
+		
+		//EXIT BUTTON:
+		int exit_x = Lost_In_Peril.WIDTH / 2 - EXIT_BUTTON_WIDTH / 2;
+		if(Gdx.input.getX() < exit_x + EXIT_BUTTON_WIDTH && Gdx.input.getX() > exit_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < EXIT_BUTTON_Y + EXIT_BUTTON_HEIGHT && Lost_In_Peril.HEIGHT - Gdx.input.getY() > EXIT_BUTTON_Y) {
+			game.batch.draw(exitButtonActive, exit_x, EXIT_BUTTON_Y , EXIT_BUTTON_WIDTH, EXIT_BUTTON_HEIGHT);
+			if(Gdx.input.isTouched()) {
+				Gdx.app.exit();
+			}
+		}
+		else{
+			game.batch.draw(exitButtonInactive, exit_x, EXIT_BUTTON_Y , EXIT_BUTTON_WIDTH, EXIT_BUTTON_HEIGHT);
+		}
+		
+		//SETTINGS BUTTON:
+		int settings_x = (Lost_In_Peril.WIDTH / 4 ) * 3 - (SETTINGS_BUTTON_WIDTH / 2);
+		game.batch.draw(settingsButton, settings_x, SETTINGS_BUTTON_Y /*, width, height, srcX, srcY,*/);
+
+		
 		game.batch.end();
 	}
 
