@@ -6,7 +6,7 @@ import com.freebandz.lost_in_peril.screens.MainMenuScreen;
 
 public class Lost_In_Peril extends Game {
 	public SpriteBatch batch;
-	
+	//change this for screen
 	public static final int WIDTH = 1280;
 	public static final int HEIGHT = 720;
 	
