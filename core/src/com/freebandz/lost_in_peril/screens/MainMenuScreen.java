@@ -67,6 +67,13 @@ public class MainMenuScreen implements Screen{
 		//SCORE BUTTON:
 		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2)-65;
 		game.batch.draw(scoreButton, score_x, SCORE_BUTTON_Y /*, width, height, srcX, srcY, srcWidth, srcHeight*/);
+		if(Gdx.input.getX() < score_x + SCORE_BUTTON_WIDTH && Gdx.input.getX() > score_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT && 
+				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SCORE_BUTTON_Y) {
+			if(Gdx.input.isTouched()) {
+				game.setScreen(new ScoreScreen(game));
+			}
+		}
+		
 		
 		//EXIT BUTTON:
 		int exit_x = Lost_In_Peril.WIDTH / 2 - EXIT_BUTTON_WIDTH / 2;
@@ -83,8 +90,12 @@ public class MainMenuScreen implements Screen{
 		//SETTINGS BUTTON:
 		int settings_x = (Lost_In_Peril.WIDTH / 4 ) * 3 - (SETTINGS_BUTTON_WIDTH / 2);
 		game.batch.draw(settingsButton, settings_x, SETTINGS_BUTTON_Y /*, width, height, srcX, srcY,*/);
-
-		
+		if(Gdx.input.getX() < settings_x + SETTINGS_BUTTON_WIDTH && Gdx.input.getX() > settings_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SETTINGS_BUTTON_Y + SETTINGS_BUTTON_HEIGHT && 
+				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SETTINGS_BUTTON_Y) {
+			if(Gdx.input.isTouched()) {
+				game.setScreen(new SettingsScreen(game));
+			}
+		}
 		game.batch.end();
 	}
 
