@@ -13,9 +13,9 @@ public class MainMenuScreen implements Screen{
 	private static final int PLAY_BUTTON_WIDTH = 330;
 	private static final int PLAY_BUTTON_HEIGHT = 150;
 	private static final int SCORE_BUTTON_WIDTH = 270;
-	//private static final int SCORE_BUTTON_HEIGHT = 90;
+	private static final int SCORE_BUTTON_HEIGHT = 90;
 	private static final int SETTINGS_BUTTON_WIDTH = 10;
-	//private static final int SETTINGS_BUTTON_HEIGHT = 10;
+	private static final int SETTINGS_BUTTON_HEIGHT = 10;
 	private static final int EXIT_BUTTON_Y = 75;
 	private static final int PLAY_BUTTON_Y = 350;
 	private static final int SCORE_BUTTON_Y = 210;
