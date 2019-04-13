@@ -39,6 +39,10 @@ public class GameScreen implements Screen{
 		if(Gdx.input.isKeyPressed(Keys.LEFT)) {
 			x-=SPEED * Gdx.graphics.getDeltaTime();
 		}
+		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
+			//pause menu
+			System.out.println("Sterling."); 
+		}
 		
 		Gdx.gl.glClearColor(1, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
