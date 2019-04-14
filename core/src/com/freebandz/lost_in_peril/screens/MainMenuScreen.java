@@ -20,8 +20,8 @@ public class MainMenuScreen implements Screen{
 	private static final int SETTINGS_BUTTON_HEIGHT = 100;
 	private static final int EXIT_BUTTON_Y = 75;
 	private static final int PLAY_BUTTON_Y = 350;
-	private static final int SCORE_BUTTON_Y = 210;
-	private static final int SETTINGS_BUTTON_Y = 30;
+	private static final int SCORE_BUTTON_Y = 220;
+	private static final int SETTINGS_BUTTON_Y = 50;
 	
 	Lost_In_Peril game;
 	Texture exitButtonActive;
@@ -33,7 +33,6 @@ public class MainMenuScreen implements Screen{
 	Texture mainBackground;
 	
 	Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
-	//Also good song, play INFECTED
 	
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
@@ -76,11 +75,12 @@ public class MainMenuScreen implements Screen{
 		}
 		
 		//SCORE BUTTON:
-		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2);
+		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2) - 70;
 		game.batch.draw(scoreButton, score_x, SCORE_BUTTON_Y /*, width, height, srcX, srcY, srcWidth, srcHeight*/);
-		if(Gdx.input.getX() < score_x + SCORE_BUTTON_WIDTH && Gdx.input.getX() > score_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT && 
+		if(Gdx.input.getX() < score_x + SCORE_BUTTON_WIDTH + 151 && Gdx.input.getX() > score_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT && 
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SCORE_BUTTON_Y) {
 			if(Gdx.input.isTouched()) {
+				mainMenuScreenSound.stop();
 				game.setScreen(new ScoreScreen(game));
 			}
 		}
@@ -101,13 +101,14 @@ public class MainMenuScreen implements Screen{
 		}
 		
 		//SETTINGS BUTTON:
-		int settings_x = (Lost_In_Peril.WIDTH / 4) * 3 - (SETTINGS_BUTTON_WIDTH / 2);
+		int settings_x = (Lost_In_Peril.WIDTH / 4) * 3 - (SETTINGS_BUTTON_WIDTH / 2) + 200;
 		game.batch.draw(settingsButton, settings_x, SETTINGS_BUTTON_Y, SETTINGS_BUTTON_WIDTH, SETTINGS_BUTTON_HEIGHT); //LAST TWO VARIABLE WERE MISSING! Hard to hit sweetspot when image is so big and zone is so small!
 		if(Gdx.input.getX() < settings_x + SETTINGS_BUTTON_WIDTH && Gdx.input.getX() > settings_x) {
 			System.out.println("Good!");
 			if(Lost_In_Peril.HEIGHT - Gdx.input.getY() < SETTINGS_BUTTON_Y + SETTINGS_BUTTON_HEIGHT && Lost_In_Peril.HEIGHT - Gdx.input.getY() > SETTINGS_BUTTON_Y) {
 				System.out.println("GREAT!");
 				if(Gdx.input.isTouched()) {
+					mainMenuScreenSound.stop();
 					game.setScreen(new SettingsScreen(game));
 				}
 			}
@@ -115,14 +116,14 @@ public class MainMenuScreen implements Screen{
 				 
 			
 		
-		
+		/*
 		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
 			//pause menu
 			System.out.println(settings_x); 
 		}
 		if(Gdx.input.isKeyPressed(Keys.P)) {
 			System.out.println(Gdx.input.getY());
-		}
+		}*/
 		
 		game.batch.end();
 	}
@@ -149,7 +150,7 @@ public class MainMenuScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		
+		mainMenuScreenSound.stop();
 	}
 
 }

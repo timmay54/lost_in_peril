@@ -3,6 +3,7 @@ package com.freebandz.lost_in_peril.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
@@ -15,9 +16,14 @@ public class GameScreen implements Screen{
 
 	Lost_In_Peril game;
 	
+	Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
+	
 	public GameScreen(Lost_In_Peril game) {
 		// TODO Auto-generated constructor stub
 		this.game = game;
+		long id = gameScreenSound.play(1.0f);
+		
+		gameScreenSound.setLooping(id,true);
 	}
 	
 	@Override
@@ -76,6 +82,7 @@ public class GameScreen implements Screen{
 	public void dispose() {
 		game.batch.dispose();
 		img.dispose();
+		
 	}
 
 }
