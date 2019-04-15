@@ -12,7 +12,10 @@ public class GameScreen implements Screen{
 	
 	public static final float SPEED = 150;
 	Texture img;
-	float x,y;
+	Texture gameScreenBackground;
+	Texture link;
+	float x = 172;
+	float y = 90;
 
 	Lost_In_Peril game;
 	
@@ -29,10 +32,15 @@ public class GameScreen implements Screen{
 	@Override
 	public void show() {
 		img = new Texture("badlogic.jpg");
+		gameScreenBackground = new Texture("startGameBackground.png");
+		link = new Texture("link-sprite-png-6.gif");
 	}
 
 	@Override
 	public void render(float delta) {
+		
+		
+		
 		if(Gdx.input.isKeyPressed(Keys.UP)) {
 			y+=SPEED * Gdx.graphics.getDeltaTime();
 		}
@@ -47,14 +55,17 @@ public class GameScreen implements Screen{
 		}
 		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
 			//pause menu
-			System.out.println("Sterling."); 
+			//System.out.println("Sterling."); 
 		}
 		
 		Gdx.gl.glClearColor(1, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
 		game.batch.begin();
-		game.batch.draw(img, x, y);
+		
+		game.batch.draw(gameScreenBackground, 0,0, 1163, 720);
+		game.batch.draw(link, x, y,45,50);
+		
 		game.batch.end();
 	}
 

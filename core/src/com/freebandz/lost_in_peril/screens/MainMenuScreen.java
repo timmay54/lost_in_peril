@@ -104,9 +104,9 @@ public class MainMenuScreen implements Screen{
 		int settings_x = (Lost_In_Peril.WIDTH / 4) * 3 - (SETTINGS_BUTTON_WIDTH / 2) + 200;
 		game.batch.draw(settingsButton, settings_x, SETTINGS_BUTTON_Y, SETTINGS_BUTTON_WIDTH, SETTINGS_BUTTON_HEIGHT); //LAST TWO VARIABLE WERE MISSING! Hard to hit sweetspot when image is so big and zone is so small!
 		if(Gdx.input.getX() < settings_x + SETTINGS_BUTTON_WIDTH && Gdx.input.getX() > settings_x) {
-			System.out.println("Good!");
+			//System.out.println("Good!");
 			if(Lost_In_Peril.HEIGHT - Gdx.input.getY() < SETTINGS_BUTTON_Y + SETTINGS_BUTTON_HEIGHT && Lost_In_Peril.HEIGHT - Gdx.input.getY() > SETTINGS_BUTTON_Y) {
-				System.out.println("GREAT!");
+				//System.out.println("GREAT!");
 				if(Gdx.input.isTouched()) {
 					mainMenuScreenSound.stop();
 					game.setScreen(new SettingsScreen(game));

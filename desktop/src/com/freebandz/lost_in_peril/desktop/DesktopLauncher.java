@@ -1,5 +1,6 @@
 package com.freebandz.lost_in_peril.desktop;
 
+import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
@@ -26,6 +27,7 @@ public class DesktopLauncher {
 		config.height = Lost_In_Peril.HEIGHT;
 		config.resizable = false;
 		config.foregroundFPS = 60;
+		config.addIcon("badlogic.jpg", FileType.Internal);
 		new LwjglApplication(new Lost_In_Peril(), config);
 		
 	}

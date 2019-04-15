@@ -43,7 +43,7 @@ public class SettingsScreen implements Screen{
 		 */
 		
 		game.batch.draw(backButton, 50,50,BACK_BUTTON_WIDTH,BACK_BUTTON_HEIGHT);
-		if(Gdx.input.getX() < 50 + BACK_BUTTON_WIDTH && Gdx.input.getX() > BACK_BUTTON_WIDTH && Lost_In_Peril.HEIGHT - Gdx.input.getY() < 50 + BACK_BUTTON_HEIGHT && 
+		if(Gdx.input.getX() < 50 + BACK_BUTTON_WIDTH && Gdx.input.getX() > 50 && Lost_In_Peril.HEIGHT - Gdx.input.getY() < 50 + BACK_BUTTON_HEIGHT && 
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > 50) {
 			if(Gdx.input.isTouched()) {
 				game.setScreen(new MainMenuScreen(game));
