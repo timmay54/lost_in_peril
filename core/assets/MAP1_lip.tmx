@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="44" height="29" tilewidth="16" tileheight="16" nextobjectid="37">
+ <tileset firstgid="1" source="untitled.tsx"/>
+ <layer name="Background" width="44" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztlctSAjEQRfG9V0T3Oip7gYG9IrD3yd4nH6CfoJ+gH+ulKreqqyudTJjBYeHiVKBmkj7dk066jUaj+8+fsgbWwQbYBFtgG+yod6omFtNy3Y3M5ztlCK0vOYzUlON8zT3QBPugBQ7c/JR4qRwq2oYv/TgegWOQgRNwCs7c/JCjjpdKWzEwfOnH8Rx03LMeyEHfzffV3IqXykAxMXzpx/ECXIIhuAIjMHbzfTW34qUyUUwNX/pxvAY34BbcgXvwIObrmlvxUpkqZoYv/Tg+gifwDF7AK3hz8301t+KlMlNY5xj9Qp6hmlvxUqnyHgnlsox4Frp/6rxbU137K+AUQp6lc9dxResuK29Z37Hz1s8zlVfd+6bnfHzQUeZVpy/P0syAjswrd66r2pd0lHdE3X05DEDHlvCssi8Xxdq3HDV17we9by1/9pt0ls+X7dlRFPGnG//rvlyEd/BR4L2m8uW+tepvnXsx5L7yeXyCrwK+mahrqO+suhfdR8T6Bt/gp8T3kfA889U91gfyjuG+15RxG6nfJFfese9AemJurtx9OZStrTyDLeRZbZ3fOm8rh6JOKdChqpyle2ytX6vu/po=
+  </data>
+ </layer>
+ <layer name="graphics" width="44" height="29">
+  <data encoding="base64" compression="zlib">
+   eJzVlbdSw0AURU3uyT25J/dgQk/uyX/A8gn2L3MKmNHsvLSybCTNnLEkX709Wj2ter3ubV+QWs535vtHUo7zXw3v/7xWCtaUfKvXTsE0zMAszME8LNTI514pkM/vy/NdhCVYhhVYhTVYV+bSykvjl+Y93w3YhC3Yhh3YhT3F18rnzzwF8hHfamYfDuAQjuAYTuC0Rl7y9fKlvmdwDn24gEu4gmuhlpeX+tfLl/rewC3cwT08wCM8Kb5WXvL18p5vnnmGF3iFN3iHD/iskZd8vXzUV3r3vDXUW6ul/s39rXVZ842s49b3w/LUfDXvOr7enJX6RvdLfUs9rXu0fDRHCW19kFysvvbctDpWbalOST94vTfKvEWvtebXumdrnKaI+E5qXOs+pfPVc5JvU4x7ftuM1Q9txfseT2LOSnqjKd9x9HbJ/P73c29rP3T1fYuO3aTv4JfqsXReui5af1jxHTTAMLA/av0ubj/NVANw
+  </data>
+ </layer>
+ <objectgroup name="ground"/>
+ <objectgroup name="tunnel cave">
+  <object id="33" x="96" y="48.6667">
+   <polyline points="0,0 112.667,-1.33333 112,110 -1.33333,110.667 -1.33333,-2"/>
+  </object>
+  <object id="34" x="288" y="46">
+   <polyline points="0,0 112.667,-0.666667 114,112.667 0.666667,112.667 -1.33333,-0.666667"/>
+  </object>
+  <object id="35" x="482" y="48">
+   <polyline points="0,0 112,-2 110.667,114.667 -4.66667,113.333 -2,1.33333"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="tunnel">
+  <object id="10" x="320" y="144" width="16" height="16"/>
+  <object id="12" x="515.333" y="141.333" width="12.6667" height="17.3333"/>
+  <object id="15" x="584" y="82" width="9.33333" height="11.3333"/>
+  <object id="16" x="482.667" y="82" width="8.66667" height="14"/>
+  <object id="17" x="393.333" y="82" width="6.66667" height="12.6667"/>
+  <object id="18" x="286.667" y="81.3333" width="9.33333" height="13.3333"/>
+  <object id="20" x="199.333" y="80" width="9.33333" height="16"/>
+  <object id="21" x="129.333" y="138.667" width="13.3333" height="20"/>
+  <object id="24" x="97.3333" y="80" width="8.66667" height="18.6667"/>
+ </objectgroup>
+</map>

@@ -9,11 +9,13 @@ import com.badlogic.gdx.graphics.Texture;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 
 public class GameScreen implements Screen{
-	
 	public static final float SPEED = 150;
 	Texture img;
 	Texture gameScreenBackground;
 	Texture link;
+	
+	private HUD hud;
+	
 	float x = 172;
 	float y = 90;
 
@@ -24,7 +26,10 @@ public class GameScreen implements Screen{
 	public GameScreen(Lost_In_Peril game) {
 		// TODO Auto-generated constructor stub
 		this.game = game;
+		
 		long id = gameScreenSound.play(1.0f);
+		
+		hud = new HUD(game.batch);
 		
 		gameScreenSound.setLooping(id,true);
 	}
@@ -39,7 +44,7 @@ public class GameScreen implements Screen{
 	@Override
 	public void render(float delta) {
 		
-		
+		game.batch.setProjectionMatrix(hud.stageHud.getCamera().combined);
 		
 		if(Gdx.input.isKeyPressed(Keys.UP)) {
 			y+=SPEED * Gdx.graphics.getDeltaTime();
@@ -67,6 +72,7 @@ public class GameScreen implements Screen{
 		game.batch.draw(link, x, y,45,50);
 		
 		game.batch.end();
+		hud.stageHud.draw();
 	}
 
 	@Override
