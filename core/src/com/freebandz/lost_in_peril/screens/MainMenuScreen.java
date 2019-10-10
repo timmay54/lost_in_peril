@@ -117,7 +117,7 @@ public class MainMenuScreen implements Screen{
 				//System.out.println("GREAT!");
 				if(Gdx.input.isTouched()) {
 					mainMenuScreenSound.stop();
-					game.setScreen(new SettingsScreen(game));
+					game.setScreen(new SettingsScreen2(game));
 				}
 			}
 		}
