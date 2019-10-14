@@ -32,6 +32,8 @@ public class MainMenuScreen implements Screen{
 	Texture settingsButton;
 	Texture mainBackground;
 	
+	
+	
 	Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
 	
 	public MainMenuScreen(Lost_In_Peril game) {
@@ -44,9 +46,12 @@ public class MainMenuScreen implements Screen{
 		scoreButton = new Texture("score.png");
 		settingsButton= new Texture("settingsButton.png");
 		
+		
 		long id = mainMenuScreenSound.play(1.0f); //plays once
 		//mainMenuScreenSound.stop(); probably should go into dispose
 		mainMenuScreenSound.setLooping(id,true);
+		
+		
 	}
 	
 	@Override
@@ -60,6 +65,9 @@ public class MainMenuScreen implements Screen{
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		game.batch.begin();
 		game.batch.draw(mainBackground,0,0);
+		
+		
+		
 		//PLAY BUTTON:
 		int play_x = Lost_In_Peril.WIDTH / 2 - PLAY_BUTTON_WIDTH / 2;
 		if(Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT && 
@@ -109,7 +117,7 @@ public class MainMenuScreen implements Screen{
 				//System.out.println("GREAT!");
 				if(Gdx.input.isTouched()) {
 					mainMenuScreenSound.stop();
-					game.setScreen(new SettingsScreen(game));
+					game.setScreen(new SettingsScreen2(game));
 				}
 			}
 		}
@@ -126,6 +134,8 @@ public class MainMenuScreen implements Screen{
 		}*/
 		
 		game.batch.end();
+		
+		
 	}
 
 	@Override
