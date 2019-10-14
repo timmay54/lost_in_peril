@@ -11,6 +11,7 @@ public class Lost_In_Peril extends Game {
 	//change this for screen
 	public static final int WIDTH = 1163;
 	public static final int HEIGHT = 720; 
+	public static final float PPM = (float) 0.40;
 	
 	private OrthographicCamera cam;
 	private StretchViewport viewport;
