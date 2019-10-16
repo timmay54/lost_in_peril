@@ -136,10 +136,13 @@ public class MainMenuScreen implements Screen{
 		
 		
 		//PLAY WITH CONTROLLLER
-		if(pad.getButton(Xbox.START)) {
-			this.dispose();
-			game.setScreen(new GameScreen(game));
+		if(pad != null) {
+			if(pad.getButton(Xbox.START)) {
+				this.dispose();
+				game.setScreen(new GameScreen(game));
+			}
 		}
+		
 				 
 			
 		
