@@ -34,7 +34,7 @@ public class MainMenuScreen implements Screen{
 	Texture scoreButton;
 	Texture settingsButton;
 	Texture mainBackground;
-	public Controller pad;
+	public static Controller pad;
 	
 	
 	Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
@@ -59,7 +59,10 @@ public class MainMenuScreen implements Screen{
 		
 		for (Controller c : Controllers.getControllers()) {
 			  System.out.println(c.getName());
-			  if(c.getName().contains("ox") && c.getName().contains("360")) {
+			  if(c.getName().contains("360")) {
+				  pad = c;
+			  }
+			  else if(c.getName().contains("XBOX")) {
 				  pad = c;
 			  }
 		}

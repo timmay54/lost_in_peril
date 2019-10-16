@@ -51,7 +51,7 @@ public class GameScreen implements Screen{
     private World world;
     private Box2DDebugRenderer b2dr;
     //private B2WorldCreator creator;
-    public Controller pad;
+    //public Controller pad;
 	
 	Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
 	
@@ -63,14 +63,14 @@ public class GameScreen implements Screen{
 		gameScreenSound.setLooping(id,true);
 		
 		////////////////////////////////////// https://infectedbytes.com/2015/01/libgdx-controller.html
-		pad = null;
-		
+		//pad = null;
+		/*
 		for (Controller c : Controllers.getControllers()) {
 			  System.out.println(c.getName());
 			  if(c.getName().contains("ox") && c.getName().contains("360")) {
 				  pad = c;
 			  }
-		}
+		}*/
 		
 		//Array<Controller> controllers = Controllers.getControllers();
 			/* if(controllers.size()==0){ */
@@ -130,19 +130,19 @@ public class GameScreen implements Screen{
 		/*cam.position.x = x;
 		cam.position.y = y;*/
 		
-		if((Gdx.input.isKeyPressed(Keys.UP)) || (Gdx.input.isKeyPressed(Keys.W)) || (pad !=null && pad.getButton(Xbox.Y))) {
+		if((Gdx.input.isKeyPressed(Keys.UP)) || (Gdx.input.isKeyPressed(Keys.W)) || (MainMenuScreen.pad !=null && MainMenuScreen.pad.getButton(Xbox.Y))) {
 			y+=SPEED * Gdx.graphics.getDeltaTime();
 			player.b2body.applyLinearImpulse(new Vector2(0,(SPEED)), player.b2body.getWorldCenter(), true);
 		}
-		if((Gdx.input.isKeyPressed(Keys.DOWN) || (Gdx.input.isKeyPressed(Keys.S))) || (pad !=null && pad.getButton(Xbox.A))) {
+		if((Gdx.input.isKeyPressed(Keys.DOWN) || (Gdx.input.isKeyPressed(Keys.S))) || (MainMenuScreen.pad !=null && MainMenuScreen.pad.getButton(Xbox.A))) {
 			y-=SPEED * Gdx.graphics.getDeltaTime();
 			player.b2body.applyLinearImpulse(new Vector2(0,-(SPEED)), player.b2body.getWorldCenter(), true);
 		}
-		if(Gdx.input.isKeyPressed(Keys.RIGHT) || (Gdx.input.isKeyPressed(Keys.D)) || (pad != null && pad.getButton(Xbox.B))) {
+		if(Gdx.input.isKeyPressed(Keys.RIGHT) || (Gdx.input.isKeyPressed(Keys.D)) || (MainMenuScreen.pad != null && MainMenuScreen.pad.getButton(Xbox.B))) {
 			x+=SPEED * Gdx.graphics.getDeltaTime();
 			player.b2body.applyLinearImpulse(new Vector2(SPEED,0), player.b2body.getWorldCenter(), true);
 		}
-		if(Gdx.input.isKeyPressed(Keys.LEFT) || (Gdx.input.isKeyPressed(Keys.A)) || ( pad!=null && pad.getButton(Xbox.X))) {
+		if(Gdx.input.isKeyPressed(Keys.LEFT) || (Gdx.input.isKeyPressed(Keys.A)) || (MainMenuScreen.pad!=null && MainMenuScreen.pad.getButton(Xbox.X))) {
 			x-=SPEED * Gdx.graphics.getDeltaTime();
 			player.b2body.applyLinearImpulse(new Vector2(-SPEED,0), player.b2body.getWorldCenter(), true);
 		}
