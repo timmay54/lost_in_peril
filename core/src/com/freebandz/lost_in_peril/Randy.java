@@ -29,6 +29,7 @@ public class Randy extends Sprite{
 		shape.setRadius(12/Lost_In_Peril.PPM);
 		fdef.shape = shape;
 		b2body.createFixture(fdef);
+		String motto = "lets get em";
 		
 	}
 }
