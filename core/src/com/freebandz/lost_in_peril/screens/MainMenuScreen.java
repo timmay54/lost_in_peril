@@ -4,6 +4,9 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.controllers.Controller;
+import com.badlogic.gdx.controllers.Controllers;
+import com.badlogic.gdx.controllers.mappings.Xbox;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
@@ -31,7 +34,7 @@ public class MainMenuScreen implements Screen{
 	Texture scoreButton;
 	Texture settingsButton;
 	Texture mainBackground;
-	
+	public Controller pad;
 	
 	
 	Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
@@ -51,6 +54,15 @@ public class MainMenuScreen implements Screen{
 		//mainMenuScreenSound.stop(); probably should go into dispose
 		mainMenuScreenSound.setLooping(id,true);
 		
+		
+		pad = null;
+		
+		for (Controller c : Controllers.getControllers()) {
+			  System.out.println(c.getName());
+			  if(c.getName().contains("ox") && c.getName().contains("360")) {
+				  pad = c;
+			  }
+		}
 		
 	}
 	
@@ -120,6 +132,13 @@ public class MainMenuScreen implements Screen{
 					game.setScreen(new SettingsScreen2(game));
 				}
 			}
+		}
+		
+		
+		//PLAY WITH CONTROLLLER
+		if(pad.getButton(Xbox.START)) {
+			this.dispose();
+			game.setScreen(new GameScreen(game));
 		}
 				 
 			

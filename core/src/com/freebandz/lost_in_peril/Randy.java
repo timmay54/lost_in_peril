@@ -21,12 +21,12 @@ public class Randy extends Sprite{
 	
 	public void defineRandy() {
 		BodyDef bdef = new BodyDef();
-		bdef.position.set(32,32);
+		bdef.position.set(1800,360);
 		bdef.type = BodyDef.BodyType.DynamicBody;
 		b2body = world.createBody(bdef);
 		FixtureDef fdef = new FixtureDef();
 		CircleShape shape = new CircleShape();
-		shape.setRadius(5);
+		shape.setRadius(12/Lost_In_Peril.PPM);
 		fdef.shape = shape;
 		b2body.createFixture(fdef);
 		
