@@ -85,6 +85,13 @@ public class GameScreen implements Screen{
 		handleInput(dt);
 		cam.update();
 		renderer.setView(cam);
+		
+		if (x > 2460 && x < 2490 && y > 1310 && y < 1370) {
+			//hud.setScore(hud.getScore() + 1);
+			hud.worldTimer++;
+			
+		}
+		hud.update(dt);
 	}
 	
 	//END OF WERID STUFF
@@ -98,6 +105,8 @@ public class GameScreen implements Screen{
 	public void render(float delta) {
 		
 		update(delta);
+		
+		
 		
 		game.batch.setProjectionMatrix(hud.stageHud.getCamera().combined);
 		

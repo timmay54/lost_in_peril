@@ -21,16 +21,16 @@ public class HUD {
 	public Stage stageHud;
 	private Viewport viewportHud;
 	
-	private Integer worldTimer;
+	public Integer worldTimer = 300;
 	private float timeCount;
 	private Integer score;
 	
 	Label countDownLabel;
 	
 	public HUD(SpriteBatch sbb) {
-		worldTimer = 300;
+		//worldTimer = 300;
 		timeCount = 0;
-		score = 500;
+		setScore(500);
 		
 		viewportHud = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		stageHud = new Stage(viewportHud, sbb);
@@ -46,6 +46,19 @@ public class HUD {
 		stageHud.addActor(tableHud);
 		
 		
+	}
+	
+	public Integer getScore() {
+		return score;
+	}
+
+	public void setScore(Integer score) {
+		this.score = score;
+	}
+	
+	
+	public void update(float dt) {
+		countDownLabel.setText(String.format("%03d", worldTimer));
 	}
 	
 }
