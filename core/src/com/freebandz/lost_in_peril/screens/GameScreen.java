@@ -164,14 +164,28 @@ public class GameScreen implements Screen{
 			cam.zoom += 0.02; 
 		}
 		
-		/*if() {
-		      System.out.println("LOL");
-		}*/
+		if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) < -0.2  || 
+		   MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) > 0.2) {
+		      System.out.println(player.getX());
+		      player.b2body.applyLinearImpulse(new Vector2(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)*SPEED,0), player.b2body.getWorldCenter(), true);
+		      //player.b2body.setTransform(player.getX()+(SPEED * MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)), y, 0);
+		      //player.defineRandy();
+		}
 		
-		if(player.getX() < 350) {
+		if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) < -0.2  || 
+				   MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) > 0.2) {
+				      System.out.println(player.getX());
+				      player.b2body.applyLinearImpulse(new Vector2(0,MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS)*-SPEED), player.b2body.getWorldCenter(), true);
+				      //player.b2body.setTransform(player.getX()+(SPEED * MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)), y, 0);
+				      //player.defineRandy();
+				}
+		
+		System.out.println(player.getX());
+		
+		/*if(player.getX() < 350) {
 			player.setCenterX(450);
 			player.setCenterY(3200);
-		}
+		}*/
 	}
 	
 	public void update(float dt) {

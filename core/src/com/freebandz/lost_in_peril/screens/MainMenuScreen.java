@@ -36,8 +36,8 @@ public class MainMenuScreen implements Screen{
 	Texture mainBackground;
 	public static Controller pad;
 	
-	
-	Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
+	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
+	Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	
 	
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
@@ -55,8 +55,8 @@ public class MainMenuScreen implements Screen{
 		mainMenuScreenSound.setLooping(id,true);
 		
 		
+		//Controller support, only for specific xbox controller
 		pad = null;
-		
 		for (Controller c : Controllers.getControllers()) {
 			  System.out.println(c.getName());
 			  if(c.getName().contains("360")) {
@@ -143,6 +143,13 @@ public class MainMenuScreen implements Screen{
 			if(pad.getButton(Xbox.START)) {
 				this.dispose();
 				game.setScreen(new GameScreen(game));
+			}
+			
+			//testing values of API
+			if(pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) != 0) {
+				System.out.println(pad.getButton((Xbox.L_BUMPER)));
+				System.out.println(pad.getButton(Xbox.L_STICK));
+				System.out.println(pad.getAxis(Xbox.R_STICK_HORIZONTAL_AXIS));
 			}
 		}
 		
