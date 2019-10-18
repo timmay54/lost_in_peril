@@ -75,6 +75,3 @@ project(":core") {
 tasks.eclipse.doLast {
     delete ".project"
 }
-
-
-//sourceCompatibility = 1.7
