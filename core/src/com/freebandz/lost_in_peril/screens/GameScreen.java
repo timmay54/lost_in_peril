@@ -3,8 +3,8 @@ package com.freebandz.lost_in_peril.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
-import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.controllers.Controller;
+//import com.badlogic.gdx.audio.Sound;
+//import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.controllers.mappings.Xbox;
 import com.badlogic.gdx.graphics.GL20;
@@ -53,14 +53,14 @@ public class GameScreen implements Screen{
     //private B2WorldCreator creator;
     //public Controller pad;
 	
-	Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
+	//Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
 	
 	public GameScreen(Lost_In_Peril game) {
 		// TODO Auto-generated constructor stub
 		this.game = game;
-		long id = gameScreenSound.play(1.0f);
+		//long id = gameScreenSound.play(1.0f);
 		
-		gameScreenSound.setLooping(id,true);
+		//gameScreenSound.setLooping(id,true);
 		
 		////////////////////////////////////// https://infectedbytes.com/2015/01/libgdx-controller.html
 		//pad = null;
