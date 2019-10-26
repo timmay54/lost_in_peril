@@ -1,0 +1,21 @@
+{ 
+entityID : ENEMY
+state : IDLE
+direction : DOWN
+animationConfig: [
+    {
+	frameDuration: .25
+	animationType: WALK_DOWN
+	texturePaths: [
+	    ../sprites/enemy.png
+	]
+	gridPoints [
+	    {
+		x: 0
+		y: 0
+	    }
+	    {
+	    
+	    }
+
+}

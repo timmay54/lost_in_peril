@@ -1,5 +1,7 @@
 package com.freebandz.lost_in_peril.screens;
 
+import java.util.jar.Pack200.Unpacker;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
@@ -23,21 +25,27 @@ import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
-import com.freebandz.lost_in_peril.Randy;
+import com.freebandz.lost_in_peril.WorldContactListener;
+import com.freebandz.lost_in_peril.Sprites.Randy;
 
 public class GameScreen implements Screen{
-	public static final float SPEED = 75;
+	public static final float SPEED = 10;
 	Texture img;
 	Texture gameScreenBackground;
 	Texture link;
 	
 	private HUD hud;
+	private pauseMenu pause;
 	private Randy player;
 	float x = 863;
 	float y = 859;
+	public static boolean boolPause = false;
 
 	Lost_In_Peril game;
 	
@@ -46,60 +54,36 @@ public class GameScreen implements Screen{
 	private TmxMapLoader mapLoader;
 	private TiledMap map;
 	private OrthogonalTiledMapRenderer renderer;
-	Controllers controller;
-	//Box2d variables
+	//Controllers controller;
     private World world;
     private Box2DDebugRenderer b2dr;
-    //private B2WorldCreator creator;
-    //public Controller pad;
 	
 	Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
 	
+	public TiledMap getMap() {
+		return map;
+	}
+	
+	public World getWorld() {
+		return world;
+	}
+	
 	public GameScreen(Lost_In_Peril game) {
-		// TODO Auto-generated constructor stub
 		this.game = game;
-		long id = gameScreenSound.play(1.0f);
+		long id = gameScreenSound.play(.5f,1f,0f);
 		
 		gameScreenSound.setLooping(id,true);
-		
-		////////////////////////////////////// https://infectedbytes.com/2015/01/libgdx-controller.html
-		//pad = null;
-		/*
-		for (Controller c : Controllers.getControllers()) {
-			  System.out.println(c.getName());
-			  if(c.getName().contains("ox") && c.getName().contains("360")) {
-				  pad = c;
-			  }
-		}*/
-		
-		//Array<Controller> controllers = Controllers.getControllers();
-			/* if(controllers.size()==0){ */
-				  //there are no controllers...
-			//} 
-			//else {
-			    
-				//for(Controller c : controllers) {
-				  //  if(c.getName().contains("ox") && c.getName().contains("360")) {
-				    //  pad = c;
-				    //}
-				//}
-				  /*if(xbox==null){
-				    //no xbox controller found
-				    //we could fallback to the first controller, like so:
-				    //pad = controllers.get(0)
-				  }*/
-			//}
-		/////////////////////////////////////
 		
 		cam = new OrthographicCamera();
 		gamePort = new FitViewport(Lost_In_Peril.WIDTH / Lost_In_Peril.PPM , Lost_In_Peril.HEIGHT / Lost_In_Peril.PPM, cam);
 		hud = new HUD(game.batch);
+		pause = new pauseMenu(game.batch);
 		mapLoader = new TmxMapLoader();
 		map = mapLoader.load("MAP2_lip.tmx");
 		renderer = new OrthogonalTiledMapRenderer(map, 1 / Lost_In_Peril.PPM );
 		
 		cam.position.set(gamePort.getScreenWidth()  , gamePort.getWorldHeight() , 0 );
-		//cam.setToOrtho(false, 1280, 720);		
+		//cam.setToOrtho(false, 1280, 720);	??	
 		cam.zoom = .4f;
 		world = new World(new Vector2(0, 0), true);
 		b2dr = new Box2DDebugRenderer(); 
@@ -110,7 +94,7 @@ public class GameScreen implements Screen{
 		Body body;
 		
 		player = new Randy(world);
-		
+		world.setContactListener(new WorldContactListener());
 		for(MapObject object : map.getLayers().get(1).getObjects().getByType(RectangleMapObject.class)){
 			Rectangle rect = ((RectangleMapObject)object).getRectangle();
 			bdef.type = BodyDef.BodyType.StaticBody;
@@ -121,14 +105,14 @@ public class GameScreen implements Screen{
 			body.createFixture(fdef);
 		}
 		
+		
+		
 	}
 	
 	public void handleInput(float dt) {
 		if(Gdx.input.isTouched()) {
-			System.out.println(player.getX() + " " + player.getY());
+			//System.out.println(player.getX() + " " + player.getY());
 		}
-		/*cam.position.x = x;
-		cam.position.y = y;*/
 		
 		if((Gdx.input.isKeyPressed(Keys.UP)) || (Gdx.input.isKeyPressed(Keys.W)) || (MainMenuScreen.pad !=null && MainMenuScreen.pad.getButton(Xbox.Y))) {
 			y+=SPEED * Gdx.graphics.getDeltaTime();
@@ -148,7 +132,8 @@ public class GameScreen implements Screen{
 		}
 		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
 			//pause menu
-			//System.out.println("Sterling."); 
+			boolPause = true;
+			
 		}
 		if(Gdx.input.isKeyPressed(Keys.Q)){
 			cam.rotate(-2,0,0,1); 
@@ -164,47 +149,75 @@ public class GameScreen implements Screen{
 			cam.zoom += 0.02; 
 		}
 		
-		if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) < -0.2  || 
-		   MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) > 0.2) {
-		      System.out.println(player.getX());
-		      player.b2body.applyLinearImpulse(new Vector2(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)*SPEED,0), player.b2body.getWorldCenter(), true);
-		      //player.b2body.setTransform(player.getX()+(SPEED * MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)), y, 0);
-		      //player.defineRandy();
+		//For Controller Support
+		if(MainMenuScreen.pad != null) {
+			if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) < -0.2  || 
+			   MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) > 0.2) {
+			      player.b2body.applyLinearImpulse(new Vector2(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)*SPEED,0), player.b2body.getWorldCenter(), true);
+			      //player.defineRandy(); Funny lol
+			}
+		
+			if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) < -0.2  || 
+			   MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) > 0.2) {
+			      //System.out.println(player.getX());
+			      player.b2body.applyLinearImpulse(new Vector2(0,MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS)*-SPEED), player.b2body.getWorldCenter(), true);
+			      //player.b2body.setTransform(player.getX()+(SPEED * MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)), y, 0);
+			      //player.defineRandy();
+			}
 		}
 		
-		if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) < -0.2  || 
-				   MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) > 0.2) {
-				      System.out.println(player.getX());
-				      player.b2body.applyLinearImpulse(new Vector2(0,MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS)*-SPEED), player.b2body.getWorldCenter(), true);
-				      //player.b2body.setTransform(player.getX()+(SPEED * MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)), y, 0);
-				      //player.defineRandy();
-				}
-		
-		System.out.println(player.getX());
+		//System.out.println(player.b2body.getLinearVelocity().x != 0f);
+		//System.out.println(player.b2body.getPosition().x + " , " + player.b2body.getPosition().y );
+		//System.out.println(player.b2body.getLinearVelocity());
 		
 		/*if(player.getX() < 350) {
 			player.setCenterX(450);
 			player.setCenterY(3200);
 		}*/
+		
+		//If no button press, decrement speed to stop Randy
+		if (player.b2body.getLinearVelocity().x != 0){
+			player.b2body.setLinearVelocity(.9f * player.b2body.getLinearVelocity().x, player.b2body.getLinearVelocity().y);
+			if(player.b2body.getLinearVelocity().isZero(.1f)) {
+				player.b2body.setLinearVelocity(0f, player.b2body.getLinearVelocity().y);
+			}
+		}
+		if (player.b2body.getLinearVelocity().y != 0){
+			player.b2body.setLinearVelocity(player.b2body.getLinearVelocity().x, .9f * player.b2body.getLinearVelocity().y);
+			if(player.b2body.getLinearVelocity().isZero(.1f)) {
+				player.b2body.setLinearVelocity(player.b2body.getLinearVelocity().x, 0f );
+			}
+		}
 	}
 	
 	public void update(float dt) {
-		handleInput(dt);
+		//handleInput(dt);
+		if(!boolPause) {
+			handleInput(dt);
+		}
+		else {
+			
+			if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
+				boolPause = false;
+			}
+		}
 		
 		cam.position.x = player.b2body.getPosition().x;
 		cam.position.y = player.b2body.getPosition().y;
 		
-		world.step(1/60f, 6, 100);
+	  //world.step(1/60f, 6, 100); / NORMAL
+		world.step(1f, 6, 100);
 		
 		cam.update();
 		renderer.setView(cam);
 		
-		if (x > 2460 && x < 2490 && y > 1310 && y < 1370) {
+		if (player.b2body.getPosition().x > 1991 && player.b2body.getPosition().x < 2490 && player.b2body.getPosition().y > 1080 && player.b2body.getPosition().y < 1096) {
 			//hud.setScore(hud.getScore() + 1);
 			hud.worldTimer++;
 			
 		}
 		hud.update(dt);
+		pause.update(dt);
 	}
 	
 	
@@ -234,6 +247,7 @@ public class GameScreen implements Screen{
 		
 		game.batch.end();
 		hud.stageHud.draw();
+		pause.pauseStage.draw();
 		
 		//renderer.render(); COOL SHIIITTTT
 	}

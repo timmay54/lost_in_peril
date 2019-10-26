@@ -62,7 +62,7 @@ public class MainMenuScreen implements Screen{
 			  if(c.getName().contains("360")) {
 				  pad = c;
 			  }
-			  else if(c.getName().contains("XBOX")) {
+			  else if(c.getName().contains("XBOX") || c.getName().contains("Xbox")) {
 				  pad = c;
 			  }
 		}

@@ -65,8 +65,6 @@ public class SettingsScreen2 implements Screen{
 	
 	@Override
 	public void show() {
-		// SHOW
-		
 		//this is needed for the textButton to work
 		Gdx.input.setInputProcessor(stage);
 		//https://stackoverflow.com/questions/38188457/textbutton-hover-option-or-something-similar
