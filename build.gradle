@@ -1,5 +1,5 @@
 buildscript {
-    
+
 
     repositories {
         mavenLocal()
@@ -11,9 +11,9 @@ buildscript {
     }
     dependencies {
         classpath 'org.wisepersist:gwt-gradle-plugin:1.0.6'
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.6'
-        
+
 
     }
 }
@@ -58,7 +58,7 @@ project(":desktop") {
         compile "de.tomgrill.gdxfacebook:gdx-facebook-desktop:1.4.1"
         compile "de.tomgrill.gdxdialogs:gdx-dialogs-desktop:1.2.5"
         compile "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-desktop"
-        
+
     }
 }
 
@@ -78,7 +78,7 @@ project(":ios") {
         compile "de.tomgrill.gdxfacebook:gdx-facebook-ios:1.4.1"
         compile "de.tomgrill.gdxdialogs:gdx-dialogs-ios:1.2.5"
         compile "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-ios"
-        
+
     }
 }
 
@@ -109,7 +109,7 @@ project(":html") {
         compile "de.tomgrill.gdxdialogs:gdx-dialogs-html:1.2.5"
         compile "de.tomgrill.gdxdialogs:gdx-dialogs-html:1.2.5:sources"
         compile "de.tomgrill.gdxdialogs:gdx-dialogs-core:1.2.5:sources"
-        
+
     }
 }
 
@@ -132,7 +132,7 @@ project(":core") {
         compile "de.tomgrill.gdxfacebook:gdx-facebook-core:1.4.1"
         compile "de.tomgrill.gdxdialogs:gdx-dialogs-core:1.2.5"
         compile "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
-        
+
     }
 }
 
@@ -174,7 +174,7 @@ project(":android") {
         natives "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-arm64-v8a"
         natives "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-x86"
         natives "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-x86_64"
-        
+
     }
 }
 

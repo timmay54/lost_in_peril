@@ -3,7 +3,6 @@ package com.freebandz.lost_in_peril.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.freebandz.lost_in_peril.Lost_in_Peril;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -46,6 +45,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-                return new Lost_in_Peril();
+                return new Lost_in;
         }
 }
