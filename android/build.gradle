@@ -18,7 +18,7 @@ android {
     }
     defaultConfig {
         applicationId "com.freebandz.lost_in_peril"
-        minSdkVersion 9
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
