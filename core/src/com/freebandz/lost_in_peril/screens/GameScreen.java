@@ -5,8 +5,8 @@ import java.util.jar.Pack200.Unpacker;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
-import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.controllers.Controller;
+//import com.badlogic.gdx.audio.Sound;
+//import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.controllers.mappings.Xbox;
 import com.badlogic.gdx.graphics.GL20;
@@ -39,7 +39,7 @@ public class GameScreen implements Screen{
 	Texture img;
 	Texture gameScreenBackground;
 	Texture link;
-	
+
 	private HUD hud;
 	private pauseMenu pause;
 	private Randy player;
@@ -48,7 +48,7 @@ public class GameScreen implements Screen{
 	public static boolean boolPause = false;
 
 	Lost_In_Peril game;
-	
+
 	private OrthographicCamera cam;
 	private Viewport gamePort;
 	private TmxMapLoader mapLoader;
@@ -57,23 +57,23 @@ public class GameScreen implements Screen{
 	//Controllers controller;
     private World world;
     private Box2DDebugRenderer b2dr;
-	
-	Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
-	
+
+	//Sound gameScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_INFECTED_05.ogg"));
+
 	public TiledMap getMap() {
 		return map;
 	}
-	
+
 	public World getWorld() {
 		return world;
 	}
-	
+
 	public GameScreen(Lost_In_Peril game) {
 		this.game = game;
-		long id = gameScreenSound.play(.5f,1f,0f);
-		
-		gameScreenSound.setLooping(id,true);
-		
+		//long id = gameScreenSound.play(.5f,1f,0f);
+
+		//gameScreenSound.setLooping(id,true);
+
 		cam = new OrthographicCamera();
 		gamePort = new FitViewport(Lost_In_Peril.WIDTH / Lost_In_Peril.PPM , Lost_In_Peril.HEIGHT / Lost_In_Peril.PPM, cam);
 		hud = new HUD(game.batch);
@@ -81,18 +81,18 @@ public class GameScreen implements Screen{
 		mapLoader = new TmxMapLoader();
 		map = mapLoader.load("MAP2_lip.tmx");
 		renderer = new OrthogonalTiledMapRenderer(map, 1 / Lost_In_Peril.PPM );
-		
+
 		cam.position.set(gamePort.getScreenWidth()  , gamePort.getWorldHeight() , 0 );
-		//cam.setToOrtho(false, 1280, 720);	??	
+		//cam.setToOrtho(false, 1280, 720);	??
 		cam.zoom = .4f;
 		world = new World(new Vector2(0, 0), true);
-		b2dr = new Box2DDebugRenderer(); 
-		
+		b2dr = new Box2DDebugRenderer();
+
 		BodyDef bdef = new BodyDef();
 		PolygonShape shape = new PolygonShape();
 		FixtureDef fdef = new FixtureDef();
 		Body body;
-		
+
 		player = new Randy(world);
 		world.setContactListener(new WorldContactListener());
 		for(MapObject object : map.getLayers().get(1).getObjects().getByType(RectangleMapObject.class)){
@@ -104,16 +104,16 @@ public class GameScreen implements Screen{
 			fdef.shape = shape;
 			body.createFixture(fdef);
 		}
-		
-		
-		
+
+
+
 	}
-	
+
 	public void handleInput(float dt) {
 		if(Gdx.input.isTouched()) {
 			//System.out.println(player.getX() + " " + player.getY());
 		}
-		
+
 		if((Gdx.input.isKeyPressed(Keys.UP)) || (Gdx.input.isKeyPressed(Keys.W)) || (MainMenuScreen.pad !=null && MainMenuScreen.pad.getButton(Xbox.Y))) {
 			y+=SPEED * Gdx.graphics.getDeltaTime();
 			player.b2body.applyLinearImpulse(new Vector2(0,(SPEED)), player.b2body.getWorldCenter(), true);
@@ -133,31 +133,31 @@ public class GameScreen implements Screen{
 		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
 			//pause menu
 			boolPause = true;
-			
+
 		}
 		if(Gdx.input.isKeyPressed(Keys.Q)){
-			cam.rotate(-2,0,0,1); 
+			cam.rotate(-2,0,0,1);
 		}
 		if(Gdx.input.isKeyPressed(Keys.E)){
-			cam.rotate(2,0,0,1); 
+			cam.rotate(2,0,0,1);
 		}
 		if(Gdx.input.isKeyPressed(Keys.I)){
-			cam.zoom -= 0.02; 
+			cam.zoom -= 0.02;
 			System.out.println(cam.zoom);
 		}
 		if(Gdx.input.isKeyPressed(Keys.O)){
-			cam.zoom += 0.02; 
+			cam.zoom += 0.02;
 		}
-		
+
 		//For Controller Support
 		if(MainMenuScreen.pad != null) {
-			if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) < -0.2  || 
+			if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) < -0.2  ||
 			   MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) > 0.2) {
 			      player.b2body.applyLinearImpulse(new Vector2(MainMenuScreen.pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS)*SPEED,0), player.b2body.getWorldCenter(), true);
 			      //player.defineRandy(); Funny lol
 			}
-		
-			if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) < -0.2  || 
+
+			if(MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) < -0.2  ||
 			   MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS) > 0.2) {
 			      //System.out.println(player.getX());
 			      player.b2body.applyLinearImpulse(new Vector2(0,MainMenuScreen.pad.getAxis(Xbox.L_STICK_VERTICAL_AXIS)*-SPEED), player.b2body.getWorldCenter(), true);
@@ -165,16 +165,16 @@ public class GameScreen implements Screen{
 			      //player.defineRandy();
 			}
 		}
-		
+
 		//System.out.println(player.b2body.getLinearVelocity().x != 0f);
 		//System.out.println(player.b2body.getPosition().x + " , " + player.b2body.getPosition().y );
 		//System.out.println(player.b2body.getLinearVelocity());
-		
+
 		/*if(player.getX() < 350) {
 			player.setCenterX(450);
 			player.setCenterY(3200);
 		}*/
-		
+
 		//If no button press, decrement speed to stop Randy
 		if (player.b2body.getLinearVelocity().x != 0){
 			player.b2body.setLinearVelocity(.9f * player.b2body.getLinearVelocity().x, player.b2body.getLinearVelocity().y);
@@ -189,66 +189,66 @@ public class GameScreen implements Screen{
 			}
 		}
 	}
-	
+
 	public void update(float dt) {
 		//handleInput(dt);
 		if(!boolPause) {
 			handleInput(dt);
 		}
 		else {
-			
+
 			if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
 				boolPause = false;
 			}
 		}
-		
+
 		cam.position.x = player.b2body.getPosition().x;
 		cam.position.y = player.b2body.getPosition().y;
-		
+
 	  //world.step(1/60f, 6, 100); / NORMAL
 		world.step(1f, 6, 100);
-		
+
 		cam.update();
 		renderer.setView(cam);
-		
+
 		if (player.b2body.getPosition().x > 1991 && player.b2body.getPosition().x < 2490 && player.b2body.getPosition().y > 1080 && player.b2body.getPosition().y < 1096) {
 			//hud.setScore(hud.getScore() + 1);
 			hud.worldTimer++;
-			
+
 		}
 		hud.update(dt);
 		pause.update(dt);
 	}
-	
-	
+
+
 	@Override
 	public void show() {
 		link = new Texture("link-sprite-png-6.gif");
 	}
- 
+
 	@Override
 	public void render(float delta) {
-		
+
 		update(delta);
-		
-		
-		
+
+
+
 		game.batch.setProjectionMatrix(hud.stageHud.getCamera().combined);
-		
-		
+
+
 		Gdx.gl.glClearColor(1, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		
+
 		renderer.render();
 		b2dr.render(world, cam.combined);
 		game.batch.begin();
-		
+
 		//game.batch.draw(link, Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT,45,50);
-		
+
 		game.batch.end();
 		hud.stageHud.draw();
 		pause.pauseStage.draw();
-		
+
 		//renderer.render(); COOL SHIIITTTT
 	}
 
@@ -259,17 +259,17 @@ public class GameScreen implements Screen{
 
 	@Override
 	public void pause() {
-		
+
 	}
 
 	@Override
 	public void resume() {
-		
+
 	}
 
 	@Override
 	public void hide() {
-		
+
 	}
 
 	@Override
@@ -278,7 +278,7 @@ public class GameScreen implements Screen{
 		img.dispose();
 		renderer.dispose();
 		map.dispose();
-		
+
 	}
 
 }
