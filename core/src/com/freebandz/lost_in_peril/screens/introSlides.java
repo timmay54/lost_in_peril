@@ -15,7 +15,7 @@ public class introSlides implements Screen{
 	
 	public introSlides(Lost_In_Peril game) {
 		this.game = game;
-		slide1 = new Texture("path/to/file.png");
+		slide1 = new Texture("485_550x550_Front_Color-NA.jpg");
 		slide2 = new Texture("path/to/file.png");
 		slide3 = new Texture("path/to/file.png");
 	}
@@ -30,6 +30,12 @@ public class introSlides implements Screen{
 		Gdx.gl.glClearColor(0, 0, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		game.batch.begin();
+		
+		//while loop
+			//after 4 seconds, dim screen, change slide 1 to slide 2
+			//repeat for slide 3 transition
+			//if slide 3
+				//dim screen and then -> this.set
 		game.batch.draw(slide1,0,0);
 		game.batch.end();
 	}
