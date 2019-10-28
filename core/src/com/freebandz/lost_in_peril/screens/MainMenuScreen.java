@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
 //import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.controllers.mappings.Xbox;
@@ -26,6 +27,8 @@ public class MainMenuScreen implements Screen{
 	private static final int SCORE_BUTTON_Y = 220;
 	private static final int SETTINGS_BUTTON_Y = 50;
 
+	public static String platformName = "nulls";
+
 	Lost_In_Peril game;
 	Texture exitButtonActive;
 	Texture exitButtonInactive;
@@ -38,6 +41,7 @@ public class MainMenuScreen implements Screen{
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
+	Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
 
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
@@ -49,10 +53,10 @@ public class MainMenuScreen implements Screen{
 		scoreButton = new Texture("score.png");
 		settingsButton= new Texture("settingsButton.png");
 
+		System.out.println("Platform: " + platformName);
 
-		//long id = mainMenuScreenSound.play(1.0f); //plays once
-		//mainMenuScreenSound.stop(); probably should go into dispose
-		//mainMenuScreenSound.setLooping(id,true);
+		menuMusic.play(); //plays once
+		menuMusic.setLooping(true); //now plays in loop (delay)
 
 
 		//Controller support, only for specific xbox controller
@@ -81,6 +85,11 @@ public class MainMenuScreen implements Screen{
 		game.batch.begin();
 		game.batch.draw(mainBackground,0,0);
 
+		//Touch screen Start
+		if (Gdx.input.isTouched( )){
+			menuMusic.dispose();
+			game.setScreen(new GameScreen(game));
+		}
 
 
 		//PLAY BUTTON:
@@ -97,17 +106,13 @@ public class MainMenuScreen implements Screen{
 			game.batch.draw(playButtonInactive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 		}
 
-		if (Gdx.input.isTouched( )){
-			game.setScreen(new GameScreen(game));
-		}
-
 		//SCORE BUTTON:
 		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2) - 70;
 		game.batch.draw(scoreButton, score_x, SCORE_BUTTON_Y /*, width, height, srcX, srcY, srcWidth, srcHeight*/);
 		if(Gdx.input.getX() < score_x + SCORE_BUTTON_WIDTH + 151 && Gdx.input.getX() > score_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SCORE_BUTTON_Y) {
 			if(Gdx.input.isTouched()) {
-				//mainMenuScreenSound.stop();
+				menuMusic.stop();
 				game.setScreen(new ScoreScreen(game));
 			}
 		}
@@ -135,7 +140,7 @@ public class MainMenuScreen implements Screen{
 			if(Lost_In_Peril.HEIGHT - Gdx.input.getY() < SETTINGS_BUTTON_Y + SETTINGS_BUTTON_HEIGHT && Lost_In_Peril.HEIGHT - Gdx.input.getY() > SETTINGS_BUTTON_Y) {
 				//System.out.println("GREAT!");
 				if(Gdx.input.isTouched()) {
-					//mainMenuScreenSound.stop();
+					menuMusic.stop();
 					game.setScreen(new SettingsScreen2(game));
 				}
 			}
@@ -196,7 +201,7 @@ public class MainMenuScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		//mainMenuScreenSound.stop();
+		menuMusic.dispose();
 	}
 
 }
