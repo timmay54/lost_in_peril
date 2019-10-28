@@ -4,6 +4,9 @@ import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
+import com.freebandz.lost_in_peril.screens.MainMenuScreen;
+
+//import sun.security.tools.keytool.Main;
 
 /*  DIRECTIONS FOR DESKTOP (as of 4-12):
  * TO COMPILE AND OUTPUT TO FOLDER:
@@ -18,10 +21,13 @@ import com.freebandz.lost_in_peril.Lost_In_Peril;
 
 
 public class DesktopLauncher {
+
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		//add stuff here before start screen shows
-		
+
+		MainMenuScreen.platformName = "desktop";
+
 		config.title = "Lost in Peril";
 		config.width = Lost_In_Peril.WIDTH;
 		config.height = Lost_In_Peril.HEIGHT;

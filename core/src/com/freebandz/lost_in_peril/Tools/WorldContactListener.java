@@ -1,4 +1,4 @@
-package com.freebandz.lost_in_peril;
+package com.freebandz.lost_in_peril.Tools;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.physics.box2d.Contact;
@@ -17,20 +17,20 @@ public class WorldContactListener implements ContactListener{
 	@Override
 	public void endContact(Contact contact) {
 		// TODO Auto-generated method stub
-		Gdx.app.log(null, "Yo end");
+		Gdx.app.log(contact.toString(), "Yo end");
 	}
 	
 	
 	//Do not use either method below yet
 	@Override
 	public void preSolve(Contact contact, Manifold oldManifold) {
-		// TODO Auto-generated method stub
+
 		
 	}
 
 	@Override
 	public void postSolve(Contact contact, ContactImpulse impulse) {
-		// TODO Auto-generated method stub
+
 		
 	}
 	

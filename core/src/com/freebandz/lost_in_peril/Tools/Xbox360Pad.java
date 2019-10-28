@@ -1,4 +1,4 @@
-package com.freebandz.lost_in_peril;
+package com.freebandz.lost_in_peril.Tools;
 
 import com.badlogic.gdx.controllers.PovDirection;
 
