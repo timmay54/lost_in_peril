@@ -21,7 +21,7 @@ public class HUD {
 	public Stage stageHud;
 	private Viewport viewportHud;
 	
-	public Integer worldTimer = 120;
+	public static Integer worldTimer = 120;
 	private float timeCount;
 	private Integer score;
 	
@@ -63,7 +63,7 @@ public class HUD {
 	public void update(float dt) {
 		//countDownLabel.setText(String.format("%03d", worldTimer));
 		timeCount += dt;
-		if(timeCount >= 1){
+		if(timeCount >= 2 && !GameScreen.boolPause){
 			worldTimer--;
 			countDownLabel.setText(String.format("%03d", worldTimer));
 			timeCount = 0;

@@ -19,8 +19,8 @@ public class pauseMenu {
 	
 	public Stage pauseStage;
 	private Viewport viewportPause;
-	public Window pause;
-	public static TextButton unpause;
+	public Window pauseWindow;
+
 	//public static Skin skin = new Skin(Gdx.files.internal("core/assets/gdx-skins_newfolder/biological-attack/skin/biological-attack-ui.json"),
 	//		new TextureAtlas(Gdx.files.internal("core/assets/gdx-skins_newfolder/biological-attack/skin/biological-attack-ui.atlas")));
 	private Skin skin;
@@ -29,22 +29,30 @@ public class pauseMenu {
 		skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
 		viewportPause = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		pauseStage = new Stage(viewportPause, sbb);
-		//Table pauseTable = new Table();
-		pause = new Window("Paused", skin);
-		pause.setMovable(false);
-		unpause = new TextButton("Unpause", skin);
-		pause.add(unpause).center(); //Add a new text button that unpauses the game.
-		pause.pack(); //Important! Correctly scales the window after adding new elements.
+		Gdx.input.setInputProcessor(pauseStage);
+
+		Table table = new Table();
+		pauseWindow = new Window("Paused", skin);
+		pauseWindow.setMovable(false);
+		TextButton unpause = new TextButton("Unpause", skin);
+
+		//table.center();
+		table.add(unpause);
+
+		pauseWindow.add(table); //Add a new text button that unpauses the game.
+		pauseWindow.pack(); //Important! Correctly scales the window after adding new elements.
 		float newWidth = 400, newHeight = 250;
-		pause.setBounds((Gdx.graphics.getWidth() - newWidth ) / 2,
+		pauseWindow.setBounds((Gdx.graphics.getWidth() - newWidth ) / 2,
 		(Gdx.graphics.getHeight() - newHeight ) / 2, newWidth , newHeight ); //Center on screen.
 
-
+		//pauseWindow.add(table);
 
 		unpause.addListener(new InputListener(){
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 GameScreen.boolPause = false;
+                pauseWindow.setVisible(false);
+
             }
             @Override
             public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
@@ -54,14 +62,14 @@ public class pauseMenu {
 
 
 
-		pauseStage.addActor(pause);
+		pauseStage.addActor(pauseWindow);
 
 
-		pauseStage.addActor(unpause);
+		//pauseStage.addActor(unpause);
 	}
 	
 	public void update(float dt) {
-		pause.setVisible(GameScreen.boolPause);
-		unpause.setVisible(GameScreen.boolPause);
+		pauseWindow.setVisible(GameScreen.boolPause);
+		//unpause.setVisible(GameScreen.boolPause);
 	}
 }

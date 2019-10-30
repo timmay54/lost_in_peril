@@ -25,7 +25,7 @@ allprojects {
     version = '1.0'
     ext {
         appName = "lost_in_peril"
-        gdxVersion = '1.9.9'
+        gdxVersion = '1.9.6'
         roboVMVersion = '2.3.6'
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
