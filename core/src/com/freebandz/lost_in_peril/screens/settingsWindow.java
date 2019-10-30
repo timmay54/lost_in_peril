@@ -21,7 +21,7 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
-import com.badlogic.gdx.utils.*;
+//import com.badlogic.gdx.utils.*;
 
 public class settingsWindow{
 
@@ -32,12 +32,7 @@ public class settingsWindow{
 	private Table table;
 
 	public settingsWindow(SpriteBatch sbb){
-		if(MainMenuScreen.platformName.equals("android")){
-			skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
-		}
-		else {
-			skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
-		}
+		skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
 
 		viewport = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		stage = new Stage(viewport, sbb);
@@ -46,7 +41,7 @@ public class settingsWindow{
 
 		table = new Table();
 		table.row();
-		settings = new Window("Paused", skin);
+		settings = new Window("Settings", skin);
 		settings.setMovable(false);
 		TextButton increment = new TextButton("+", skin);
 

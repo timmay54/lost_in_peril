@@ -37,8 +37,9 @@ public class GameScreen implements Screen{
 	Texture link;
 	private TextureAtlas atlas;
 
-	private HUD hud;
+	public static HUD hud;
 	private pauseMenu pause;
+	private gameOver gameover;
 	private Randy player;
 	private enemyFighter boss;
 	float x = 863;
@@ -73,7 +74,7 @@ public class GameScreen implements Screen{
 		//atlas = new TextureAtlas(Gdx.files.internal("PossibleAssets/Pack01/Original (16x16)/Sprites.png"));
 
 		gameMusic.setLooping(true);
-		gameMusic.setVolume(.58f);
+		gameMusic.setVolume(MainMenuScreen.musicVolume);
 		gameMusic.play();
 
 		link = new Texture("link-sprite-png-6.gif");
@@ -85,6 +86,7 @@ public class GameScreen implements Screen{
 			controller = new Controller(game.batch);
 		}
 		pause = new pauseMenu(game.batch);
+		gameover = new gameOver(game.batch);
 		mapLoader = new TmxMapLoader();
 		map = mapLoader.load("MAP2_lip.tmx");
 		renderer = new OrthogonalTiledMapRenderer(map, 1 / Lost_In_Peril.PPM );
@@ -210,12 +212,17 @@ public class GameScreen implements Screen{
 	public void update(float dt) {
 		//handleInput(dt);
 		//System.out.println("boolPause: " + boolPause);
+		Vector2 tempPlayerVector = new Vector2(0,0);
 		if(!boolPause) {
 			handleInput(dt);
+			hud.update(dt);
+
 		}
 		else {
-
+			tempPlayerVector = player.b2body.getLinearVelocity();
+			player.b2body.setLinearVelocity(0,0);
 			if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
+				player.b2body.setLinearVelocity(tempPlayerVector);
 				boolPause = false;
 			}
 		}
@@ -236,11 +243,17 @@ public class GameScreen implements Screen{
 			//hud.worldTimer++;
 
 		}
-		hud.update(dt);
+
+		/*
+		if(hud.worldTimer.equals(0)){
+			gameOver.
+		}
+		*/
+
 
 		//boss.update(dt); //for sprite image location on screen
 		player.update(dt);
-
+		gameover.update(dt);
 		pause.update(dt);
 	}
 
@@ -268,9 +281,9 @@ public class GameScreen implements Screen{
 		if(MainMenuScreen.platformName.equals("android")) {
 			controller.draw();
 		}
-		if(boolPause) {
-			pause.pauseStage.draw();
-		}
+
+
+
 
 		game.batch.begin();
 
@@ -279,6 +292,14 @@ public class GameScreen implements Screen{
 		//player.draw(game.batch);
 		game.batch.end();
 
+		if(boolPause) {
+			if(hud.worldTimer <= 0){
+				gameOver.overStage.draw();
+			}
+			else {
+				pause.pauseStage.draw();
+			}
+		}
 
 	}
 

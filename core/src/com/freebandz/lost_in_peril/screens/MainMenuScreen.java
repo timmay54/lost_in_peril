@@ -96,10 +96,12 @@ public class MainMenuScreen implements Screen{
 		game.batch.draw(mainBackground,0,0);
 
 		//Touch screen Start
-		/*if (Gdx.input.isTouched( )){
-			menuMusic.dispose();
-			game.setScreen(new GameScreen(game));
-		}*/
+
+		if (Gdx.input.isTouched( )){
+			showSettings = true;
+			//game.setScreen(new GameScreen(game));
+		}
+
 
 
 		//PLAY BUTTON:
@@ -108,6 +110,7 @@ public class MainMenuScreen implements Screen{
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y) {
 			game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 			if(Gdx.input.isTouched()) {
+				menuMusic.dispose();
 				this.dispose();
 				game.setScreen(new GameScreen(game));
 			}
@@ -115,6 +118,14 @@ public class MainMenuScreen implements Screen{
 		else{
 			game.batch.draw(playButtonInactive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 		}
+
+		//Play button for android CRASHES FROM TOO MUCH INPUT
+		/*
+		if(Gdx.input.isTouched() && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
+				Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y){
+			//this.dispose();
+			game.setScreen(new GameScreen(game));
+		}*/
 
 		//SCORE BUTTON:
 		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2) - 70;
