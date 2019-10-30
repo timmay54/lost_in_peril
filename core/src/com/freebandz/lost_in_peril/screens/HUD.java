@@ -21,11 +21,12 @@ public class HUD {
 	public Stage stageHud;
 	private Viewport viewportHud;
 	
-	public Integer worldTimer = 300;
+	public Integer worldTimer = 120;
 	private float timeCount;
 	private Integer score;
 	
 	Label countDownLabel;
+	Label scoreLabel;
 	
 	public HUD(SpriteBatch sbb) {
 		//worldTimer = 300;
@@ -39,8 +40,10 @@ public class HUD {
 		tableHud.setFillParent(true);
 		
 		countDownLabel = new Label(String.format("%03d", worldTimer), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+		scoreLabel = new Label(String.format("%03d", score), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
 		
 		tableHud.add(countDownLabel).expandX().padTop(10);
+		tableHud.add(scoreLabel).expandX().pad(10, 10, 0, 0);
 		tableHud.row();
 		
 		stageHud.addActor(tableHud);
@@ -58,7 +61,18 @@ public class HUD {
 	
 	
 	public void update(float dt) {
-		countDownLabel.setText(String.format("%03d", worldTimer));
+		//countDownLabel.setText(String.format("%03d", worldTimer));
+		timeCount += dt;
+		if(timeCount >= 1){
+			worldTimer--;
+			countDownLabel.setText(String.format("%03d", worldTimer));
+			timeCount = 0;
+		}
+	}
+
+	public void addScore(int value){
+		score += value;
+		scoreLabel.setText(String.format("%03d", score));
 	}
 	
 }

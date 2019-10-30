@@ -28,6 +28,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexEnabled = true
         }
     }
 }
@@ -89,6 +90,7 @@ task run(type: Exec) {
     def adb = path + "/platform-tools/adb"
     commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.freebandz.lost_in_peril/com.freebandz.lost_in_peril.AndroidLauncher'
 }
+
 
 // sets up the Android Eclipse project, using the old Ant based build.
 eclipse {
