@@ -1,0 +1,22 @@
+intro slide screens
+    to main menu
+mainmenu settings -> volume
+            credits
+            high score
+      pause screen
+      text on what to do
+      Go
+
+      spritesheets
+      Push objects places
+      collect coins
+      attack boss
+      spacebar attack
+
+
+end of 2 minutes
+    accumulate points
+    pause game after 2 minutes
+    game over screen
+
+    420 cty road 1150 north, henry, il

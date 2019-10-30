@@ -26,7 +26,7 @@ public class MainMenuScreen implements Screen{
 	private static final int PLAY_BUTTON_Y = 350;
 	private static final int SCORE_BUTTON_Y = 220;
 	private static final int SETTINGS_BUTTON_Y = 50;
-
+	public static float musicVolume = 1f;
 	public static String platformName = "nulls";
 
 	Lost_In_Peril game;
@@ -38,10 +38,13 @@ public class MainMenuScreen implements Screen{
 	Texture settingsButton;
 	Texture mainBackground;
 	public static Controller pad;
+	public static boolean showSettings;
+	private settingsWindow settings;
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
 	Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
+
 
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
@@ -52,12 +55,14 @@ public class MainMenuScreen implements Screen{
 		exitButtonInactive = new Texture("exit_button_inactive.png");
 		scoreButton = new Texture("score.png");
 		settingsButton= new Texture("settingsButton.png");
-
+		boolean showSettings = false;
 		System.out.println("Platform: " + platformName);
 
-		menuMusic.play(); //plays once
 		menuMusic.setLooping(true); //now plays in loop (delay)
+		menuMusic.setVolume(musicVolume);
+		menuMusic.play();
 
+		settings = new settingsWindow(game.batch);
 
 		//Controller support, only for specific xbox controller
 		pad = null;
@@ -78,23 +83,28 @@ public class MainMenuScreen implements Screen{
 
 	}
 
+	public void update(float dt) {
+		settings.update(dt);
+	}
+
 	@Override
 	public void render(float delta) {
+		update(delta);
 		Gdx.gl.glClearColor(0, 0, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		game.batch.begin();
 		game.batch.draw(mainBackground,0,0);
 
 		//Touch screen Start
-		if (Gdx.input.isTouched( )){
+		/*if (Gdx.input.isTouched( )){
 			menuMusic.dispose();
 			game.setScreen(new GameScreen(game));
-		}
+		}*/
 
 
 		//PLAY BUTTON:
 		int play_x = Lost_In_Peril.WIDTH / 2 - PLAY_BUTTON_WIDTH / 2;
-		if(Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
+		if((!showSettings) && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y) {
 			game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 			if(Gdx.input.isTouched()) {
@@ -109,7 +119,7 @@ public class MainMenuScreen implements Screen{
 		//SCORE BUTTON:
 		int score_x = (Lost_In_Peril.WIDTH / 2) - (SCORE_BUTTON_WIDTH / 2) - 70;
 		game.batch.draw(scoreButton, score_x, SCORE_BUTTON_Y /*, width, height, srcX, srcY, srcWidth, srcHeight*/);
-		if(Gdx.input.getX() < score_x + SCORE_BUTTON_WIDTH + 151 && Gdx.input.getX() > score_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT &&
+		if((!showSettings) && Gdx.input.getX() < score_x + SCORE_BUTTON_WIDTH + 151 && Gdx.input.getX() > score_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SCORE_BUTTON_Y) {
 			if(Gdx.input.isTouched()) {
 				menuMusic.stop();
@@ -120,10 +130,11 @@ public class MainMenuScreen implements Screen{
 
 		//EXIT BUTTON:
 		int exit_x = Lost_In_Peril.WIDTH / 2 - EXIT_BUTTON_WIDTH / 2;
-		if(Gdx.input.getX() < exit_x + EXIT_BUTTON_WIDTH && Gdx.input.getX() > exit_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < EXIT_BUTTON_Y + EXIT_BUTTON_HEIGHT &&
+		if((!showSettings) && Gdx.input.getX() < exit_x + EXIT_BUTTON_WIDTH && Gdx.input.getX() > exit_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < EXIT_BUTTON_Y + EXIT_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > EXIT_BUTTON_Y) {
 			game.batch.draw(exitButtonActive, exit_x, EXIT_BUTTON_Y , EXIT_BUTTON_WIDTH, EXIT_BUTTON_HEIGHT);
 			if(Gdx.input.isTouched()) {
+				dispose();
 				Gdx.app.exit();
 			}
 		}
@@ -140,8 +151,12 @@ public class MainMenuScreen implements Screen{
 			if(Lost_In_Peril.HEIGHT - Gdx.input.getY() < SETTINGS_BUTTON_Y + SETTINGS_BUTTON_HEIGHT && Lost_In_Peril.HEIGHT - Gdx.input.getY() > SETTINGS_BUTTON_Y) {
 				//System.out.println("GREAT!");
 				if(Gdx.input.isTouched()) {
-					menuMusic.stop();
-					game.setScreen(new SettingsScreen2(game));
+					//System.out.println("grand.");
+					//menuMusic.stop();
+					//game.setScreen(new SettingsScreen2(game));
+					showSettings = true;
+
+
 				}
 			}
 		}
@@ -175,6 +190,10 @@ public class MainMenuScreen implements Screen{
 		}*/
 
 		game.batch.end();
+		if(showSettings) {
+			settingsWindow.stage.draw();
+			menuMusic.setVolume(musicVolume);
+		}
 
 
 	}

@@ -8,6 +8,7 @@ import com.badlogic.gdx.controllers.mappings.Xbox;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -24,6 +25,8 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
+import com.freebandz.lost_in_peril.Sprites.enemyFighter;
+import com.freebandz.lost_in_peril.Tools.B2WorldCreator;
 import com.freebandz.lost_in_peril.Tools.Controller;
 import com.freebandz.lost_in_peril.Tools.WorldContactListener;
 import com.freebandz.lost_in_peril.Sprites.Randy;
@@ -32,10 +35,12 @@ public class GameScreen implements Screen{
 	public static final float SPEED = 10;
 	Texture img;
 	Texture link;
+	private TextureAtlas atlas;
 
 	private HUD hud;
 	private pauseMenu pause;
 	private Randy player;
+	private enemyFighter boss;
 	float x = 863;
 	float y = 859;
 	public static boolean boolPause = false;
@@ -59,14 +64,19 @@ public class GameScreen implements Screen{
 	public World getWorld() {
 		return world;
 	}
+	public TextureAtlas getAtlas(){
+		return atlas;
+	}
 
 	public GameScreen(Lost_In_Peril game) {
 		this.game = game;
-		//
+		//atlas = new TextureAtlas(Gdx.files.internal("PossibleAssets/Pack01/Original (16x16)/Sprites.png"));
+
 		gameMusic.setLooping(true);
 		gameMusic.setVolume(.58f);
 		gameMusic.play();
 
+		link = new Texture("link-sprite-png-6.gif");
 
 		cam = new OrthographicCamera();
 		gamePort = new FitViewport(Lost_In_Peril.WIDTH , Lost_In_Peril.HEIGHT, cam);
@@ -74,7 +84,7 @@ public class GameScreen implements Screen{
 		if(MainMenuScreen.platformName.equals("android")) {
 			controller = new Controller(game.batch);
 		}
-		//pause = new pauseMenu(game.batch);
+		pause = new pauseMenu(game.batch);
 		mapLoader = new TmxMapLoader();
 		map = mapLoader.load("MAP2_lip.tmx");
 		renderer = new OrthogonalTiledMapRenderer(map, 1 / Lost_In_Peril.PPM );
@@ -88,22 +98,12 @@ public class GameScreen implements Screen{
 		world = new World(new Vector2(0, 0), true);
 		b2dr = new Box2DDebugRenderer();
 
-		BodyDef bdef = new BodyDef();
-		PolygonShape shape = new PolygonShape();
-		FixtureDef fdef = new FixtureDef();
-		Body body;
+		new B2WorldCreator(this);
 
-		player = new Randy(world);
+		player = new Randy(world, this);
+		boss = new enemyFighter(this, 10, 10);
 		world.setContactListener(new WorldContactListener());
-		for(MapObject object : map.getLayers().get(1).getObjects().getByType(RectangleMapObject.class)){
-			Rectangle rect = ((RectangleMapObject)object).getRectangle();
-			bdef.type = BodyDef.BodyType.StaticBody;
-			bdef.position.set((rect.getX() + rect.getWidth() /2) / Lost_In_Peril.PPM, (rect.getY() + rect.getHeight()/2) / Lost_In_Peril.PPM);
-			body = world.createBody(bdef);
-			shape.setAsBox((rect.getWidth()) /2/ Lost_In_Peril.PPM, (rect.getHeight()) /2/ Lost_In_Peril.PPM);
-			fdef.shape = shape;
-			body.createFixture(fdef);
-		}
+
 	}
 
 	public void handleInput(float dt) {
@@ -149,7 +149,6 @@ public class GameScreen implements Screen{
 		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
 			//pause menu
 			boolPause = true;
-
 		}
 		if(Gdx.input.isKeyPressed(Keys.Q)){
 			cam.rotate(-2,0,0,1);
@@ -204,11 +203,13 @@ public class GameScreen implements Screen{
 				player.b2body.setLinearVelocity(player.b2body.getLinearVelocity().x, 0f );
 			}
 		}
+
+		boss.b2body.setLinearVelocity(boss.b2body.getLinearVelocity().x * .85f, boss.b2body.getLinearVelocity().y * .85f);
 	}
 
 	public void update(float dt) {
-		handleInput(dt);
-		/*
+		//handleInput(dt);
+		//System.out.println("boolPause: " + boolPause);
 		if(!boolPause) {
 			handleInput(dt);
 		}
@@ -218,31 +219,35 @@ public class GameScreen implements Screen{
 				boolPause = false;
 			}
 		}
-		*/
 
 
+		//System.out.println(boss.b2body.getPosition().x + " " + boss.b2body.getPosition().y);
 		cam.position.x = player.b2body.getPosition().x;
 		cam.position.y = player.b2body.getPosition().y;
 
 	  //world.step(1/60f, 6, 100); / NORMAL
-		world.step(1f, 6, 100);
+		world.step(1f, 6, 2);
 
 		cam.update();
 		renderer.setView(cam);
 
 		if (player.b2body.getPosition().x > 1991 && player.b2body.getPosition().x < 2490 && player.b2body.getPosition().y > 1080 && player.b2body.getPosition().y < 1096) {
 			//hud.setScore(hud.getScore() + 1);
-			hud.worldTimer++;
+			//hud.worldTimer++;
 
 		}
 		hud.update(dt);
-		//pause.update(dt);
+
+		//boss.update(dt); //for sprite image location on screen
+		player.update(dt);
+
+		pause.update(dt);
 	}
 
 
 	@Override
 	public void show() {
-		link = new Texture("link-sprite-png-6.gif");
+
 	}
 
 	@Override
@@ -250,24 +255,31 @@ public class GameScreen implements Screen{
 		update(delta);
 		game.batch.setProjectionMatrix(hud.stageHud.getCamera().combined);
 
-		Gdx.gl.glClearColor(1, 0, 0, 1);
+		Gdx.gl.glClearColor(.5f, 0f, .5f, 1 );
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
+
+
 		renderer.render();
-		b2dr.render(world, cam.combined); //TODO Comment this line to hide lines and circle
-		game.batch.begin();
+		b2dr.render(world, cam.combined); //TODO Comment this to hide wall lines and circle
 
-		//game.batch.draw(link, Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT,45,50);
 
-		game.batch.end();
 		hud.stageHud.draw();
 		if(MainMenuScreen.platformName.equals("android")) {
 			controller.draw();
 		}
+		if(boolPause) {
+			pause.pauseStage.draw();
+		}
 
-		//pause.pauseStage.draw();
+		game.batch.begin();
 
-		//renderer.render(); COOL SHIIITTTT
+		game.batch.draw(link, this.gamePort.getScreenWidth()/2 - 45, this.gamePort.getScreenHeight()/2 - 45,45/Lost_In_Peril.PPM,50/Lost_In_Peril.PPM);
+		//game.batch.draw(cob, Lost_In_Peril.WIDTH * boss.b2body.getPosition().x, boss.b2body.getPosition().y / Lost_In_Peril.HEIGHT, 45, 45);
+		//player.draw(game.batch);
+		game.batch.end();
+
+
 	}
 
 	@Override
