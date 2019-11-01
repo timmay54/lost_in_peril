@@ -20,8 +20,8 @@ public class introSlides implements Screen{
 		this.game = game;
 		//slides[5] = new Array<Texture>();
 		slide1 = new Texture("485_550x550_Front_Color-NA.jpg");
-		slide2 = new Texture("cob_how.jpg");
-		slide3 = new Texture("cob_how.gif");
+		slide2 = new Texture("wiu.jpg");
+		slide3 = new Texture("nullpointer.jpg");
 		slides.add(slide1);
 		slides.add(slide2);
 		slides.add(slide3);
@@ -58,7 +58,7 @@ public class introSlides implements Screen{
 			//if slide 3
 				//dim screen and then -> this.set
 
-		game.batch.draw(slides.get(x),Lost_In_Peril.WIDTH / 4,Lost_In_Peril.HEIGHT / 4);
+		game.batch.draw(slides.get(x),Lost_In_Peril.WIDTH / 6,Lost_In_Peril.HEIGHT / 5);
 
 		//game.batch.draw(slide1,0,0);
 		game.batch.end();

@@ -15,6 +15,8 @@ import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 
+import static com.freebandz.lost_in_peril.screens.GameScreen.boolPause;
+
 public class pauseMenu {
 	
 	public Stage pauseStage;
@@ -50,7 +52,7 @@ public class pauseMenu {
 		unpause.addListener(new InputListener(){
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
-                GameScreen.boolPause = false;
+                boolPause = false;
                 pauseWindow.setVisible(false);
 
             }
@@ -69,7 +71,7 @@ public class pauseMenu {
 	}
 	
 	public void update(float dt) {
-		pauseWindow.setVisible(GameScreen.boolPause);
+		pauseWindow.setVisible(boolPause);
 		//unpause.setVisible(GameScreen.boolPause);
 	}
 }

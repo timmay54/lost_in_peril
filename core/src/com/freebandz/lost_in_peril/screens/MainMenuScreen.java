@@ -3,13 +3,16 @@ package com.freebandz.lost_in_peril.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
-//import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.controllers.mappings.Xbox;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 
 public class MainMenuScreen implements Screen{
@@ -26,10 +29,12 @@ public class MainMenuScreen implements Screen{
 	private static final int PLAY_BUTTON_Y = 350;
 	private static final int SCORE_BUTTON_Y = 220;
 	private static final int SETTINGS_BUTTON_Y = 50;
-	public static float musicVolume = 1f;
+	public static float musicVolume = .5f;
 	public static String platformName = "nulls";
 
 	Lost_In_Peril game;
+	private OrthographicCamera cam;
+	private Viewport viewport;
 	Texture exitButtonActive;
 	Texture exitButtonInactive;
 	Texture playButtonActive;
@@ -38,8 +43,9 @@ public class MainMenuScreen implements Screen{
 	Texture settingsButton;
 	Texture mainBackground;
 	public static Controller pad;
-	public static boolean showSettings;
+	public static boolean showSettings = false;
 	private settingsWindow settings;
+	Vector2 touchLogic;
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
@@ -48,6 +54,8 @@ public class MainMenuScreen implements Screen{
 
 	public MainMenuScreen(Lost_In_Peril game) {
 		this.game = game;
+		cam = new OrthographicCamera();
+		viewport = new FitViewport(Lost_In_Peril.WIDTH / Lost_In_Peril.PPM, Lost_In_Peril.HEIGHT / Lost_In_Peril.PPM, cam);
 		mainBackground = new Texture("mainBackground1.png");
 		playButtonActive = new Texture("play_button_active.png");
 		playButtonInactive = new Texture("play_button_inactive.png");
@@ -55,7 +63,6 @@ public class MainMenuScreen implements Screen{
 		exitButtonInactive = new Texture("exit_button_inactive.png");
 		scoreButton = new Texture("score.png");
 		settingsButton= new Texture("settingsButton.png");
-		boolean showSettings = false;
 		System.out.println("Platform: " + platformName);
 
 		menuMusic.setLooping(true); //now plays in loop (delay)
@@ -63,8 +70,9 @@ public class MainMenuScreen implements Screen{
 		menuMusic.play();
 
 		settings = new settingsWindow(game.batch);
+		touchLogic = new Vector2(0,0);
 
-		//Controller support, only for specific xbox controller
+		//Controller support, only for specific Xbox controllers
 		pad = null;
 		for (Controller c : Controllers.getControllers()) {
 			  System.out.println(c.getName());
@@ -97,27 +105,54 @@ public class MainMenuScreen implements Screen{
 
 		//Touch screen Start
 
-		if (Gdx.input.isTouched( )){
-			showSettings = true;
-			//game.setScreen(new GameScreen(game));
+		if (Gdx.input.isTouched()){
+			/*touchLogic = new Vector2(Gdx.input.getX(),Gdx.input.getY());
+			touchLogic = Lost_In_Peril.viewport.unproject(touchLogic);
+			*/
+			//System.out.println(touchLogic);
+			//showSettings = true;
+			game.setScreen(new GameScreen(game));
 		}
 
 
 
 		//PLAY BUTTON:
+
 		int play_x = Lost_In_Peril.WIDTH / 2 - PLAY_BUTTON_WIDTH / 2;
-		if((!showSettings) && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
+		if((!showSettings) && Gdx.input.isTouched() && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y) {
-			game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
-			if(Gdx.input.isTouched()) {
+			game.batch.draw(playButtonActive,play_x,PLAY_BUTTON_Y,PLAY_BUTTON_WIDTH,PLAY_BUTTON_HEIGHT);
+			if(Gdx.input.isTouched()){
+				game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
+				menuMusic.stop();
 				menuMusic.dispose();
-				this.dispose();
 				game.setScreen(new GameScreen(game));
+				this.dispose();
+				dispose();
 			}
 		}
 		else{
 			game.batch.draw(playButtonInactive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 		}
+
+		/*
+		//PLAY BUTTON:
+		int play_x = Lost_In_Peril.WIDTH / 2 - PLAY_BUTTON_WIDTH / 2;
+		if((!showSettings) && touchLogic.x < play_x + PLAY_BUTTON_WIDTH && touchLogic.x > play_x && Lost_In_Peril.HEIGHT - touchLogic.y < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
+				Lost_In_Peril.HEIGHT - touchLogic.y > PLAY_BUTTON_Y) {
+
+			game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
+			menuMusic.stop();
+			menuMusic.dispose();
+			game.setScreen(new GameScreen(game));
+			this.dispose();
+			dispose();
+		}
+		else{
+			game.batch.draw(playButtonInactive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
+		}
+
+		 */
 
 		//Play button for android CRASHES FROM TOO MUCH INPUT
 		/*

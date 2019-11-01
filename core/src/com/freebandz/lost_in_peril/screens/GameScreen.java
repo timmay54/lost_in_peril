@@ -80,7 +80,7 @@ public class GameScreen implements Screen{
 		link = new Texture("link-sprite-png-6.gif");
 
 		cam = new OrthographicCamera();
-		gamePort = new FitViewport(Lost_In_Peril.WIDTH , Lost_In_Peril.HEIGHT, cam);
+		gamePort = new FitViewport(Lost_In_Peril.WIDTH , Lost_In_Peril.HEIGHT, cam); /****************************************/
 		hud = new HUD(game.batch);
 		if(MainMenuScreen.platformName.equals("android")) {
 			controller = new Controller(game.batch);
@@ -111,16 +111,23 @@ public class GameScreen implements Screen{
 	public void handleInput(float dt) {
 		if(Gdx.input.isTouched()) {
 			//System.out.println(player.getX() + " " + player.getY());
+			System.out.println(Gdx.input.getX() + " " + Gdx.input.getY());
+			//controller.isUpPressed();
+
+
 		}
 
 		//ANDROID SPECIFIC CONTROLS
 		if(MainMenuScreen.platformName.equals("android")){
+			//System.out.println("True");
 			if(controller.isUpPressed()){
 				player.b2body.applyLinearImpulse(new Vector2(0,(SPEED)), player.b2body.getWorldCenter(), true);
+				System.out.println();
 			}
 
 			if(controller.isDownPressed()){
 				player.b2body.applyLinearImpulse(new Vector2(0,-(SPEED)), player.b2body.getWorldCenter(), true);
+				System.out.println("Yo");
 			}
 
 			if(controller.isRightPressed()){
@@ -212,17 +219,17 @@ public class GameScreen implements Screen{
 	public void update(float dt) {
 		//handleInput(dt);
 		//System.out.println("boolPause: " + boolPause);
-		Vector2 tempPlayerVector = new Vector2(0,0);
+		//Vector2 tempPlayerVector = new Vector2(0,0);
 		if(!boolPause) {
 			handleInput(dt);
 			hud.update(dt);
 
 		}
 		else {
-			tempPlayerVector = player.b2body.getLinearVelocity();
-			player.b2body.setLinearVelocity(0,0);
+			//tempPlayerVector = player.b2body.getLinearVelocity();
+			//player.b2body.setLinearVelocity(0,0);
 			if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
-				player.b2body.setLinearVelocity(tempPlayerVector);
+				//player.b2body.setLinearVelocity(tempPlayerVector);
 				boolPause = false;
 			}
 		}
@@ -244,13 +251,6 @@ public class GameScreen implements Screen{
 
 		}
 
-		/*
-		if(hud.worldTimer.equals(0)){
-			gameOver.
-		}
-		*/
-
-
 		//boss.update(dt); //for sprite image location on screen
 		player.update(dt);
 		gameover.update(dt);
@@ -268,22 +268,14 @@ public class GameScreen implements Screen{
 		update(delta);
 		game.batch.setProjectionMatrix(hud.stageHud.getCamera().combined);
 
-		Gdx.gl.glClearColor(.5f, 0f, .5f, 1 );
+		Gdx.gl.glClearColor(.3f, 0f, .3f, 1 );
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
-
 
 		renderer.render();
 		b2dr.render(world, cam.combined); //TODO Comment this to hide wall lines and circle
-
-
-		hud.stageHud.draw();
 		if(MainMenuScreen.platformName.equals("android")) {
 			controller.draw();
 		}
-
-
-
 
 		game.batch.begin();
 
@@ -292,9 +284,21 @@ public class GameScreen implements Screen{
 		//player.draw(game.batch);
 		game.batch.end();
 
+		hud.stageHud.draw();
+
+		if(MainMenuScreen.platformName.equals("android")) {
+			controller.draw();
+		}
+
 		if(boolPause) {
 			if(hud.worldTimer <= 0){
 				gameOver.overStage.draw();
+				/*
+				if(gameOver.overStage.touchUp()){
+					game.setScreen(new MainMenuScreen(game));
+				}
+				
+				 */
 			}
 			else {
 				pause.pauseStage.draw();
