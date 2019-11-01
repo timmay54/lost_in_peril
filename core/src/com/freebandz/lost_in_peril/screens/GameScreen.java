@@ -297,7 +297,7 @@ public class GameScreen implements Screen{
 				if(gameOver.overStage.touchUp()){
 					game.setScreen(new MainMenuScreen(game));
 				}
-				
+
 				 */
 			}
 			else {
