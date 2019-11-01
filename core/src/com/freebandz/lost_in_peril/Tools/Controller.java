@@ -8,6 +8,7 @@ package com.freebandz.lost_in_peril.Tools;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -33,8 +34,50 @@ public class Controller {
         viewport = new FitViewport(Lost_In_Peril.WIDTH/*Lost_In_Peril.PPM*/, Lost_In_Peril.HEIGHT/*Lost_In_Peril.PPM*/,cam);
         //viewport = new FitViewport(800,480);
         stage = new Stage(viewport, ssb);
-
         Gdx.input.setInputProcessor(stage);
+
+        /*
+        stage.addListener(new InputListener(){
+            @Override
+            public boolean keyDown(InputEvent event, int keycode) {
+                switch(keycode){
+                    case Input.Keys.UP:
+                        upPressed = true;
+                        break;
+                    case Input.Keys.DOWN:
+                        downPressed = true;
+                        break;
+                    case Input.Keys.LEFT:
+                        leftPressed = true;
+                        break;
+                    case Input.Keys.RIGHT:
+                        rightPressed = true;
+                        break;
+                }
+                return true;
+            }
+
+            @Override
+            public boolean keyUp(InputEvent event, int keycode) {
+                switch(keycode){
+                    case Input.Keys.UP:
+                        upPressed = false;
+                        break;
+                    case Input.Keys.DOWN:
+                        downPressed = false;
+                        break;
+                    case Input.Keys.LEFT:
+                        leftPressed = false;
+                        break;
+                    case Input.Keys.RIGHT:
+                        rightPressed = false;
+                        break;
+                }
+                return true;
+            }
+        }); */
+
+
 
         Table table = new Table();
         table.left().bottom();

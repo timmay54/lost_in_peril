@@ -57,7 +57,7 @@ public class settingsWindow{
 		//back.scaleBy(1.5f);
 		table.add(back);
 		settings.add(table);
-		settings.pack(); //Important! Correctly scales the window after adding new elements.
+		settings.pack();
 		float newWidth = 400, newHeight = 250;
 		settings.setBounds((Gdx.graphics.getWidth() - newWidth ) / 2,
 				(Gdx.graphics.getHeight() - newHeight ) / 2, newWidth , newHeight ); //Center on screen.

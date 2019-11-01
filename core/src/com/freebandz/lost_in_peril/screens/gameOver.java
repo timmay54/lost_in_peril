@@ -40,21 +40,29 @@ public class gameOver {
         Table table = new Table();
 
         TextButton mainMenu = new TextButton("Main Menu", skin);
-        gameOver = new Window("Main Menu", skin);
+        gameOver = new Window("GAME OVER", skin);
         gameOver.setMovable(false);
         //unpause = new TextButton("Unpause", skin);
         //gameOver.add(unpause).center(); //Add a new text button that unpauses the game.
-        gameOver.pack(); //Important! Correctly scales the window after adding new elements.
+
+        table.row();
+        table.add(mainMenu);
+
+        gameOver.add(table);
+        gameOver.pack();
         float newWidth = 400, newHeight = 250;
         gameOver.setBounds((Gdx.graphics.getWidth() - newWidth ) / 2,
                 (Gdx.graphics.getHeight() - newHeight ) / 2, newWidth , newHeight ); //Center on screen.
 
 
-        /*
-        unpause.addListener(new InputListener(){
+
+        mainMenu.addListener(new InputListener(){
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 GameScreen.boolPause = false;
+                System.out.println("main menu");
+
+
             }
             @Override
             public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
@@ -62,14 +70,10 @@ public class gameOver {
             }
         });
 
-         */
-
-
 
         overStage.addActor(gameOver);
 
 
-        //overStage.addActor(unpause);
     }
 
     public void update(float dt) {
@@ -77,6 +81,7 @@ public class gameOver {
         if(GameScreen.hud.worldTimer <= 0){
             GameScreen.boolPause = true;
             gameOver.setVisible(GameScreen.boolPause);
+            MainMenuScreen.musicVolume = 0f;
         }
 
         //unpause.setVisible(GameScreen.boolPause);

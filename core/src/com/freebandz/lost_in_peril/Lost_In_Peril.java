@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
+import com.freebandz.lost_in_peril.screens.GameScreen;
 import com.freebandz.lost_in_peril.screens.MainMenuScreen;
 import com.freebandz.lost_in_peril.screens.introSlides;
 
@@ -12,10 +13,10 @@ public class Lost_In_Peril extends Game {
 	//change this for screen
 	public static final int WIDTH = 1163;
 	public static final int HEIGHT = 720; 
-	public static final float PPM = (float) .5;
+	public static final float PPM = .5f;
 	
 	private OrthographicCamera cam;
-	private StretchViewport viewport;
+	public StretchViewport viewport;
 	
 	@Override
 	public void create () {
