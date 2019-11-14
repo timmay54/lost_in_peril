@@ -17,26 +17,21 @@ public class Randy extends Sprite{
 	public World world;
 	public Body b2body;
 	//private GameScreen screen;
-	TextureRegion randyStand;
+	private TextureRegion randyStand;
 
 	
 	public Randy(World world, GameScreen screen) {
-		//this.screen = screen;
-		//super(screen.getAtlas().findRegion(""));
+		super(screen.getAtlas().findRegion("Sprites"));
 		this.world = world;
 		defineRandy();
-		/*
-		Texture coboss = new Texture("link-sprite-png-6.gif");
-		randyStand = new TextureRegion(coboss);
-		setBounds(0,0,10/Lost_In_Peril.PPM,10/Lost_In_Peril.PPM);
-		setRegion(coboss);
-
-		 */
+		randyStand = new TextureRegion(getTexture(),0,0,16,16);
+		setBounds(0,0,16/Lost_In_Peril.PPM,16/Lost_In_Peril.PPM);
+		setRegion(randyStand);
 
 	}
 
 	public void update(float dt){
-		setPosition(b2body.getPosition().x, b2body.getPosition().y);
+		setPosition(b2body.getPosition().x- 8, b2body.getPosition().y - 8);
 	}
 	
 	public void defineRandy() {

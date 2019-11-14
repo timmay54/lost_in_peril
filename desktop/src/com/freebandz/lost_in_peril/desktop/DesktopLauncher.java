@@ -22,11 +22,19 @@ import com.freebandz.lost_in_peril.screens.MainMenuScreen;
 
 public class DesktopLauncher {
 
-	public static void main (String[] arg) {
+	public static void main (String[] args) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		//add stuff here before start screen shows
 
 		MainMenuScreen.platformName = "desktop";
+
+		System.out.println(args.length);
+
+		if(args.length != 0){
+			if(args[0].equals("GodMode")){
+				MainMenuScreen.godMode = true;
+			}
+		}
 
 		config.title = "Lost in Peril";
 		config.width = Lost_In_Peril.WIDTH;

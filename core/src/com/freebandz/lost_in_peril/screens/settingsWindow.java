@@ -43,10 +43,10 @@ public class settingsWindow{
 		table.row();
 		settings = new Window("Settings", skin);
 		settings.setMovable(false);
-		TextButton increment = new TextButton("+", skin);
+		TextButton increment = new TextButton("  +  ", skin);
 
 		//settings.add(increment); //Add a new text button that unpauses the game.
-		TextButton decrement = new TextButton("-", skin);
+		TextButton decrement = new TextButton("  -  ", skin);
 		table.add(decrement);
 		table.add();
 		table.add(increment);

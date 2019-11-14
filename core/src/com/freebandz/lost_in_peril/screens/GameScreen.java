@@ -45,6 +45,7 @@ public class GameScreen implements Screen{
 	float x = 863;
 	float y = 859;
 	public static boolean boolPause = false;
+	public static boolean returnToMain = false;
 
 	Lost_In_Peril game;
 
@@ -68,10 +69,11 @@ public class GameScreen implements Screen{
 	public TextureAtlas getAtlas(){
 		return atlas;
 	}
+	float grn = 0f;
 
 	public GameScreen(Lost_In_Peril game) {
 		this.game = game;
-		//atlas = new TextureAtlas(Gdx.files.internal("PossibleAssets/Pack01/Original (16x16)/Sprites.png"));
+		atlas = new TextureAtlas(Gdx.files.internal("randySprite.atlas"));
 
 		gameMusic.setLooping(true);
 		gameMusic.setVolume(MainMenuScreen.musicVolume);
@@ -80,7 +82,7 @@ public class GameScreen implements Screen{
 		link = new Texture("link-sprite-png-6.gif");
 
 		cam = new OrthographicCamera();
-		gamePort = new FitViewport(Lost_In_Peril.WIDTH , Lost_In_Peril.HEIGHT, cam); /****************************************/
+		gamePort = new FitViewport(Lost_In_Peril.WIDTH , Lost_In_Peril.HEIGHT, cam);
 		hud = new HUD(game.batch);
 		if(MainMenuScreen.platformName.equals("android")) {
 			controller = new Controller(game.batch);
@@ -105,6 +107,8 @@ public class GameScreen implements Screen{
 		player = new Randy(world, this);
 		boss = new enemyFighter(this, 10, 10);
 		world.setContactListener(new WorldContactListener());
+
+
 
 	}
 
@@ -219,17 +223,17 @@ public class GameScreen implements Screen{
 	public void update(float dt) {
 		//handleInput(dt);
 		//System.out.println("boolPause: " + boolPause);
-		//Vector2 tempPlayerVector = new Vector2(0,0);
+		Vector2 tempPlayerVector = new Vector2(0,0);
 		if(!boolPause) {
 			handleInput(dt);
 			hud.update(dt);
 
 		}
 		else {
-			//tempPlayerVector = player.b2body.getLinearVelocity();
-			//player.b2body.setLinearVelocity(0,0);
+			tempPlayerVector = player.b2body.getLinearVelocity();
+			player.b2body.setLinearVelocity(0,0);
 			if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
-				//player.b2body.setLinearVelocity(tempPlayerVector);
+				player.b2body.setLinearVelocity(tempPlayerVector);
 				boolPause = false;
 			}
 		}
@@ -255,6 +259,12 @@ public class GameScreen implements Screen{
 		player.update(dt);
 		gameover.update(dt);
 		pause.update(dt);
+
+		if (returnToMain == true){
+			returnToMain = false;
+			gameMusic.dispose();
+			game.setScreen(new MainMenuScreen(game));
+		}
 	}
 
 
@@ -268,7 +278,11 @@ public class GameScreen implements Screen{
 		update(delta);
 		game.batch.setProjectionMatrix(hud.stageHud.getCamera().combined);
 
-		Gdx.gl.glClearColor(.3f, 0f, .3f, 1 );
+		if(MainMenuScreen.godMode){
+		    grn = (float)(Math.random());
+        }
+
+		Gdx.gl.glClearColor(.3f, grn, .3f, 1 );
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		renderer.render();
@@ -277,11 +291,12 @@ public class GameScreen implements Screen{
 			controller.draw();
 		}
 
+		game.batch.setProjectionMatrix(cam.combined);
 		game.batch.begin();
 
-		game.batch.draw(link, this.gamePort.getScreenWidth()/2 - 45, this.gamePort.getScreenHeight()/2 - 45,45/Lost_In_Peril.PPM,50/Lost_In_Peril.PPM);
+		//game.batch.draw(link, this.gamePort.getScreenWidth()/2 - 45, this.gamePort.getScreenHeight()/2 - 45,45/Lost_In_Peril.PPM,50/Lost_In_Peril.PPM);
 		//game.batch.draw(cob, Lost_In_Peril.WIDTH * boss.b2body.getPosition().x, boss.b2body.getPosition().y / Lost_In_Peril.HEIGHT, 45, 45);
-		//player.draw(game.batch);
+		player.draw(game.batch);
 		game.batch.end();
 
 		hud.stageHud.draw();
