@@ -1,6 +1,7 @@
 package com.freebandz.lost_in_peril.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -17,7 +18,17 @@ public class ScoreScreen implements Screen {
 
 	public ScoreScreen(Lost_In_Peril game) {
 		this.game = game;
+
+		Preferences pref = Gdx.app.getPreferences("gameSettings");
+		int HighScore = pref.getInteger("highscore", 0);
+		HighScore++;
+
+		pref.putInteger("highscore", (HighScore));
+		pref.flush();
+
+		System.out.println(HighScore);
 	}
+
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub

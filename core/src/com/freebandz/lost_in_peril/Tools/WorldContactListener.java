@@ -11,13 +11,13 @@ public class WorldContactListener implements ContactListener{
 	@Override
 	public void beginContact(Contact contact) {
 		// TODO Auto-generated method stub
-		Gdx.app.log(null, "Yo begin");
+		Gdx.app.log("wall", "Yo begin");
 	}
 
 	@Override
 	public void endContact(Contact contact) {
 		// TODO Auto-generated method stub
-		Gdx.app.log(contact.toString(), "Yo end");
+		Gdx.app.log("wall", "Yo end");
 	}
 	
 	

@@ -60,7 +60,7 @@ public class gameOver {
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 GameScreen.boolPause = false;
-                System.out.println("main menu");
+                GameScreen.returnToMain = true;
 
 
             }

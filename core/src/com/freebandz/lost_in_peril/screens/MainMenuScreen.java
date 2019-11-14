@@ -1,6 +1,7 @@
 package com.freebandz.lost_in_peril.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.audio.Music;
@@ -31,6 +32,7 @@ public class MainMenuScreen implements Screen{
 	private static final int SETTINGS_BUTTON_Y = 50;
 	public static float musicVolume = .5f;
 	public static String platformName = "nulls";
+	public static boolean godMode = false;
 
 	Lost_In_Peril game;
 	private OrthographicCamera cam;
@@ -83,6 +85,10 @@ public class MainMenuScreen implements Screen{
 				  pad = c;
 			  }
 		}
+		//System.out.println(Gdx.graphics.getMonitor());
+        System.out.println(Gdx.graphics.getDisplayMode());
+        System.out.println(Gdx.graphics.getDeltaTime());
+        System.out.println(Gdx.graphics.getFramesPerSecond());
 
 	}
 
@@ -104,25 +110,28 @@ public class MainMenuScreen implements Screen{
 		game.batch.draw(mainBackground,0,0);
 
 		//Touch screen Start
-
+        /*
 		if (Gdx.input.isTouched()){
 			/*touchLogic = new Vector2(Gdx.input.getX(),Gdx.input.getY());
 			touchLogic = Lost_In_Peril.viewport.unproject(touchLogic);
-			*/
+
 			//System.out.println(touchLogic);
 			//showSettings = true;
 			game.setScreen(new GameScreen(game));
-		}
+		}*/
 
 
 
 		//PLAY BUTTON:
 
 		int play_x = Lost_In_Peril.WIDTH / 2 - PLAY_BUTTON_WIDTH / 2;
-		if((!showSettings) && Gdx.input.isTouched() && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
+		if((!showSettings) && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y) {
+
 			game.batch.draw(playButtonActive,play_x,PLAY_BUTTON_Y,PLAY_BUTTON_WIDTH,PLAY_BUTTON_HEIGHT);
-			if(Gdx.input.isTouched()){
+
+			if(Gdx.input.isTouched() && Gdx.input.getX() < play_x + PLAY_BUTTON_WIDTH && Gdx.input.getX() > play_x && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
+                    Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y){
 				game.batch.draw(playButtonActive, play_x, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 				menuMusic.stop();
 				menuMusic.dispose();

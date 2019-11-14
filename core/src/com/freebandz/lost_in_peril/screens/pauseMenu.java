@@ -25,6 +25,7 @@ public class pauseMenu {
 
 	//public static Skin skin = new Skin(Gdx.files.internal("core/assets/gdx-skins_newfolder/biological-attack/skin/biological-attack-ui.json"),
 	//		new TextureAtlas(Gdx.files.internal("core/assets/gdx-skins_newfolder/biological-attack/skin/biological-attack-ui.atlas")));
+
 	private Skin skin;
 
 	public pauseMenu(SpriteBatch sbb){
@@ -40,6 +41,9 @@ public class pauseMenu {
 
 		//table.center();
 		table.add(unpause);
+		table.row();
+		TextButton mainMenu = new TextButton("Quit", skin);
+		table.add(mainMenu);
 
 		pauseWindow.add(table); //Add a new text button that unpauses the game.
 		pauseWindow.pack(); //Important! Correctly scales the window after adding new elements.
@@ -61,6 +65,18 @@ public class pauseMenu {
                 return true;
             }
         });
+
+		mainMenu.addListener(new InputListener(){
+			@Override
+			public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
+				GameScreen.returnToMain = true;
+
+			}
+			@Override
+			public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+				return true;
+			}
+		});
 
 
 
