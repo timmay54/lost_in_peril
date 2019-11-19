@@ -26,7 +26,7 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		//add stuff here before start screen shows
 
-		MainMenuScreen.platformName = "desktop";
+		Lost_In_Peril.platformName = "desktop";
 
 		System.out.println(args.length);
 
