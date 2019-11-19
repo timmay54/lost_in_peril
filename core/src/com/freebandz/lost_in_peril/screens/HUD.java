@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
@@ -17,7 +18,7 @@ import com.freebandz.lost_in_peril.Lost_In_Peril;
  *
  */ 
 
-public class HUD {
+public class HUD implements Disposable {
 	public Stage stageHud;
 	private Viewport viewportHud;
 	
@@ -73,6 +74,10 @@ public class HUD {
 	public void addScore(int value){
 		score += value;
 		scoreLabel.setText(String.format("%03d", score));
+	}
+
+	public void dispose(){
+		stageHud.dispose();
 	}
 	
 }

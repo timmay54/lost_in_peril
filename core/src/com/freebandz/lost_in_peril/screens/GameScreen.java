@@ -9,22 +9,17 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.maps.MapObject;
-import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Body;
-import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
-import com.badlogic.gdx.physics.box2d.FixtureDef;
-import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
+import com.freebandz.lost_in_peril.Sprites.Teleporter;
+import com.freebandz.lost_in_peril.Sprites.Torch;
 import com.freebandz.lost_in_peril.Sprites.enemyFighter;
 import com.freebandz.lost_in_peril.Tools.B2WorldCreator;
 import com.freebandz.lost_in_peril.Tools.Controller;
@@ -33,8 +28,9 @@ import com.freebandz.lost_in_peril.Sprites.Randy;
 
 public class GameScreen implements Screen{
 	public static final float SPEED = 10;
-	Texture img;
-	Texture link;
+	public static String Teleport = null;
+	//Texture img;
+	//Texture link;
 	private TextureAtlas atlas;
 
 	public static HUD hud;
@@ -42,6 +38,7 @@ public class GameScreen implements Screen{
 	private gameOver gameover;
 	private Randy player;
 	private enemyFighter boss;
+	private Torch torch;
 	float x = 863;
 	float y = 859;
 	public static boolean boolPause = false;
@@ -56,7 +53,7 @@ public class GameScreen implements Screen{
 	private OrthogonalTiledMapRenderer renderer;
     private World world;
     private Box2DDebugRenderer b2dr;
-    Controller controller;
+    Controller androidController;
 
 	Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_INFECTED_05.ogg"));
 
@@ -73,19 +70,19 @@ public class GameScreen implements Screen{
 
 	public GameScreen(Lost_In_Peril game) {
 		this.game = game;
-		atlas = new TextureAtlas(Gdx.files.internal("randySprite.atlas"));
+		atlas = new TextureAtlas(Gdx.files.internal("SpaceAssets.atlas"));
 
 		gameMusic.setLooping(true);
 		gameMusic.setVolume(MainMenuScreen.musicVolume);
 		gameMusic.play();
 
-		link = new Texture("link-sprite-png-6.gif");
+		//link = new Texture("link-sprite-png-6.gif");
 
 		cam = new OrthographicCamera();
 		gamePort = new FitViewport(Lost_In_Peril.WIDTH , Lost_In_Peril.HEIGHT, cam);
 		hud = new HUD(game.batch);
-		if(MainMenuScreen.platformName.equals("android")) {
-			controller = new Controller(game.batch);
+		if(Lost_In_Peril.platformName.equals("android")) {
+			androidController = new Controller(game.batch);
 		}
 		pause = new pauseMenu(game.batch);
 		gameover = new gameOver(game.batch);
@@ -106,7 +103,10 @@ public class GameScreen implements Screen{
 
 		player = new Randy(world, this);
 		boss = new enemyFighter(this, 10, 10);
+		torch = new Torch(this, 10, 10);
+
 		world.setContactListener(new WorldContactListener());
+
 
 
 
@@ -115,30 +115,28 @@ public class GameScreen implements Screen{
 	public void handleInput(float dt) {
 		if(Gdx.input.isTouched()) {
 			//System.out.println(player.getX() + " " + player.getY());
-			System.out.println(Gdx.input.getX() + " " + Gdx.input.getY());
+			//System.out.println(Gdx.input.getX() + " " + Gdx.input.getY());
 			//controller.isUpPressed();
-
-
 		}
 
 		//ANDROID SPECIFIC CONTROLS
-		if(MainMenuScreen.platformName.equals("android")){
+		if(Lost_In_Peril.platformName.equals("android")){
 			//System.out.println("True");
-			if(controller.isUpPressed()){
+			if(androidController.isUpPressed()){
 				player.b2body.applyLinearImpulse(new Vector2(0,(SPEED)), player.b2body.getWorldCenter(), true);
 				System.out.println();
 			}
 
-			if(controller.isDownPressed()){
+			if(androidController.isDownPressed()){
 				player.b2body.applyLinearImpulse(new Vector2(0,-(SPEED)), player.b2body.getWorldCenter(), true);
 				System.out.println("Yo");
 			}
 
-			if(controller.isRightPressed()){
+			if(androidController.isRightPressed()){
 				player.b2body.applyLinearImpulse(new Vector2(SPEED,0), player.b2body.getWorldCenter(), true);
 			}
 
-			if(controller.isLeftPressed()){
+			if(androidController.isLeftPressed()){
 				player.b2body.applyLinearImpulse(new Vector2(-SPEED,0), player.b2body.getWorldCenter(), true);
 			}
 		}
@@ -221,7 +219,7 @@ public class GameScreen implements Screen{
 	}
 
 	public void update(float dt) {
-		//handleInput(dt);
+		handleInput(dt);
 		//System.out.println("boolPause: " + boolPause);
 		Vector2 tempPlayerVector = new Vector2(0,0);
 		if(!boolPause) {
@@ -244,25 +242,31 @@ public class GameScreen implements Screen{
 		cam.position.y = player.b2body.getPosition().y;
 
 	  //world.step(1/60f, 6, 100); / NORMAL
-		world.step(1f, 6, 2);
+		world.step(1f, 6, 100);
 
 		cam.update();
 		renderer.setView(cam);
 
 		if (player.b2body.getPosition().x > 1991 && player.b2body.getPosition().x < 2490 && player.b2body.getPosition().y > 1080 && player.b2body.getPosition().y < 1096) {
-			//hud.setScore(hud.getScore() + 1);
+			hud.setScore(hud.getScore() + 1);
 			//hud.worldTimer++;
 
 		}
 
-		//boss.update(dt); //for sprite image location on screen
+		if(Teleport != null){
+			player.b2body.setTransform(490,420,player.b2body.getAngle());
+		}
+
+		boss.update(dt); //for sprite image location on screen
 		player.update(dt);
 		gameover.update(dt);
 		pause.update(dt);
+		torch.update(dt);
 
 		if (returnToMain == true){
 			returnToMain = false;
 			gameMusic.dispose();
+			this.dispose();
 			game.setScreen(new MainMenuScreen(game));
 		}
 	}
@@ -281,15 +285,15 @@ public class GameScreen implements Screen{
 		if(MainMenuScreen.godMode){
 		    grn = (float)(Math.random());
         }
+		else{
+			grn = 0f;
+		}
 
 		Gdx.gl.glClearColor(.3f, grn, .3f, 1 );
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		renderer.render();
 		b2dr.render(world, cam.combined); //TODO Comment this to hide wall lines and circle
-		if(MainMenuScreen.platformName.equals("android")) {
-			controller.draw();
-		}
 
 		game.batch.setProjectionMatrix(cam.combined);
 		game.batch.begin();
@@ -297,13 +301,14 @@ public class GameScreen implements Screen{
 		//game.batch.draw(link, this.gamePort.getScreenWidth()/2 - 45, this.gamePort.getScreenHeight()/2 - 45,45/Lost_In_Peril.PPM,50/Lost_In_Peril.PPM);
 		//game.batch.draw(cob, Lost_In_Peril.WIDTH * boss.b2body.getPosition().x, boss.b2body.getPosition().y / Lost_In_Peril.HEIGHT, 45, 45);
 		player.draw(game.batch);
+		boss.draw(game.batch);
+		torch.draw(game.batch);
+
 		game.batch.end();
 
 		hud.stageHud.draw();
 
-		if(MainMenuScreen.platformName.equals("android")) {
-			controller.draw();
-		}
+
 
 		if(boolPause) {
 			if(hud.worldTimer <= 0){
@@ -320,13 +325,17 @@ public class GameScreen implements Screen{
 			}
 		}
 
+		if(Lost_In_Peril.platformName.equals("android")) {
+			androidController.draw();
+		}
+
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		gamePort.update(width, height);
-		if(MainMenuScreen.platformName.equals("android")) {
-			controller.resize(width, height);
+		if(Lost_In_Peril.platformName.equals("android")) {
+			androidController.resize(width, height);
 		}
 	}
 
@@ -347,11 +356,15 @@ public class GameScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		game.batch.dispose();
-		img.dispose();
+
+		//img.dispose();
 		renderer.dispose();
 		map.dispose();
+		world.dispose();
+		b2dr.dispose();
+		hud.dispose();
 		gameMusic.dispose();
+		game.batch.dispose();
 	}
 
 }

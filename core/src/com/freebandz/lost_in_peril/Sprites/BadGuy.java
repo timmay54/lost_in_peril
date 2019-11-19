@@ -14,6 +14,7 @@ public abstract class BadGuy extends Sprite{
 		this.world = screen.getWorld();
 		this.screen = screen;
 		setPosition(x,y);
+		defineBadGuy();
 
 	}
 

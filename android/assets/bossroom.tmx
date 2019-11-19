@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" nextobjectid="12">
  <tileset firstgid="1" source="untitled.tsx"/>
- <tileset firstgid="171" source="untitled.tsx"/>
- <tileset firstgid="341" name="dungeon_1" tilewidth="16" tileheight="16" tilecount="240" columns="20">
+ <tileset firstgid="171" name="dungeon_1" tilewidth="16" tileheight="16" tilecount="0" columns="20">
   <image source="../../core/assets/dungeon_1.png" width="320" height="192"/>
  </tileset>
  <layer name="Tile Layer 1" width="40" height="40">
   <data encoding="base64" compression="zlib">
-   eJzlmDFOw0AQRdeU0EVyRAuFuUBIovRREuUK9AgCB0CCHAF6CnfpuAAdJ0AC7gIta5ERX58Zx4JZxRLF0yb2xPt35s/aTh5C6Ebylo5F5KjF4yAybPE4jcxaPG7bX//Bf+9ZCC+Rg50QDiPP2RdvyjFEzlW/fVXiPzIf/+3G653HcRG5CH6f93Z8/PcQ13kd/FllPv57SqTvMfPxn5a/m1+wXIP58/Cflj8PfVX+PPyXSp+X/1LV18t/qfJ35uS/lP2Rwn9Lx/qm8J+XvlUi/3nq8/afzNHW/e/OAe/97zRy1YAlUDaIv2wwfxP/9eH7sRG3T/p6RtwEauf1/sH6tLhyret2zdiIQ31e7x+sT4sbkb7SiOuTRg//oT4rbk76ekbchPR5+88atfpuw39DI06r7zb8J3CcVl/teqjvL++/OWDpQ7T6ckwe9N6w/JfX1L0ANH0FMQJtUl+OKcLP3kDtXZhHjll1HwDcHxpz0tcz4rg/ugasm8cpgPqmBiXpG9N5zX+zdS01RFvd/lOXP/aVVl/OiczNOdTA3G3KMerDdSFc346SE5mbc2ih9ReuU+sPOca+kv4VOkpOZF7eYzAfPHIeUCvWV7B8yM8vsj8jWn0xv3W11MD+4Psmw/o6wfaX5T+rVzah3dMx39VaqufNRfj+7+ykZi0WVq9sQtsnuC+rc/eAtQ/VoWn+BBGrtIc=
+   eJztmEFOw0AMRecMlVJxgnCB0FbZV03VGwB7JAoHAEGPUPYsclamIhZfH3syAo8aCRZPhsbCP/b3NKEKIcwj1URjHbmccFxGVhOOXWQ74Xhuf/0F/z1FriM3iZi6ZsXnjPo5Pmgj95F95MHx5yajfo4PdpGXAqwz6uf4oC2kr8mon+M/rX+vP+AwgP3z8l8JfSX959W/Uv7z6t+//6bnv4Nj/0r4z0tfKf959s/bf1Jjqv57c8Dbf3fh8xlrjAPQZ+Q/ZtTP8d8Cfr8y8i5IX2PkbWB2Xu8frE/L6wddx4G1kYf6vN4/WJ+W15K+3shbkEYP/6E+K29H+hojb0P6vP1nRW2+5/DfysjT5nsO/wmcp81X+3uo7zfvvxVg6UO0+XJOFfTdsPxXJeZeA5q+mmhBm8yXc+rwfTdQ+xzqyGfW3JcA74fGjvQ1Rh7vx9yAdXPsANTXGfSkb03XNf9th1lqiLbU+ZPqH/tKmy/3RGpzDzWwd2M9Rn14XwjPd6b0RGpzDy20/cL71PZDPmNfyf4KM6UnUpfPGOwHR+4DasX5CpYP+flFzmdEmy/2NzVLDdwP/t5kWN8s2P6y/Gftyhjadzr2+3Qvp+fNffj639lt4l4srF0ZQzsneC9P194B6xxKoWn+AN5SpDM=
   </data>
  </layer>
  <objectgroup name="Object Layer 1">
