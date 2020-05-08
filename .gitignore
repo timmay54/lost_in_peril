@@ -4,8 +4,11 @@
 # Ignore Gradle GUI config
 gradle-app.setting
 
+# Local file should only be used per computer, breaks things for different OS's
+local.properties
+
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+gradle-wrapper.jar
 
 # Cache of project
 .gradletasknamecache

@@ -6,6 +6,7 @@
 
 package com.freebandz.lost_in_peril.Sprites;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
@@ -16,6 +17,9 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.utils.Array;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 import com.freebandz.lost_in_peril.screens.GameScreen;
+
+import box2dLight.PointLight;
+import box2dLight.RayHandler;
 
 public class enemyFighter extends BadGuy{
 
@@ -28,19 +32,19 @@ public class enemyFighter extends BadGuy{
     private Animation baddieRight;
     private boolean runningRight;
     private float stateTimer;
-
+    RayHandler rayHandler;
+    PointLight light;
     private TextureRegion baddieStand;
 
-    public enemyFighter(GameScreen screen, float x, float y) {
+    public enemyFighter(GameScreen screen, float x, float y, RayHandler rayHandler) {
         super(screen, x, y);
-
+        this.rayHandler = rayHandler;
         //super.screen.getAtlas().findRegion("AH_SpriteSheet_People1");
 
         currentState = enemyFighter.State.STANDING;
         previousState = enemyFighter.State.STANDING;
         stateTimer = 0;
         runningRight = true;
-
         //ANIMATION INITIALIZATION
         //DOWN
         Array<TextureRegion> frames = new Array<TextureRegion>();
@@ -149,14 +153,17 @@ public class enemyFighter extends BadGuy{
     }
 
     @Override
-    protected void defineBadGuy() {
+    protected void defineBadGuy(float x, float y) {
         BodyDef bdef = new BodyDef();
-        bdef.position.set(1600, 400); //Exact coordinates, do not divide by PPM
+        bdef.position.set(1530, 300); //Exact coordinates, do not divide by PPM
         bdef.type = BodyDef.BodyType.DynamicBody;
         b2body = world.createBody(bdef);
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
-        shape.setRadius(10 / Lost_In_Peril.PPM);
+        shape.setRadius(7 / Lost_In_Peril.PPM);
+
+        //light = new box2dLight.PointLight(rayHandler, 1000, Color.WHITE,50/Lost_In_Peril.PPM,0f,0f);
+        //light.attachToBody(b2body);
 
         fdef.shape = shape;
         b2body.createFixture(fdef).setUserData("EnemyFighter");
@@ -165,10 +172,16 @@ public class enemyFighter extends BadGuy{
 
         //collision detection stuff, dunno what it does tho????
 
+
         EdgeShape head = new EdgeShape();
         head.set(new Vector2(-2/Lost_In_Peril.PPM, 5 / Lost_In_Peril.PPM), new Vector2(2/Lost_In_Peril.PPM, 5 / Lost_In_Peril.PPM));
         fdef.shape = head;
         fdef.isSensor = true;
         b2body.createFixture(fdef).setUserData("head");
+    }
+
+    @Override
+    public void onHit(){
+
     }
 }

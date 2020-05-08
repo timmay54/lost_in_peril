@@ -1,5 +1,6 @@
 package com.freebandz.lost_in_peril.Sprites;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
@@ -15,6 +16,9 @@ import com.badlogic.gdx.utils.Array;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 import com.freebandz.lost_in_peril.screens.GameScreen;
 
+import box2dLight.PointLight;
+import box2dLight.RayHandler;
+
 public class Randy extends Sprite{
 	public enum State {STANDING, RUNNING, UP,LEFT,RIGHT,DOWN}
 	public State currentState;
@@ -28,16 +32,20 @@ public class Randy extends Sprite{
 	public World world;
 	public Body b2body;
 	private TextureRegion randyStand;
+	private PointLight randyLight;
+	private PointLight randyLight2;
+	public RayHandler rayHandler;
 
 	
-	public Randy(World world, GameScreen screen) {
+	public Randy(World world, GameScreen screen, int x, int y, RayHandler rayHandler) {
 		super(screen.getAtlas().findRegion("AH_SpriteSheet_People1"));
 		this.world = world;
+		this.rayHandler = rayHandler;
 		currentState = State.STANDING;
 		previousState = State.STANDING;
 		stateTimer = 0;
 		runningRight = true;
-
+		randyLight = new box2dLight.PointLight(new RayHandler(world), 1000, Color.ORANGE,100f,1580f,350f);
 		//ANIMATION INITIALIZATION
 		//DOWN
 		Array<TextureRegion> frames = new Array<TextureRegion>();
@@ -75,7 +83,7 @@ public class Randy extends Sprite{
 		randyStand = new TextureRegion(getTexture(),16,0,16,16);
 
 
-		defineRandy();
+		defineRandy(x, y);
 
 		setBounds(0,0,16/Lost_In_Peril.PPM,16/Lost_In_Peril.PPM);
 		setRegion(randyStand);
@@ -85,6 +93,7 @@ public class Randy extends Sprite{
 	public void update(float dt){
 		setPosition(b2body.getPosition().x- 16, b2body.getPosition().y - 16);
 		setRegion(getFrame(dt));
+		//rayHandler.updateAndRender();
 	}
 
 	public TextureRegion getFrame(float dt){
@@ -150,9 +159,9 @@ public class Randy extends Sprite{
 		}
 	}
 	
-	public void defineRandy() {
+	public void defineRandy(int x, int y) {
 		BodyDef bdef = new BodyDef();
-		bdef.position.set(1794,360);
+		bdef.position.set(x,y);
 		bdef.type = BodyDef.BodyType.DynamicBody;
 		b2body = world.createBody(bdef);
 
@@ -163,9 +172,19 @@ public class Randy extends Sprite{
 		fdef.filter.maskBits = Lost_In_Peril.DEFAULT_BIT
                 | Lost_In_Peril.CHEST_BIT
                 | Lost_In_Peril.COIN_BIT
+				| Lost_In_Peril.MINE_BIT
                 | Lost_In_Peril.TELEPORTER_BIT;
 
 		fdef.shape = shape;
+
+		randyLight = new box2dLight.PointLight(rayHandler, 1000, Color.WHITE,50/Lost_In_Peril.PPM,0f,0f);
+		randyLight2 = new box2dLight.PointLight(rayHandler, 1000, Color.WHITE,50/Lost_In_Peril.PPM,0f,0f);
+		randyLight.attachToBody(b2body);
+		randyLight2.attachToBody(b2body,0f,1f);
+
+		//define what this light collides with in world
+		randyLight.setContactFilter(Lost_In_Peril.DEFAULT_BIT, Lost_In_Peril.RANDY_BIT, Lost_In_Peril.CHEST_BIT);
+
 		b2body.createFixture(fdef).setUserData("Randy");
 
 		String motto = "lets get em";
@@ -178,4 +197,8 @@ public class Randy extends Sprite{
 		b2body.createFixture(fdef).setUserData("head");
 		
 	}
+
+	/*public void teleportRandy(int x, int y){
+
+	}*/
 }

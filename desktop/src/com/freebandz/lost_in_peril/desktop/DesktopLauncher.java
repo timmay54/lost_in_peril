@@ -28,7 +28,7 @@ public class DesktopLauncher {
 
 		Lost_In_Peril.platformName = "desktop";
 
-		System.out.println(args.length);
+		//System.out.println(args.length);
 
 		if(args.length != 0){
 			if(args[0].equals("GodMode")){
@@ -41,7 +41,13 @@ public class DesktopLauncher {
 		config.height = Lost_In_Peril.HEIGHT;
 		config.resizable = false;
 		config.foregroundFPS = 60;
-		config.addIcon("badlogic.jpg", FileType.Internal);
+		config.backgroundFPS = 0;
+		config.vSyncEnabled = false;
+		config.addIcon("badlogic.jpg", FileType.Internal);//256
+		config.addIcon("badlogic128.jpg", FileType.Internal);//128
+		config.addIcon("badlogic32.jpg", FileType.Internal);//32
+		config.addIcon("badlogic16.jpg", FileType.Internal);//16
+
 		new LwjglApplication(new Lost_In_Peril(), config);
 		
 	}

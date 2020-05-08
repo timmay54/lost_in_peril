@@ -2,19 +2,25 @@ package com.freebandz.lost_in_peril.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.controllers.mappings.Xbox;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
+
+import box2dLight.PointLight;
+import box2dLight.RayHandler;
 
 public class MainMenuScreen implements Screen{
 
@@ -36,6 +42,8 @@ public class MainMenuScreen implements Screen{
 	private static int SETTINGS_BUTTON_Y = 50;
 	public static float musicVolume = .5f;
 	public static boolean godMode = false;
+	public static boolean showSettings = false;
+	public static boolean showScoreScreen = false;
 
 	Lost_In_Peril game;
 	private OrthographicCamera cam;
@@ -48,14 +56,20 @@ public class MainMenuScreen implements Screen{
 	Texture settingsButton;
 	Texture mainBackground;
 	public static Controller pad;
-	public static boolean showSettings = false;
 	private settingsWindow settings;
+	private ScoreScreen scoreWindow;
 	BitmapFont font;
 	Vector2 touchLogic;
+	InputMultiplexer inputMultiplexer;
+	RayHandler rayHandler;
+	World world;
+	PointLight light;
+	private float DISTANCE;
+	int timeCount;
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
-	Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
+	Music menuMusic;
 
 
 	public MainMenuScreen(Lost_In_Peril game) {
@@ -71,13 +85,19 @@ public class MainMenuScreen implements Screen{
 		scoreButton = new Texture("score.png");
 		settingsButton= new Texture("settingsButton.png");
 		System.out.println("Platform: " + Lost_In_Peril.platformName);
-
+		menuMusic= Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
+		musicVolume = .5f;
 		menuMusic.setLooping(true); //now plays in loop (delay)
 		menuMusic.setVolume(musicVolume);
 		menuMusic.play();
 
 		settings = new settingsWindow(game.batch);
+		scoreWindow = new ScoreScreen(game.batch);
 		touchLogic = new Vector2(0,0);
+		inputMultiplexer = new InputMultiplexer();
+		inputMultiplexer.addProcessor(settings.stage);
+		inputMultiplexer.addProcessor(scoreWindow.scoreStage);
+		Gdx.input.setInputProcessor(inputMultiplexer);
 
 		//Controller support, only for specific Xbox controllers
 		pad = null;
@@ -87,7 +107,9 @@ public class MainMenuScreen implements Screen{
 				  pad = c;
 			  }
 			  else if(c.getName().contains("XBOX") || c.getName().contains("Xbox")) {
+			  	  System.out.println("Controller obtained.");
 				  pad = c;
+				  System.out.println(c);
 			  }
 		}
 
@@ -98,16 +120,26 @@ public class MainMenuScreen implements Screen{
 		EXIT_BUTTON_X = Lost_In_Peril.WIDTH / 2 - (PLAY_BUTTON_WIDTH / 2);
 		EXIT_BUTTON_Y = Lost_In_Peril.HEIGHT / 5 - (PLAY_BUTTON_HEIGHT / 2);
 
-		SCORE_BUTTON_X = (Lost_In_Peril.WIDTH / 2) - ((SCORE_BUTTON_WIDTH / 9)*10);
+		SCORE_BUTTON_X = (Lost_In_Peril.WIDTH / 2) - ((SCORE_BUTTON_WIDTH )); /*/ 9)*10*/
 		SCORE_BUTTON_Y =  Lost_In_Peril.HEIGHT / 4 - SCORE_BUTTON_HEIGHT / 10;
 
 		SETTINGS_BUTTON_X = (Lost_In_Peril.WIDTH / 10) * 8;
 		SETTINGS_BUTTON_Y = EXIT_BUTTON_Y;
 
+		timeCount = 0;
+		DISTANCE = 400;
+
 		//System.out.println(Gdx.graphics.getMonitor());
         System.out.println(Gdx.graphics.getDisplayMode());
         System.out.println(Gdx.graphics.getDeltaTime());
         System.out.println(Gdx.graphics.getFramesPerSecond());
+
+        world = new World(new Vector2(0,0),false);
+        rayHandler = new RayHandler(world);
+        rayHandler.setCombinedMatrix(cam.combined);
+        rayHandler.setShadows(false);
+
+        light = new box2dLight.PointLight(rayHandler, 1000,new Color(.95f,.95f,.95f,.95f),100000,578413,380100);
 
 	}
 
@@ -118,6 +150,34 @@ public class MainMenuScreen implements Screen{
 
 	public void update(float dt) {
 		settings.update(dt);
+		scoreWindow.update(dt);
+
+		if(Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE)){
+			Gdx.app.exit();
+		}
+
+		timeCount += dt;
+		if(DISTANCE < 50){
+			if(timeCount >= .75f){
+				DISTANCE-=100;
+				light.setDistance(DISTANCE);
+				timeCount = 0;
+			}
+		}
+		else{
+			if(timeCount >= .75f){
+				DISTANCE+=100;
+				light.setDistance(DISTANCE);
+				timeCount = 0;
+			}
+		}
+
+		/*if(Gdx.input.isTouched()){
+			System.out.println(Gdx.input.getX() + "" + Gdx.input.getY());
+		}
+		System.out.println(light.getX());*/
+
+		//light = new box2dLight.PointLight(rayHandler, 100,new Color(.95f,.95f,.95f,.95f),50f,Lost_In_Peril.WIDTH/2,Lost_In_Peril.HEIGHT/2);
 	}
 
 	@Override
@@ -128,15 +188,6 @@ public class MainMenuScreen implements Screen{
 		game.batch.begin();
 
 		game.batch.draw(mainBackground, 0, 0, Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT);
-
-
-		if(Gdx.input.isKeyJustPressed(Input.Keys.ENTER)){
-			menuMusic.stop();
-			menuMusic.dispose();
-			game.setScreen(new GameScreen(game));
-			this.dispose();
-			dispose();
-		}
 
 		//Touch screen Start
         /*
@@ -162,10 +213,14 @@ public class MainMenuScreen implements Screen{
                     Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y){
 				game.batch.draw(playButtonActive, PLAY_BUTTON_X, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 				menuMusic.stop();
-				menuMusic.dispose();
+				//menuMusic.dispose();
+				////ggss = new GameScreen(new Lost_In_Peril());
+				//this.dispose();
 				game.setScreen(new GameScreen(game));
-				this.dispose();
-				dispose();
+				//game.batch.end();
+
+				//return;
+				//dispose();
 			}
 		}
 		else{
@@ -205,8 +260,8 @@ public class MainMenuScreen implements Screen{
 		if((!showSettings) && Gdx.input.getX() < SCORE_BUTTON_X + SCORE_BUTTON_WIDTH + 151 && Gdx.input.getX() > SCORE_BUTTON_X && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SCORE_BUTTON_Y) {
 			if(Gdx.input.isTouched()) {
-				menuMusic.stop();
-				game.setScreen(new ScoreScreen(game));
+				showScoreScreen = true;
+
 			}
 		}
 
@@ -217,7 +272,7 @@ public class MainMenuScreen implements Screen{
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > EXIT_BUTTON_Y) {
 			game.batch.draw(exitButtonActive, EXIT_BUTTON_X, EXIT_BUTTON_Y , EXIT_BUTTON_WIDTH, EXIT_BUTTON_HEIGHT);
 			if(Gdx.input.isTouched()) {
-				dispose();
+				//dispose();
 				Gdx.app.exit();
 			}
 		}
@@ -246,11 +301,21 @@ public class MainMenuScreen implements Screen{
 
 		//game.batch.draw(font); Gdx.graphics.getDisplayMode(),10,10);
 
+		/*
+		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
+			//pause menu
+			System.out.println(SETTINGS_BUTTON_X);
+		}
+		if(Gdx.input.isKeyPressed(Keys.P)) {
+			System.out.println(Gdx.input.getY());
+		}*/
+
+		game.batch.end();
 
 		//PLAY WITH CONTROLLER
 		if(pad != null) {
 			if(pad.getButton(Xbox.START)) {
-				this.dispose();
+				//this.dispose();
 				game.setScreen(new GameScreen(game));
 			}
 
@@ -262,24 +327,21 @@ public class MainMenuScreen implements Screen{
 			}
 		}
 
+		rayHandler.setCombinedMatrix(cam.combined);
+		rayHandler.updateAndRender();
 
-
-
-		/*
-		if(Gdx.input.isKeyJustPressed(Keys.ESCAPE)){
-			//pause menu
-			System.out.println(SETTINGS_BUTTON_X);
-		}
-		if(Gdx.input.isKeyPressed(Keys.P)) {
-			System.out.println(Gdx.input.getY());
-		}*/
-
-		game.batch.end();
 		if(showSettings) {
 			settingsWindow.stage.draw();
 			menuMusic.setVolume(musicVolume);
 		}
 
+		if(showScoreScreen){
+			scoreWindow.scoreStage.draw();
+		}
+
+		if(Gdx.input.isKeyJustPressed(Input.Keys.ENTER)){
+			game.setScreen(new GameScreen(game));
+		}
 
 	}
 
@@ -306,6 +368,10 @@ public class MainMenuScreen implements Screen{
 	@Override
 	public void dispose() {
 		menuMusic.dispose();
+		world.dispose();
+		rayHandler.dispose();
+		game.batch.dispose();
+
 	}
 
 }

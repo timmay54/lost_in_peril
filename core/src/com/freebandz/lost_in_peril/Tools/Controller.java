@@ -21,17 +21,18 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 import com.freebandz.lost_in_peril.screens.GameScreen;
+import com.freebandz.lost_in_peril.screens.MainMenuScreen;
 
 public class Controller {
     Viewport viewport;
-    Stage stage;
+    public Stage stage;
     boolean upPressed, downPressed, leftPressed, rightPressed;
     OrthographicCamera cam;
-    private int btnSize = 100 * (int)(Lost_In_Peril.WIDTH / 1162);
+    private int btnSize = 100 * (Lost_In_Peril.WIDTH / 1162);
 
     public Controller(SpriteBatch ssb){
         cam = new OrthographicCamera();
-        viewport = new FitViewport(Lost_In_Peril.WIDTH/*Lost_In_Peril.PPM*/, Lost_In_Peril.HEIGHT/*Lost_In_Peril.PPM*/,cam);
+        viewport = new FitViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT,cam);
         //viewport = new FitViewport(800,480);
         stage = new Stage(viewport, ssb);
 
