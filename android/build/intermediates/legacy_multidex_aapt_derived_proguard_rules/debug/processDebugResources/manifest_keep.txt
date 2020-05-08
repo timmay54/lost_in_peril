@@ -1,2 +1,0 @@
-# Referenced at /media/timmay54/USB/lost_in_peril/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
