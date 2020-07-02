@@ -14,3 +14,4 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 ios/build.gradle
+ios/build/robovm/IOSLauncher.app/IOSLauncher
