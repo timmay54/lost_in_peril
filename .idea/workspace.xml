@@ -1,8 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cceb855-bbf4-4d2b-b7a9-b6f214b527a3" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="9cceb855-bbf4-4d2b-b7a9-b6f214b527a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_ashley_ashley_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_box2dlights_box2dlights_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_ai_1_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_headless_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_lwjgl_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_robovm_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_box2d_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_box2d_platform_1_9_6_natives_desktop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_box2d_platform_1_9_6_natives_ios.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_bullet_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_bullet_platform_1_9_6_natives_desktop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_bullet_platform_1_9_6_natives_ios.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_controllers_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_controllers_desktop_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_controllers_platform_1_9_6_natives_desktop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_freetype_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_freetype_platform_1_9_6_natives_desktop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_freetype_platform_1_9_6_natives_ios.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_platform_1_9_6_natives_desktop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_platform_1_9_6_natives_ios.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_tools_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_jlayer_jlayer_1_0_1_gdx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kotcrab_vis_vis_ui_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_bolts_ios_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_core_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_login_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_messenger_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_notifications_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_share_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_cocoatouch_2_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_objc_2_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_rt_2_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_underwaterapps_overlap2druntime_overlap2d_runtime_libgdx_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_core_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_desktop_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_ios_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_core_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_desktop_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_ios_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_dermetfan_libgdx_utils_libgdx_utils_0_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_dermetfan_libgdx_utils_libgdx_utils_box2d_0_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_2_0_5_natives_linux.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_2_0_5_natives_osx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_2_0_5_natives_windows.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jutils_jutils_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jcraft_jorbis_0_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_platform_2_9_2_natives_linux.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_platform_2_9_2_natives_osx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_platform_2_9_2_natives_windows.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_util_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/core/core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/desktop/desktop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/ios/ios.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/robovm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ios/robovm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lost_in_peril.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lost_in_peril.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,58 +81,210 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$/ios">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="ios" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="ios" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="ios" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mobivm" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="ios" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="ios" type="2d1252cf:ModuleNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="176" />
-    <option name="y" value="20" />
-    <option name="width" value="1484" />
-    <option name="height" value="1000" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lost_in_peril" type="1abcf292:AndroidViewProjectNode" />
-              <item name="lost_in_peril" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1e39Ru6MHZjf3Ot9XCDCFjyAjHa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ios/build/libs" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="robovm.ipaConfig.archs" value="All - 32-bit (thumbv7) + 64-bit (arm64)" />
+    <property name="robovm.ipaConfig.destinationDir" value="$PROJECT_DIR$/../Desktop" />
+    <property name="robovm.ipaConfig.moduleName" value="ios" />
+    <property name="robovm.ipaConfig.provisioningProfile" value="iOS Team Provisioning Profile: testingxcode.test1UITests" />
+    <property name="robovm.ipaConfig.signingIdentity" value="Mac Developer: heavygamer54@yahoo.com (JPL5X36FFC)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ios/build/libs" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
     </option>
+  </component>
+  <component name="RunManager" selected="Gradle.lost_in_peril:ios [createIPA]">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lost_in_peril [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lost_in_peril:ios [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ios" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lost_in_peril:ios [createIPA]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ios" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="createIPA" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lost_in_peril:ios [launchIOSDevice]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ios" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="launchIOSDevice" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lost_in_peril:ios [launchIPhoneSimulator]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ios" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="launchIPhoneSimulator" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.lost_in_peril:ios [launchIPhoneSimulator]" />
+        <item itemvalue="Gradle.lost_in_peril:ios [launchIOSDevice]" />
+        <item itemvalue="Gradle.lost_in_peril:ios [createIPA]" />
+        <item itemvalue="Gradle.lost_in_peril [build]" />
+        <item itemvalue="Gradle.lost_in_peril:ios [assemble]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -78,28 +299,86 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="176" y="20" width="1484" height="1000" extended-state="0" />
-    <layout>
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.31039324" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.3298731" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Assistant" weight="0.32985073" />
-      <window_info anchor="right" id="Palette&#9;" />
-    </layout>
+  <component name="WindowStateProjectService">
+    <state x="133" y="159" key="#PSD" timestamp="1593622314395">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="133" y="159" key="#PSD/0.23.1280.773@0.23.1280.773" timestamp="1593622314395" />
+    <state x="240" y="75" key="#Project_Structure" timestamp="1593544224711">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="240" y="75" key="#Project_Structure/0.23.1280.773@0.23.1280.773" timestamp="1593544224711" />
+    <state x="581" y="23" width="699" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593628715565">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="581" y="23" width="699" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.773@0.23.1280.773" timestamp="1593628715565" />
+    <state x="640" y="23" width="640" height="772" key="#lost_in_peril:ios_[createIPA]" timestamp="1593628877621">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="640" y="23" width="640" height="772" key="#lost_in_peril:ios_[createIPA]/0.23.1280.773@0.23.1280.773" timestamp="1593628877621" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1593647686891">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.773@0.23.1280.773" timestamp="1593647686891" />
+    <state width="1238" height="196" key="GridCell.Tab.0.bottom" timestamp="1593655034053">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="196" key="GridCell.Tab.0.bottom/0.23.1280.773@0.23.1280.773" timestamp="1593655034053" />
+    <state width="1238" height="196" key="GridCell.Tab.0.center" timestamp="1593655034052">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="196" key="GridCell.Tab.0.center/0.23.1280.773@0.23.1280.773" timestamp="1593655034052" />
+    <state width="1238" height="196" key="GridCell.Tab.0.left" timestamp="1593655034051">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="196" key="GridCell.Tab.0.left/0.23.1280.773@0.23.1280.773" timestamp="1593655034051" />
+    <state width="1238" height="196" key="GridCell.Tab.0.right" timestamp="1593655034052">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="196" key="GridCell.Tab.0.right/0.23.1280.773@0.23.1280.773" timestamp="1593655034052" />
+    <state width="1238" height="244" key="GridCell.Tab.1.bottom" timestamp="1593545758343">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="244" key="GridCell.Tab.1.bottom/0.23.1280.773@0.23.1280.773" timestamp="1593545758343" />
+    <state width="1238" height="244" key="GridCell.Tab.1.center" timestamp="1593545758342">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="244" key="GridCell.Tab.1.center/0.23.1280.773@0.23.1280.773" timestamp="1593545758342" />
+    <state width="1238" height="244" key="GridCell.Tab.1.left" timestamp="1593545758341">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="244" key="GridCell.Tab.1.left/0.23.1280.773@0.23.1280.773" timestamp="1593545758341" />
+    <state width="1238" height="244" key="GridCell.Tab.1.right" timestamp="1593545758342">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="244" key="GridCell.Tab.1.right/0.23.1280.773@0.23.1280.773" timestamp="1593545758342" />
+    <state x="380" y="23" width="900" height="772" key="SettingsEditor" timestamp="1593640711830">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="380" y="23" width="900" height="772" key="SettingsEditor/0.23.1280.773@0.23.1280.773" timestamp="1593640711830" />
+    <state x="640" y="23" width="640" height="772" key="com.intellij.ide.util.TipDialog" timestamp="1593641872490">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="640" y="23" width="640" height="772" key="com.intellij.ide.util.TipDialog/0.23.1280.773@0.23.1280.773" timestamp="1593641872490" />
+    <state x="210" y="152" width="860" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593545427510">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="210" y="152" width="860" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.773@0.23.1280.773" timestamp="1593545427510" />
+    <state x="104" y="77" key="psd.add.library.dependency.panel.dimension" timestamp="1593545544436">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="104" y="77" key="psd.add.library.dependency.panel.dimension/0.23.1280.773@0.23.1280.773" timestamp="1593545544436" />
+    <state x="453" y="271" key="psd.choose.module.panel.dimension" timestamp="1593545476611">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="453" y="271" key="psd.choose.module.panel.dimension/0.23.1280.773@0.23.1280.773" timestamp="1593545476611" />
+    <state x="305" y="185" width="670" height="675" key="run.anything.popup" timestamp="1593622037301">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="305" y="185" width="670" height="675" key="run.anything.popup/0.23.1280.773@0.23.1280.773" timestamp="1593622037301" />
+    <state x="305" y="60" width="670" height="676" key="search.everywhere.popup" timestamp="1593625268752">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="305" y="60" width="670" height="676" key="search.everywhere.popup/0.23.1280.773@0.23.1280.773" timestamp="1593625268752" />
   </component>
 </project>
