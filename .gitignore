@@ -15,3 +15,5 @@ gradle-app.setting
 
 ios/build.gradle
 ios/build/robovm/IOSLauncher.app/IOSLauncher
+ios/build/robovm.tmp/IOSLauncher
+ios/build/robovm.tmp/arm64/IOSLauncher
