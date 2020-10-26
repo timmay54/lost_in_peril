@@ -16,6 +16,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     
+    - name: Count Lines of Code (cloc)
+      uses: djdefi/cloc-action@2
+
+    
     # Runs a single command using the runners shell
     - name: Display starting of gradle
       run: Starting Gradle...
