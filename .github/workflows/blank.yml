@@ -8,6 +8,19 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  lines-of-code:
+    runs-on: ubuntu-latest
+    steps:
+    # Count line numbers and language usages
+    - name: Count Lines of Code (cloc)
+      uses: djdefi/cloc-action@2
+      
+    # Runs a single command using the runners shell
+    - name: Display starting of gradle
+      run: Starting Gradle...
+
+
+  
   # This workflow contains a single job called "build-GitHub-Actions"
   build-GH-Actions:
     # The type of runner that the job will run on
@@ -15,10 +28,6 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    
-    # Runs a single command using the runners shell
-    - name: Display starting of gradle
-      run: Starting Gradle...
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
@@ -41,9 +50,3 @@ jobs:
       with:
         name: Package
         path: build/libs
-        
-        
-    # Count line numbers and language usages
-    - name: Count Lines of Code (cloc)
-      uses: djdefi/cloc-action@2
-
