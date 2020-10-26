@@ -14,12 +14,7 @@ jobs:
     # Count line numbers and language usages
     - name: Count Lines of Code (cloc)
       uses: djdefi/cloc-action@2
-      
-    # Runs a single command using the runners shell
-    - name: Display starting of gradle
-      run: Starting Gradle...
-
-
+      run: ls
   
   # This workflow contains a single job called "build-GitHub-Actions"
   build-GH-Actions:
@@ -30,17 +25,16 @@ jobs:
     steps:
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
+    - name: Gradle Android
+      uses: Raul6469/android-gradle-action@2.0.0
+
     - name: Cache Gradle packages
       uses: actions/cache@v2
       with:
         path: ~/.gradle/caches
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
         restore-keys: ${{ runner.os }}-gradle
+
     - name: Build Gradle
       run: ./gradlew desktop:dist
       
