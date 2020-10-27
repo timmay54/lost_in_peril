@@ -24,6 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9cceb855-bbf4-4d2b-b7a9-b6f214b527a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/blank.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/blank.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
