@@ -8,6 +8,23 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  AppInspector:
+    runs-on: ubuntu-latest
+    steps:
+    - name: AppInspector
+      uses: microsoft/ApplicationInspector-Action@v1
+      #with:
+        # The path relative to repository root to scan.
+        #location-to-scan: # optional, default is GITHUB_WORKSPACE
+        # The path relative to file root to output to.
+        #output-path: # optional, default is AppInspectorResults
+        # Output format [html|json|text]
+        #output-format: # optional, default is json
+        # Comma separated list of file path patterns to exclude.
+        #file-path-exclusions: # optional, default is ,
+        # Other arguments to Application AppInspector
+        #arguments: # optional, default is 
+        
   lines-of-code:
     runs-on: ubuntu-latest
     steps:
