@@ -1,33 +1,26 @@
 name: Java/Gradle CI
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: push
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   AppInspector:
+    name: Microsoft App Inspector - code breakdown
     runs-on: ubuntu-latest
+    
     steps:
     - name: AppInspector
-      uses: microsoft/ApplicationInspector-Action@v1
-      #with:
-        # The path relative to repository root to scan.
-        #location-to-scan: # optional, default is GITHUB_WORKSPACE
-        # The path relative to file root to output to.
-        #output-path: # optional, default is AppInspectorResults
-        # Output format [html|json|text]
-        #output-format: # optional, default is json
-        # Comma separated list of file path patterns to exclude.
-        #file-path-exclusions: # optional, default is ,
-        # Other arguments to Application AppInspector
-        #arguments: # optional, default is 
+    - uses: actions/checkout@v2
+    - uses: microsoft/ApplicationInspector-Action@v1
+    - uses: actions/upload-artifact@v2
+      with:
+          name: AppInspectorResults
+          path: AppInspectorResults.json
         
   lines-of-code:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     # Count line numbers and language usages
     - name: Count Lines of Code (cloc)
       uses: djdefi/cloc-action@2
