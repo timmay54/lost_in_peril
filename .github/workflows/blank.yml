@@ -26,6 +26,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Gradle Android
       uses: Raul6469/android-gradle-action@2.0.0
+      with:
+        script: dist:desktop
 
     - name: Cache Gradle packages
       uses: actions/cache@v2
@@ -33,9 +35,6 @@ jobs:
         path: ~/.gradle/caches
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
         restore-keys: ${{ runner.os }}-gradle
-
-    - name: Build Gradle
-      run: ./gradlew desktop:dist
       
     # To upload built file to inspect later
     - name: Publish package
