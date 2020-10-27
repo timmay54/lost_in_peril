@@ -1,15 +1,14 @@
 name: Java/Gradle CI
 
-on: push
+on: [push, pull_request]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   AppInspector:
-    name: Microsoft App Inspector - code breakdown
+    #name: Microsoft App Inspector - code breakdown
     runs-on: ubuntu-latest
     
     steps:
-    - name: AppInspector
     - uses: actions/checkout@v2
     - uses: microsoft/ApplicationInspector-Action@v1
     - uses: actions/upload-artifact@v2
