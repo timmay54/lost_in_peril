@@ -2,75 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cceb855-bbf4-4d2b-b7a9-b6f214b527a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_ashley_ashley_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_box2dlights_box2dlights_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_ai_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_headless_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_lwjgl_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_robovm_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_box2d_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_box2d_platform_1_9_6_natives_desktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_box2d_platform_1_9_6_natives_ios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_bullet_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_bullet_platform_1_9_6_natives_desktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_bullet_platform_1_9_6_natives_ios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_controllers_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_controllers_desktop_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_controllers_platform_1_9_6_natives_desktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_freetype_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_freetype_platform_1_9_6_natives_desktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_freetype_platform_1_9_6_natives_ios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_platform_1_9_6_natives_desktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_platform_1_9_6_natives_ios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_tools_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_jlayer_jlayer_1_0_1_gdx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kotcrab_vis_vis_ui_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_bolts_ios_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_core_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_login_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_messenger_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_notifications_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_share_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_cocoatouch_2_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_objc_2_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_rt_2_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_underwaterapps_overlap2druntime_overlap2d_runtime_libgdx_0_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_core_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_desktop_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_ios_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_core_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_desktop_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_ios_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_dermetfan_libgdx_utils_libgdx_utils_0_13_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_dermetfan_libgdx_utils_libgdx_utils_box2d_0_13_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_2_0_5_natives_linux.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_2_0_5_natives_osx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_2_0_5_natives_windows.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jutils_jutils_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jcraft_jorbis_0_0_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_platform_2_9_2_natives_linux.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_platform_2_9_2_natives_osx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_platform_2_9_2_natives_windows.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_lwjgl_util_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/core/core.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/desktop/desktop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ios/ios.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Lost_In_Peril.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Lost_In_Peril.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/BadGuy.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/BadGuy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Chest.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Chest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/InteractiveTileObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/InteractiveTileObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy$State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Teleporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Teleporter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Torch$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Torch$State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Torch.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Torch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter$State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/B2WorldCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/B2WorldCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/WorldContactListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/WorldContactListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Xbox360Pad.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Xbox360Pad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/GameScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/HUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/HUD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/MainMenuScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/MainMenuScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/ScoreScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/ScoreScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/introSlides.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/introSlides.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/robovm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ios/robovm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lost_in_peril.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lost_in_peril.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/classes/java/main/com/freebandz/lost_in_peril/IOSLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/classes/java/main/com/freebandz/lost_in_peril/IOSLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/Entitlements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/IOSLauncher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/IOSLauncher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/classpath_dependencies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/exported_symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/linker0.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/linker1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/linker2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/arm64/objects0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/assetcatalog_dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/partial-plists/Media.xcassets_3122362608714962578.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/IOSLauncher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/classpath_dependencies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/exported_symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/linker0.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/linker1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/linker2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm.tmp/thumbv7/objects0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app.dSYM/Contents/Resources/DWARF/IOSLauncher" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app.dSYM/Contents/Resources/DWARF/IOSLauncher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/IOSLauncher" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/IOSLauncher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/embedded.mobileprovision" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.app/embedded.mobileprovision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.ipa" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/robovm/IOSLauncher.ipa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/robovm-build/xcode/.ib/ios.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/robovm-build/xcode/.ib/ios.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/robovm-build/xcode/.ib/ios.xcodeproj/project.xcworkspace/xcuserdata/myah.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/robovm-build/xcode/.ib/ios.xcodeproj/project.xcworkspace/xcuserdata/myah.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +161,7 @@
     <property name="robovm.ipaConfig.archs" value="All - 32-bit (thumbv7) + 64-bit (arm64)" />
     <property name="robovm.ipaConfig.destinationDir" value="$PROJECT_DIR$/../Desktop" />
     <property name="robovm.ipaConfig.moduleName" value="ios" />
-    <property name="robovm.ipaConfig.provisioningProfile" value="iOS Team Provisioning Profile: testingxcode.test1UITests" />
+    <property name="robovm.ipaConfig.provisioningProfile" value="iOS Team Provisioning Profile: com.freebandz.lostinperil" />
     <property name="robovm.ipaConfig.signingIdentity" value="Mac Developer: heavygamer54@yahoo.com (JPL5X36FFC)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -173,7 +175,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.lost_in_peril:ios [createIPA]">
+  <component name="RunManager" selected="Gradle.lost_in_peril:ios [launchIOSDevice]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -276,10 +278,34 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TestIphone-RoboVM" type="com.robovm.idea.running.RoboVmIOSConfigurationType" factoryName="RoboVM iOS">
+      <module name="ios" />
+      <option name="moduleName" value="ios" />
+      <option name="targetType" value="Device" />
+      <option name="deviceArch" value="thumbv7" />
+      <option name="signingIdentity" value="Auto (matches 'iPhone Developer|iOS Development')" />
+      <option name="provisioningProfile" value="Auto" />
+      <option name="simArch" value="x86_64" />
+      <option name="simulatorName" value="iPad Pro (9.7-inch)" />
+      <option name="simulatorSdk" value="721408" />
+      <option name="arguments" value="" />
+      <option name="workingDir" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.lost_in_peril [build]" />
+      <item itemvalue="Gradle.lost_in_peril:ios [assemble]" />
+      <item itemvalue="Gradle.lost_in_peril:ios [createIPA]" />
+      <item itemvalue="Gradle.lost_in_peril:ios [launchIOSDevice]" />
+      <item itemvalue="Gradle.lost_in_peril:ios [launchIPhoneSimulator]" />
+      <item itemvalue="RoboVM iOS.TestIphone-RoboVM" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.lost_in_peril:ios [launchIPhoneSimulator]" />
         <item itemvalue="Gradle.lost_in_peril:ios [launchIOSDevice]" />
+        <item itemvalue="Gradle.lost_in_peril:ios [launchIPhoneSimulator]" />
         <item itemvalue="Gradle.lost_in_peril:ios [createIPA]" />
         <item itemvalue="Gradle.lost_in_peril [build]" />
         <item itemvalue="Gradle.lost_in_peril:ios [assemble]" />
@@ -300,85 +326,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="133" y="159" key="#PSD" timestamp="1593622314395">
+    <state width="1238" height="196" key="GridCell.Tab.0.bottom" timestamp="1618691946903">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="133" y="159" key="#PSD/0.23.1280.773@0.23.1280.773" timestamp="1593622314395" />
-    <state x="240" y="75" key="#Project_Structure" timestamp="1593544224711">
+    <state width="1238" height="196" key="GridCell.Tab.0.bottom/0.23.1280.773@0.23.1280.773" timestamp="1618691946903" />
+    <state width="1238" height="196" key="GridCell.Tab.0.center" timestamp="1618691946902">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="240" y="75" key="#Project_Structure/0.23.1280.773@0.23.1280.773" timestamp="1593544224711" />
-    <state x="581" y="23" width="699" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593628715565">
+    <state width="1238" height="196" key="GridCell.Tab.0.center/0.23.1280.773@0.23.1280.773" timestamp="1618691946902" />
+    <state width="1238" height="196" key="GridCell.Tab.0.left" timestamp="1618691946901">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="581" y="23" width="699" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.773@0.23.1280.773" timestamp="1593628715565" />
-    <state x="640" y="23" width="640" height="772" key="#lost_in_peril:ios_[createIPA]" timestamp="1593628877621">
+    <state width="1238" height="196" key="GridCell.Tab.0.left/0.23.1280.773@0.23.1280.773" timestamp="1618691946901" />
+    <state width="1238" height="196" key="GridCell.Tab.0.right" timestamp="1618691946903">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="640" y="23" width="640" height="772" key="#lost_in_peril:ios_[createIPA]/0.23.1280.773@0.23.1280.773" timestamp="1593628877621" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1593647686891">
+    <state width="1238" height="196" key="GridCell.Tab.0.right/0.23.1280.773@0.23.1280.773" timestamp="1618691946903" />
+    <state x="0" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1618691824721">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.773@0.23.1280.773" timestamp="1593647686891" />
-    <state width="1238" height="196" key="GridCell.Tab.0.bottom" timestamp="1593655034053">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="196" key="GridCell.Tab.0.bottom/0.23.1280.773@0.23.1280.773" timestamp="1593655034053" />
-    <state width="1238" height="196" key="GridCell.Tab.0.center" timestamp="1593655034052">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="196" key="GridCell.Tab.0.center/0.23.1280.773@0.23.1280.773" timestamp="1593655034052" />
-    <state width="1238" height="196" key="GridCell.Tab.0.left" timestamp="1593655034051">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="196" key="GridCell.Tab.0.left/0.23.1280.773@0.23.1280.773" timestamp="1593655034051" />
-    <state width="1238" height="196" key="GridCell.Tab.0.right" timestamp="1593655034052">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="196" key="GridCell.Tab.0.right/0.23.1280.773@0.23.1280.773" timestamp="1593655034052" />
-    <state width="1238" height="244" key="GridCell.Tab.1.bottom" timestamp="1593545758343">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="244" key="GridCell.Tab.1.bottom/0.23.1280.773@0.23.1280.773" timestamp="1593545758343" />
-    <state width="1238" height="244" key="GridCell.Tab.1.center" timestamp="1593545758342">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="244" key="GridCell.Tab.1.center/0.23.1280.773@0.23.1280.773" timestamp="1593545758342" />
-    <state width="1238" height="244" key="GridCell.Tab.1.left" timestamp="1593545758341">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="244" key="GridCell.Tab.1.left/0.23.1280.773@0.23.1280.773" timestamp="1593545758341" />
-    <state width="1238" height="244" key="GridCell.Tab.1.right" timestamp="1593545758342">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state width="1238" height="244" key="GridCell.Tab.1.right/0.23.1280.773@0.23.1280.773" timestamp="1593545758342" />
-    <state x="380" y="23" width="900" height="772" key="SettingsEditor" timestamp="1593640711830">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="380" y="23" width="900" height="772" key="SettingsEditor/0.23.1280.773@0.23.1280.773" timestamp="1593640711830" />
-    <state x="640" y="23" width="640" height="772" key="com.intellij.ide.util.TipDialog" timestamp="1593641872490">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="640" y="23" width="640" height="772" key="com.intellij.ide.util.TipDialog/0.23.1280.773@0.23.1280.773" timestamp="1593641872490" />
-    <state x="210" y="152" width="860" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593545427510">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="210" y="152" width="860" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.773@0.23.1280.773" timestamp="1593545427510" />
-    <state x="104" y="77" key="psd.add.library.dependency.panel.dimension" timestamp="1593545544436">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="104" y="77" key="psd.add.library.dependency.panel.dimension/0.23.1280.773@0.23.1280.773" timestamp="1593545544436" />
-    <state x="453" y="271" key="psd.choose.module.panel.dimension" timestamp="1593545476611">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="453" y="271" key="psd.choose.module.panel.dimension/0.23.1280.773@0.23.1280.773" timestamp="1593545476611" />
-    <state x="305" y="185" width="670" height="675" key="run.anything.popup" timestamp="1593622037301">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="305" y="185" width="670" height="675" key="run.anything.popup/0.23.1280.773@0.23.1280.773" timestamp="1593622037301" />
-    <state x="305" y="60" width="670" height="676" key="search.everywhere.popup" timestamp="1593625268752">
-      <screen x="0" y="23" width="1280" height="773" />
-    </state>
-    <state x="305" y="60" width="670" height="676" key="search.everywhere.popup/0.23.1280.773@0.23.1280.773" timestamp="1593625268752" />
+    <state x="0" y="242" key="com.intellij.ide.util.TipDialog/0.23.1280.773@0.23.1280.773" timestamp="1618691824721" />
   </component>
 </project>

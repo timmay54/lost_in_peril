@@ -16,7 +16,7 @@ createIPA.dependsOn build
 robovm {
 	archs = "thumbv7:arm64"
     iosSignIdentity = "iPhone Developer: heavygamer54@yahoo.com (JPL5X36FFC)"
-    iosProvisioningProfile = "iOS Team Provisioning Profile: testingxcode.test1"
+    iosProvisioningProfile = "iOS Team Provisioning Profile: testingxcode.test1UITests"
     iosSkipSigning = false
 }
 
