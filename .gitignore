@@ -1,8 +1,10 @@
 .gradle
 /build/
-
+/robovm-build/
+ios/build/
 # Ignore Gradle GUI config
 gradle-app.setting
+.DS_Store
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
@@ -17,3 +19,4 @@ ios/build.gradle
 ios/build/robovm/IOSLauncher.app/IOSLauncher
 ios/build/robovm.tmp/IOSLauncher
 ios/build/robovm.tmp/arm64/IOSLauncher
+/ios/robovm-build/*

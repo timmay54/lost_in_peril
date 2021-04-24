@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
+            "map": [
+                {
+                    "source": "/Users/tim/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.18.0.aar/ee49ae5854fb41927831eae71f1816e9/res/values-te/values-te.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,225,356,476,570,656,741,806,882,959,1052,1134,1216,1304,1413,1476,1554,1720",
+                        "endColumns": "169,130,119,93,85,84,64,75,76,92,81,81,87,108,62,77,165,59",
+                        "endOffsets": "220,351,471,565,651,736,801,877,954,1047,1129,1211,1299,1408,1471,1549,1715,1775"
+                    }
+                }
+            ]
+        }
+    ]
+}

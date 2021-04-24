@@ -55,7 +55,7 @@ public class MainMenuScreen implements Screen{
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
-	Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
+	//TODO Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
 
 
 	public MainMenuScreen(Lost_In_Peril game) {
@@ -72,9 +72,10 @@ public class MainMenuScreen implements Screen{
 		settingsButton= new Texture("settingsButton.png");
 		System.out.println("Platform: " + Lost_In_Peril.platformName);
 
+		/*TODO
 		menuMusic.setLooping(true); //now plays in loop (delay)
 		menuMusic.setVolume(musicVolume);
-		menuMusic.play();
+		menuMusic.play(); */
 
 		settings = new settingsWindow(game.batch);
 		touchLogic = new Vector2(0,0);
@@ -131,8 +132,8 @@ public class MainMenuScreen implements Screen{
 
 
 		if(Gdx.input.isKeyJustPressed(Input.Keys.ENTER)){
-			menuMusic.stop();
-			menuMusic.dispose();
+			/*TODO menuMusic.stop();
+			menuMusic.dispose(); */
 			game.setScreen(new GameScreen(game));
 			this.dispose();
 			dispose();
@@ -161,8 +162,8 @@ public class MainMenuScreen implements Screen{
 			if(Gdx.input.isTouched() && Gdx.input.getX() < PLAY_BUTTON_X + PLAY_BUTTON_WIDTH && Gdx.input.getX() > PLAY_BUTTON_X && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
                     Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y){
 				game.batch.draw(playButtonActive, PLAY_BUTTON_X, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
-				menuMusic.stop();
-				menuMusic.dispose();
+				/*TODO menuMusic.stop();
+				menuMusic.dispose(); */
 				game.setScreen(new GameScreen(game));
 				this.dispose();
 				dispose();
@@ -205,7 +206,7 @@ public class MainMenuScreen implements Screen{
 		if((!showSettings) && Gdx.input.getX() < SCORE_BUTTON_X + SCORE_BUTTON_WIDTH + 151 && Gdx.input.getX() > SCORE_BUTTON_X && Lost_In_Peril.HEIGHT - Gdx.input.getY() < SCORE_BUTTON_Y + SCORE_BUTTON_HEIGHT &&
 				Lost_In_Peril.HEIGHT - Gdx.input.getY() > SCORE_BUTTON_Y) {
 			if(Gdx.input.isTouched()) {
-				menuMusic.stop();
+				//TODO menuMusic.stop();
 				game.setScreen(new ScoreScreen(game));
 			}
 		}
@@ -277,7 +278,7 @@ public class MainMenuScreen implements Screen{
 		game.batch.end();
 		if(showSettings) {
 			settingsWindow.stage.draw();
-			menuMusic.setVolume(musicVolume);
+			//TODO menuMusic.setVolume(musicVolume);
 		}
 
 
@@ -305,7 +306,7 @@ public class MainMenuScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		menuMusic.dispose();
+		//TODO menuMusic.dispose();
 	}
 
 }

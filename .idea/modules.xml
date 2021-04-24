@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="lost_in_peril/core" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/desktop.iml" group="lost_in_peril/desktop" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ios/ios.iml" filepath="$PROJECT_DIR$/.idea/modules/ios/ios.iml" group="lost_in_peril/ios" />
-      <module fileurl="file://$PROJECT_DIR$/lost_in_peril.iml" filepath="$PROJECT_DIR$/lost_in_peril.iml" group="lost_in_peril" />
+      <module fileurl="file://$PROJECT_DIR$/lost_in_peril.iml" filepath="$PROJECT_DIR$/lost_in_peril.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/lost_in_peril.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/lost_in_peril.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/lost_in_peril.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/lost_in_peril.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ios/lost_in_peril.ios.iml" filepath="$PROJECT_DIR$/.idea/modules/ios/lost_in_peril.ios.iml" />
     </modules>
   </component>
 </project>
