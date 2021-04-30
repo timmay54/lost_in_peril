@@ -55,6 +55,7 @@ public class MainMenuScreen implements Screen{
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
+
 	//TODO Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
 
 
@@ -134,6 +135,7 @@ public class MainMenuScreen implements Screen{
 		if(Gdx.input.isKeyJustPressed(Input.Keys.ENTER)){
 			/*TODO menuMusic.stop();
 			menuMusic.dispose(); */
+
 			game.setScreen(new GameScreen(game));
 			this.dispose();
 			dispose();
@@ -164,6 +166,7 @@ public class MainMenuScreen implements Screen{
 				game.batch.draw(playButtonActive, PLAY_BUTTON_X, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 				/*TODO menuMusic.stop();
 				menuMusic.dispose(); */
+
 				game.setScreen(new GameScreen(game));
 				this.dispose();
 				dispose();
@@ -280,7 +283,6 @@ public class MainMenuScreen implements Screen{
 			settingsWindow.stage.draw();
 			//TODO menuMusic.setVolume(musicVolume);
 		}
-
 
 	}
 

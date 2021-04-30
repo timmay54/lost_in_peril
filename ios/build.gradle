@@ -5,7 +5,6 @@ sourceCompatibility = '1.7'
 
 ext {
 	mainClassName = "com.freebandz.lost_in_peril.IOSLauncher"
-    
 }
 
 launchIPhoneSimulator.dependsOn build

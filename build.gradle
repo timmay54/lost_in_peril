@@ -5,6 +5,7 @@ buildscript {
         mavenCentral()
         maven { url "https://plugins.gradle.org/m2/" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+
         jcenter()
         google()
     }
@@ -43,7 +44,6 @@ allprojects {
 project(":desktop") {
     apply plugin: "java"
 
-
     dependencies {
         compile project(":core")
         compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
@@ -79,11 +79,10 @@ project(":ios") {
 
     }
 }
-/*
+
 project(":html") {
     apply plugin: "gwt"
     apply plugin: "war"
-
 
     dependencies {
         compile project(":core")
@@ -110,10 +109,9 @@ project(":html") {
 
     }
 }
-*/
+
 project(":core") {
     apply plugin: "java"
-
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
@@ -133,7 +131,7 @@ project(":core") {
 
     }
 }
-/*
+
 project(":android") {
     apply plugin: "android"
 
@@ -176,7 +174,7 @@ project(":android") {
 
     }
 }
-*/
+
 tasks.eclipse.doLast {
     delete ".project"
 }

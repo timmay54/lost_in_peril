@@ -11,6 +11,7 @@ import org.robovm.pods.facebook.core.FBSDKApplicationDelegate;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
 
+import com.freebandz.lost_in_peril.Lost_in_Peril;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override

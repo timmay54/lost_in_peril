@@ -1,8 +1,10 @@
-.gradle
+!.gradle
 /build/
 /robovm-build/
 **/robovm-build
 ios/build/
+=======
+local.properties
 # Ignore Gradle GUI config
 gradle-app.setting
 local.properties

@@ -76,6 +76,7 @@ public class GameScreen implements Screen{
 		gameMusic.setVolume(MainMenuScreen.musicVolume);
 		gameMusic.play(); */
 
+
 		//link = new Texture("link-sprite-png-6.gif");
 
 		cam = new OrthographicCamera();
@@ -266,6 +267,7 @@ public class GameScreen implements Screen{
 		if (returnToMain == true){
 			returnToMain = false;
 			//TODO gameMusic.dispose();
+
 			this.dispose();
 			game.setScreen(new MainMenuScreen(game));
 		}
