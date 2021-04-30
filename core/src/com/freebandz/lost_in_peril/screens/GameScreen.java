@@ -55,7 +55,7 @@ public class GameScreen implements Screen{
     private Box2DDebugRenderer b2dr;
     Controller androidController;
 
-	Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_INFECTED_05.ogg"));
+    //TODO Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_INFECTED_05.ogg"));
 
 	public TiledMap getMap() {
 		return map;
@@ -71,10 +71,11 @@ public class GameScreen implements Screen{
 	public GameScreen(Lost_In_Peril game) {
 		this.game = game;
 		atlas = new TextureAtlas(Gdx.files.internal("SpaceAssets.atlas"));
-
+		/*TODO
 		gameMusic.setLooping(true);
 		gameMusic.setVolume(MainMenuScreen.musicVolume);
-		gameMusic.play();
+		gameMusic.play(); */
+
 
 		//link = new Texture("link-sprite-png-6.gif");
 
@@ -265,7 +266,8 @@ public class GameScreen implements Screen{
 
 		if (returnToMain == true){
 			returnToMain = false;
-			gameMusic.dispose();
+			//TODO gameMusic.dispose();
+
 			this.dispose();
 			game.setScreen(new MainMenuScreen(game));
 		}
@@ -363,7 +365,7 @@ public class GameScreen implements Screen{
 		world.dispose();
 		b2dr.dispose();
 		hud.dispose();
-		gameMusic.dispose();
+		//TODO gameMusic.dispose();
 		game.batch.dispose();
 	}
 

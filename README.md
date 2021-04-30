@@ -1,3 +1,13 @@
+
+# lost_in_peril
+LibGDX powered Android, Windows, MacOS game.
+
+## To do:
+* add screenshots
+* link to google play
+* how to contribute
+* links to LibGDx documentation
+
 # Lost in Peril
 ## LibGDX powered Android, Windows, MacOS game.
 Run around the map to gather coins, but watch out for landmines! Hurry before the clock runs out!

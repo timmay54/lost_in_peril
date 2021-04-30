@@ -1,0 +1,373 @@
+Index: ios/src/com/freebandz/lost_in_peril/IOSLauncher.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.freebandz.lost_in_peril;\n\nimport org.robovm.apple.foundation.NSAutoreleasePool;\nimport org.robovm.apple.uikit.UIApplication;\n\nimport com.badlogic.gdx.backends.iosrobovm.IOSApplication;\nimport com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;\nimport com.freebandz.lost_in_peril.Lost_in_Peril;\n\npublic class IOSLauncher extends IOSApplication.Delegate {\n    @Override\n    protected IOSApplication createApplication() {\n        IOSApplicationConfiguration config = new IOSApplicationConfiguration();\n        return new IOSApplication(new Lost_in_Peril(), config);\n    }\n\n    public static void main(String[] argv) {\n        NSAutoreleasePool pool = new NSAutoreleasePool();\n        UIApplication.main(argv, null, IOSLauncher.class);\n        pool.close();\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ios/src/com/freebandz/lost_in_peril/IOSLauncher.java	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ ios/src/com/freebandz/lost_in_peril/IOSLauncher.java	(date 1618970003000)
+@@ -5,13 +5,13 @@
+ 
+ import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
+ import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
+-import com.freebandz.lost_in_peril.Lost_in_Peril;
++import com.freebandz.lost_in_peril.Lost_In_Peril;
+ 
+ public class IOSLauncher extends IOSApplication.Delegate {
+     @Override
+     protected IOSApplication createApplication() {
+         IOSApplicationConfiguration config = new IOSApplicationConfiguration();
+-        return new IOSApplication(new Lost_in_Peril(), config);
++        return new IOSApplication(new Lost_In_Peril(), config);
+     }
+ 
+     public static void main(String[] argv) {
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>buildscript {\n\n\n    repositories {\n        mavenLocal()\n        mavenCentral()\n        maven { url \"https://plugins.gradle.org/m2/\" }\n        maven { url \"https://oss.sonatype.org/content/repositories/snapshots/\" }\n        jcenter()\n        google()\n    }\n    dependencies {\n        classpath 'org.wisepersist:gwt-gradle-plugin:1.0.6'\n        classpath 'com.android.tools.build:gradle:3.2.0'\n        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.6'\n\n\n    }\n}\n\nallprojects {\n    apply plugin: \"eclipse\"\n    apply plugin: \"idea\"\n\n    version = '1.0'\n    ext {\n        appName = \"lost_in_peril\"\n        gdxVersion = '1.9.6'\n        roboVMVersion = '2.3.6'\n        box2DLightsVersion = '1.4'\n        ashleyVersion = '1.7.0'\n        aiVersion = '1.8.0'\n    }\n\n    repositories {\n        mavenLocal()\n        mavenCentral()\n        jcenter()\n        google()\n        maven { url \"https://oss.sonatype.org/content/repositories/snapshots/\" }\n        maven { url \"https://oss.sonatype.org/content/repositories/releases/\" }\n    }\n}\n\nproject(\":desktop\") {\n    apply plugin: \"java\"\n\n\n    dependencies {\n        compile project(\":core\")\n        compile \"com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop\"\n        compile \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop\"\n        compile \"com.badlogicgames.gdx:gdx-tools:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop\"\n        compile \"com.badlogicgames.gdx:gdx-controllers-desktop:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-controllers-platform:$gdxVersion:natives-desktop\"\n        compile \"de.tomgrill.gdxfacebook:gdx-facebook-desktop:1.4.1\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-desktop:1.2.5\"\n        compile \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-desktop\"\n\n    }\n}\n\nproject(\":ios\") {\n    apply plugin: \"java\"\n    apply plugin: \"robovm\"\n\n\n    dependencies {\n        compile project(\":core\")\n        compile \"com.mobidevelop.robovm:robovm-rt:$roboVMVersion\"\n        compile \"com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion\"\n        compile \"com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios\"\n        compile \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios\"\n        compile \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-ios\"\n        compile \"de.tomgrill.gdxfacebook:gdx-facebook-ios:1.4.1\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-ios:1.2.5\"\n        compile \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-ios\"\n\n    }\n}\n\nproject(\":html\") {\n    apply plugin: \"gwt\"\n    apply plugin: \"war\"\n\n\n    dependencies {\n        compile project(\":core\")\n        compile \"com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx:$gdxVersion:sources\"\n        compile \"com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources\"\n        compile \"com.badlogicgames.gdx:gdx-box2d:$gdxVersion:sources\"\n        compile \"com.badlogicgames.gdx:gdx-box2d-gwt:$gdxVersion:sources\"\n        compile \"com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion:sources\"\n        compile \"com.badlogicgames.ashley:ashley:$ashleyVersion:sources\"\n        compile \"com.badlogicgames.gdx:gdx-ai:$aiVersion:sources\"\n        compile \"com.badlogicgames.gdx:gdx-controllers:$gdxVersion:sources\"\n        compile \"com.badlogicgames.gdx:gdx-controllers-gwt:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-controllers-gwt:$gdxVersion:sources\"\n        compile \"com.kotcrab.vis:vis-ui:1.3.0:sources\"\n        compile \"net.dermetfan.libgdx-utils:libgdx-utils:0.13.4:sources\"\n        compile \"net.dermetfan.libgdx-utils:libgdx-utils:0.13.4:sources\"\n        compile \"net.dermetfan.libgdx-utils:libgdx-utils-box2d:0.13.4:sources\"\n        compile \"de.tomgrill.gdxfacebook:gdx-facebook-core:1.4.1:sources\"\n        compile \"de.tomgrill.gdxfacebook:gdx-facebook-html:1.4.1:sources\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-html:1.2.5\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-html:1.2.5:sources\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-core:1.2.5:sources\"\n\n    }\n}\n\nproject(\":core\") {\n    apply plugin: \"java\"\n\n\n    dependencies {\n        compile \"com.badlogicgames.gdx:gdx:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-box2d:$gdxVersion\"\n        compile \"com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion\"\n        compile \"com.badlogicgames.ashley:ashley:$ashleyVersion\"\n        compile \"com.badlogicgames.gdx:gdx-ai:$aiVersion\"\n        compile \"com.badlogicgames.gdx:gdx-freetype:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-controllers:$gdxVersion\"\n        compile \"com.underwaterapps.overlap2druntime:overlap2d-runtime-libgdx:0.1.0\"\n        compile \"com.kotcrab.vis:vis-ui:1.3.0\"\n        compile \"net.dermetfan.libgdx-utils:libgdx-utils:0.13.4\"\n        compile \"net.dermetfan.libgdx-utils:libgdx-utils-box2d:0.13.4\"\n        compile \"de.tomgrill.gdxfacebook:gdx-facebook-core:1.4.1\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-core:1.2.5\"\n        compile \"com.badlogicgames.gdx:gdx-bullet:$gdxVersion\"\n\n    }\n}\n\nproject(\":android\") {\n    apply plugin: \"android\"\n\n    configurations { natives }\n\n    dependencies {\n        compile project(\":core\")\n        implementation 'com.android.support:multidex:1.0.3'\n        compile \"com.badlogicgames.gdx:gdx-backend-android:$gdxVersion\"\n        natives \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi\"\n        natives \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a\"\n        natives \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-arm64-v8a\"\n        natives \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86\"\n        natives \"com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64\"\n        compile \"com.badlogicgames.gdx:gdx-box2d:$gdxVersion\"\n        natives \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi\"\n        natives \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi-v7a\"\n        natives \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-arm64-v8a\"\n        natives \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86\"\n        natives \"com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64\"\n        compile \"com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion\"\n        compile \"com.badlogicgames.ashley:ashley:$ashleyVersion\"\n        compile \"com.badlogicgames.gdx:gdx-ai:$aiVersion\"\n        compile \"com.badlogicgames.gdx:gdx-freetype:$gdxVersion\"\n        natives \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-armeabi\"\n        natives \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-armeabi-v7a\"\n        natives \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-arm64-v8a\"\n        natives \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86\"\n        natives \"com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86_64\"\n        compile \"com.badlogicgames.gdx:gdx-controllers:$gdxVersion\"\n        compile \"com.badlogicgames.gdx:gdx-controllers-android:$gdxVersion\"\n        compile \"de.tomgrill.gdxfacebook:gdx-facebook-android:1.4.1\"\n        compile \"de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.5\"\n        compile \"com.badlogicgames.gdx:gdx-bullet:$gdxVersion\"\n        natives \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-armeabi\"\n        natives \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-armeabi-v7a\"\n        natives \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-arm64-v8a\"\n        natives \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-x86\"\n        natives \"com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-x86_64\"\n\n    }\n}\n\ntasks.eclipse.doLast {\n    delete \".project\"\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ build.gradle	(date 1618967714000)
+@@ -12,7 +12,7 @@
+     dependencies {
+         classpath 'org.wisepersist:gwt-gradle-plugin:1.0.6'
+         classpath 'com.android.tools.build:gradle:3.2.0'
+-        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.6'
++        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.7'
+ 
+ 
+     }
+@@ -26,7 +26,7 @@
+     ext {
+         appName = "lost_in_peril"
+         gdxVersion = '1.9.6'
+-        roboVMVersion = '2.3.6'
++        roboVMVersion = '2.3.7'
+         box2DLightsVersion = '1.4'
+         ashleyVersion = '1.7.0'
+         aiVersion = '1.8.0'
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"delegatedBuild\" value=\"true\" />\n        <option name=\"testRunner\" value=\"PLATFORM\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ .idea/gradle.xml	(date 1618596847000)
+@@ -8,6 +8,16 @@
+         <option name="testRunner" value="PLATFORM" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/android" />
++            <option value="$PROJECT_DIR$/core" />
++            <option value="$PROJECT_DIR$/desktop" />
++            <option value="$PROJECT_DIR$/html" />
++            <option value="$PROJECT_DIR$/ios" />
++          </set>
++        </option>
+         <option name="resolveModulePerSourceSet" value="false" />
+         <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/lost_in_peril.iml\" filepath=\"$PROJECT_DIR$/lost_in_peril.iml\" />\n    </modules>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ .idea/modules.xml	(date 1618596918000)
+@@ -3,6 +3,11 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/lost_in_peril.iml" filepath="$PROJECT_DIR$/lost_in_peril.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/lost_in_peril.android.iml" filepath="$PROJECT_DIR$/.idea/modules/android/lost_in_peril.android.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/lost_in_peril.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/lost_in_peril.core.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/lost_in_peril.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/lost_in_peril.desktop.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/html/lost_in_peril.html.iml" filepath="$PROJECT_DIR$/.idea/modules/html/lost_in_peril.html.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ios/lost_in_peril.ios.iml" filepath="$PROJECT_DIR$/.idea/modules/ios/lost_in_peril.ios.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"NONE\" />\n  </component>\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"9cceb855-bbf4-4d2b-b7a9-b6f214b527a3\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.github/workflows/blank.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.github/workflows/blank.yml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DefaultGradleProjectSettings\">\n    <option name=\"testRunner\" value=\"GRADLE\" />\n    <option name=\"delegatedBuild\" value=\"true\" />\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view />\n      </state>\n    </system>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1jQ9cyiBjlhhxyOWP5EO6CjTNaC\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"android.sdk.path\" value=\"$USER_HOME$/AppData/Local/Android/Sdk\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"AndroidSdkUpdater\" />\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"9cceb855-bbf4-4d2b-b7a9-b6f214b527a3\" name=\"Default Changelist\" comment=\"\" />\n      <created>1574376570753</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1574376570753</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"210\" y=\"270\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog\" timestamp=\"1603744680538\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"210\" y=\"270\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040\" timestamp=\"1603744680538\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ .idea/workspace.xml	(date 1618970279000)
+@@ -1,5 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AndroidLayouts">
++    <shared>
++      <config />
++    </shared>
++  </component>
+   <component name="AutoImportSettings">
+     <option name="autoReloadType" value="NONE" />
+   </component>
+@@ -23,9 +28,18 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="9cceb855-bbf4-4d2b-b7a9-b6f214b527a3" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/.github/workflows/blank.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/blank.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/lost_in_peril.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lost_in_peril.iml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,6 +50,12 @@
+     <option name="testRunner" value="GRADLE" />
+     <option name="delegatedBuild" value="true" />
+   </component>
++  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
++  <component name="ExternalProjectsData">
++    <projectState path="$PROJECT_DIR$">
++      <ProjectState />
++    </projectState>
++  </component>
+   <component name="ExternalProjectsManager">
+     <system id="GRADLE">
+       <state>
+@@ -54,8 +74,103 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
++    <property name="dart.analysis.tool.window.visible" value="false" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="memory.settings.postsync.last.time.stamp" value="1618596902446" />
++    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
++    <property name="show.migrate.to.gradle.popup" value="false" />
++  </component>
++  <component name="RunManager" selected="RoboVM iOS.RoboVM-Simulator">
++    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
++      <option name="TEST_OBJECT" value="class" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
++      <method v="2">
++        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="android" type="AndroidRunConfigurationType" factoryName="Android App">
++      <module name="lost_in_peril.android" />
++      <option name="DEPLOY" value="true" />
++      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
++      <option name="DEPLOY_AS_INSTANT" value="false" />
++      <option name="ARTIFACT_NAME" value="" />
++      <option name="PM_INSTALL_OPTIONS" value="" />
++      <option name="ALL_USERS" value="false" />
++      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
++      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
++      <option name="MODE" value="default_activity" />
++      <option name="CLEAR_LOGCAT" value="false" />
++      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
++      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
++      <option name="FORCE_STOP_RUNNING_APP" value="true" />
++      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
++      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
++      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
++      <option name="DEBUGGER_TYPE" value="Auto" />
++      <Auto>
++        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
++        <option name="SHOW_STATIC_VARS" value="true" />
++        <option name="WORKING_DIR" value="" />
++        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
++        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
++      </Auto>
++      <Hybrid>
++        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
++        <option name="SHOW_STATIC_VARS" value="true" />
++        <option name="WORKING_DIR" value="" />
++        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
++        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
++      </Hybrid>
++      <Java />
++      <Native>
++        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
++        <option name="SHOW_STATIC_VARS" value="true" />
++        <option name="WORKING_DIR" value="" />
++        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
++        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
++      </Native>
++      <Profilers>
++        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
++        <option name="STARTUP_PROFILING_ENABLED" value="false" />
++        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
++        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
++        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
++        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
++      </Profilers>
++      <option name="DEEP_LINK" value="" />
++      <option name="ACTIVITY_CLASS" value="" />
++      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
++      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
++      <method v="2">
++        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="RoboVM-Simulator" type="com.robovm.idea.running.RoboVmIOSConfigurationType" factoryName="RoboVM iOS">
++      <module name="lost_in_peril.ios" />
++      <option name="targetType" value="Simulator" />
++      <option name="deviceArch" value="arm64" />
++      <option name="signingIdentityType" value="AUTO" />
++      <option name="signingIdentity" value="" />
++      <option name="provisioningProfileType" value="AUTO" />
++      <option name="provisioningProfile" value="" />
++      <option name="simArch" value="x86_64" />
++      <option name="simulatorType" value="AUTO" />
++      <option name="simulatorName" value="" />
++      <option name="simulatorSdk" value="-1" />
++      <option name="simulatorLaunchWatch" value="0" />
++      <option name="arguments" value="" />
++      <option name="workingDir" value="" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++        <option name="Buildr.BeforeRunTask" enabled="true" />
++      </method>
++    </configuration>
++    <list>
++      <item itemvalue="Android App.android" />
++      <item itemvalue="RoboVM iOS.RoboVM-Simulator" />
++    </list>
+   </component>
+   <component name="SvnConfiguration">
+     <configuration />
+@@ -80,11 +195,40 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="210" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603744680538">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state x="404" y="279" key="#Custom_Plugin_Repositories" timestamp="1618969555029">
++      <screen x="0" y="25" width="1440" height="789" />
+     </state>
+-    <state x="210" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603744680538" />
++    <state x="404" y="279" key="#Custom_Plugin_Repositories/0.25.1440.789@0.25.1440.789" timestamp="1618969555029" />
++    <state x="274" y="286" width="567" height="357" key="#Notifications" timestamp="1618968894769">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state x="274" y="286" width="567" height="357" key="#Notifications/0.25.1440.789@0.25.1440.789" timestamp="1618968894769" />
++    <state x="184" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618969895615">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state x="184" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.789@0.25.1440.789" timestamp="1618969895615" />
++    <state width="1396" height="199" key="GridCell.Tab.0.bottom" timestamp="1618933187788">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state width="1396" height="199" key="GridCell.Tab.0.bottom/0.25.1440.789@0.25.1440.789" timestamp="1618933187788" />
++    <state width="1396" height="199" key="GridCell.Tab.0.center" timestamp="1618933187788">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state width="1396" height="199" key="GridCell.Tab.0.center/0.25.1440.789@0.25.1440.789" timestamp="1618933187788" />
++    <state width="1396" height="199" key="GridCell.Tab.0.left" timestamp="1618933187787">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state width="1396" height="199" key="GridCell.Tab.0.left/0.25.1440.789@0.25.1440.789" timestamp="1618933187787" />
++    <state width="1396" height="199" key="GridCell.Tab.0.right" timestamp="1618933187788">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state width="1396" height="199" key="GridCell.Tab.0.right/0.25.1440.789@0.25.1440.789" timestamp="1618933187788" />
++    <state x="0" y="25" key="SettingsEditor" timestamp="1618969613269">
++      <screen x="0" y="25" width="1440" height="789" />
++    </state>
++    <state x="0" y="25" key="SettingsEditor/0.25.1440.789@0.25.1440.789" timestamp="1618969613269" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\">\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\n  </component>\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"Android\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ .idea/misc.xml	(date 1618596898000)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1618596898000)
++++ .idea/compiler.xml	(date 1618596898000)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.7">
++      <module name="lost_in_peril.android" target="1.8" />
++    </bytecodeTargetLevel>
++  </component>
++</project>
+\ No newline at end of file
+Index: lost_in_peril.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module external.linked.project.id=\":\" external.linked.project.path=\"C:\\Users\\root\\Desktop\\git\\lost_in_peril\" external.root.project.path=\"$MODULE_DIR$\" external.system.id=\"GRADLE\" type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"FacetManager\">\n    <facet type=\"android-gradle\" name=\"Android-Gradle\">\n      <configuration>\n        <option name=\"GRADLE_PROJECT_PATH\" value=\":\" />\n        <option name=\"LAST_SUCCESSFUL_SYNC_AGP_VERSION\" />\n        <option name=\"LAST_KNOWN_AGP_VERSION\" />\n      </configuration>\n    </facet>\n  </component>\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\n    <exclude-output />\n    <content url=\"file://$MODULE_DIR$\" />\n    <orderEntry type=\"jdk\" jdkName=\"1.8\" jdkType=\"JavaSDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lost_in_peril.iml	(revision d804c47a03ec3471b56691af291dc812964338da)
++++ lost_in_peril.iml	(date 1618596918000)
+@@ -1,17 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module external.linked.project.id=":" external.linked.project.path="C:\Users\root\Desktop\git\lost_in_peril" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
++<module external.linked.project.id="lost_in_peril" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+   <component name="FacetManager">
+-    <facet type="android-gradle" name="Android-Gradle">
++    <facet type="java-gradle" name="Java-Gradle">
+       <configuration>
+-        <option name="GRADLE_PROJECT_PATH" value=":" />
+-        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+-        <option name="LAST_KNOWN_AGP_VERSION" />
++        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
++        <option name="BUILDABLE" value="false" />
+       </configuration>
+     </facet>
+   </component>
+   <component name="NewModuleRootManager" inherit-compiler-output="true">
+     <exclude-output />
+-    <content url="file://$MODULE_DIR$" />
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
++      <excludeFolder url="file://$MODULE_DIR$/build" />
++    </content>
+     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
