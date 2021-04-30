@@ -38,6 +38,7 @@ public class SettingsScreen implements Screen{
 		backButton = new Texture("backButton.png");
 		
 		game.batch.begin();
+
 		/* if volume icon is clicked:
 		 *     swap icons between volume_icon_diasbled & volume_Icon_enabled
 		 */

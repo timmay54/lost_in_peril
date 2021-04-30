@@ -19,10 +19,10 @@ import com.freebandz.lost_in_peril.Lost_In_Peril;
  */ 
 
 public class HUD implements Disposable {
-	public Stage stageHud;
+	public static Stage stageHud;
 	private Viewport viewportHud;
 	
-	public static Integer worldTimer = 120;
+	public Integer worldTimer = 120;
 	private float timeCount;
 	private Integer score;
 	
@@ -32,7 +32,7 @@ public class HUD implements Disposable {
 	public HUD(SpriteBatch sbb) {
 		//worldTimer = 300;
 		timeCount = 0;
-		setScore(500);
+		setScore(0);
 		
 		viewportHud = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		stageHud = new Stage(viewportHud, sbb);
@@ -56,6 +56,10 @@ public class HUD implements Disposable {
 		return score;
 	}
 
+	public int getTime(){
+		return worldTimer;
+	}
+
 	public void setScore(Integer score) {
 		this.score = score;
 	}
@@ -69,6 +73,7 @@ public class HUD implements Disposable {
 			countDownLabel.setText(String.format("%03d", worldTimer));
 			timeCount = 0;
 		}
+		scoreLabel.setText(String.format("%03d", score));
 	}
 
 	public void addScore(int value){

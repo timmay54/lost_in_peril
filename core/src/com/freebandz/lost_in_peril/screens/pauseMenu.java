@@ -11,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
+import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
@@ -30,7 +31,7 @@ public class pauseMenu {
 
 	public pauseMenu(SpriteBatch sbb){
 		skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
-		viewportPause = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
+		viewportPause = new FitViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		pauseStage = new Stage(viewportPause, sbb);
 		Gdx.input.setInputProcessor(pauseStage);
 
@@ -57,7 +58,7 @@ public class pauseMenu {
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 boolPause = false;
-                pauseWindow.setVisible(false);
+                //pauseWindow.setVisible(false);
 
             }
             @Override
@@ -69,7 +70,8 @@ public class pauseMenu {
 		mainMenu.addListener(new InputListener(){
 			@Override
 			public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
-				GameScreen.returnToMain = true;
+				//GameScreen.returnToMain = true;
+				Gdx.app.exit();
 
 			}
 			@Override

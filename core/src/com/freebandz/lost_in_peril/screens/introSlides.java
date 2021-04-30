@@ -14,6 +14,7 @@ public class introSlides implements Screen{
 	Texture slide1;
 	Texture slide2;
 	Texture slide3;
+	Texture slide4;
 	private float timeCount;
 	
 	public introSlides(Lost_In_Peril game) {
@@ -22,9 +23,11 @@ public class introSlides implements Screen{
 		slide1 = new Texture("485_550x550_Front_Color-NA.jpg");
 		slide2 = new Texture("wiu.jpg");
 		slide3 = new Texture("nullpointer.jpg");
+		slide4 = new Texture("indiegamething.png");
 		slides.add(slide1);
 		slides.add(slide2);
 		slides.add(slide3);
+		slides.add(slide4);
 	}
 	int x = 0;
 
@@ -38,7 +41,7 @@ public class introSlides implements Screen{
 		timeCount += dt;
 		if(timeCount >= 3){
 			x++;
-			if(x == 3){
+			if(x == 4){
 				game.setScreen(new MainMenuScreen(game));
 			}
 			timeCount = 0;
@@ -58,7 +61,15 @@ public class introSlides implements Screen{
 			//if slide 3
 				//dim screen and then -> this.set
 
-		game.batch.draw(slides.get(x),Lost_In_Peril.WIDTH / 6,Lost_In_Peril.HEIGHT / 5);
+		if(x<=2){
+			game.batch.draw(slides.get(x),Lost_In_Peril.WIDTH / 6,Lost_In_Peril.HEIGHT / 5);
+		}
+		else{
+			game.batch.draw(slides.get(x), 5,  5, Lost_In_Peril.WIDTH * .85f, Lost_In_Peril.HEIGHT * .85f);
+		}
+
+		//TODO change above call to:
+		//game.batch.draw(slides.get(x),Lost_In_Peril.WIDTH / 6,Lost_In_Peril.HEIGHT / 5, float WIDTH, float HEIGHT);
 
 		//game.batch.draw(slide1,0,0);
 		game.batch.end();
@@ -67,31 +78,31 @@ public class introSlides implements Screen{
 
 	@Override
 	public void resize(int width, int height) {
-		// TODO Auto-generated method stub
+
 		
 	}
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
+
 		
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
+
 		
 	}
 
 	@Override
 	public void hide() {
-		// TODO Auto-generated method stub
+
 		
 	}
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
+
 		
 	}
 	

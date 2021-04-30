@@ -22,7 +22,7 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 import com.freebandz.lost_in_peril.Lost_In_Peril;
 
 public class gameOver {
-    public static Stage overStage;
+    public Stage overStage;
     private Viewport viewportOver;
     public Window gameOver;
     //public TextButton unpause;
@@ -40,6 +40,7 @@ public class gameOver {
         Table table = new Table();
 
         TextButton mainMenu = new TextButton("Main Menu", skin);
+        TextButton exit = new TextButton("Exit", skin);
         gameOver = new Window("GAME OVER", skin);
         gameOver.setMovable(false);
         //unpause = new TextButton("Unpause", skin);
@@ -47,6 +48,8 @@ public class gameOver {
 
         table.row();
         table.add(mainMenu);
+        table.row();
+        table.add(exit);
 
         gameOver.add(table);
         gameOver.pack();
@@ -59,13 +62,25 @@ public class gameOver {
         mainMenu.addListener(new InputListener(){
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
-                GameScreen.boolPause = false;
                 GameScreen.returnToMain = true;
-
 
             }
             @Override
             public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+                return true;
+            }
+        });
+
+        exit.addListener(new InputListener(){
+            @Override
+            public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
+               Gdx.app.exit();
+               System.exit(0);
+
+            }
+            @Override
+            public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+                Gdx.app.exit();
                 return true;
             }
         });
@@ -77,7 +92,7 @@ public class gameOver {
     }
 
     public void update(float dt) {
-        GameScreen.hud.update(dt);
+        //update(dt);
         if(GameScreen.hud.worldTimer <= 0){
             GameScreen.boolPause = true;
             gameOver.setVisible(GameScreen.boolPause);
