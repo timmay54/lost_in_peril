@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/tim/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/8cbb9586df548add74ada680248794bb/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,14,20,26,32,38,39,40,41,46,51,56,58,60,61,62,115,169",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,474,899,1327,1753,2180,2605,2694,2795,2898,3306,3726,4148,4255,4384,4455,4538,8477,12559",
+                        "endLines": "7,13,19,25,31,37,38,39,40,45,50,55,57,59,60,61,114,168,169",
+                        "endColumns": "12,12,12,12,12,12,88,100,102,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "469,894,1322,1748,2175,2600,2689,2790,2893,3301,3721,4143,4250,4379,4450,4533,8472,12554,12645"
+                    },
+                    "to": {
+                        "startLines": "2,8,14,20,26,32,38,39,40,41,46,51,56,58,68,69,70,123,177",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,474,899,1327,1753,2180,2605,2694,2795,2898,3306,3726,4148,4255,4852,4923,5006,8945,13027",
+                        "endLines": "7,13,19,25,31,37,38,39,40,45,50,55,57,59,68,69,122,176,177",
+                        "endColumns": "12,12,12,12,12,12,88,100,102,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "469,894,1322,1748,2175,2600,2689,2790,2893,3301,3721,4143,4250,4379,4918,5001,8940,13022,13113"
+                    }
+                },
+                {
+                    "source": "/Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/dfa6e2edc91efe36ccb5f56835a10e5b/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "518"
+                    },
+                    "to": {
+                        "startLines": "60",
+                        "startColumns": "4",
+                        "startOffsets": "4384",
+                        "endLines": "67",
+                        "endColumns": "12",
+                        "endOffsets": "4847"
+                    }
+                }
+            ]
+        }
+    ]
+}
