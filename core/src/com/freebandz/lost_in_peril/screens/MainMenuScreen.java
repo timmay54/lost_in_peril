@@ -69,7 +69,7 @@ public class MainMenuScreen implements Screen{
 
 
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
-	Music menuMusic;
+	//Music menuMusic;
 
 
 	public MainMenuScreen(Lost_In_Peril game) {
@@ -85,11 +85,11 @@ public class MainMenuScreen implements Screen{
 		scoreButton = new Texture("score.png");
 		settingsButton= new Texture("settingsButton.png");
 		System.out.println("Platform: " + Lost_In_Peril.platformName);
-		menuMusic= Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
+		/*TODO menuMusic= Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
 		musicVolume = .5f;
 		menuMusic.setLooping(true); //now plays in loop (delay)
 		menuMusic.setVolume(musicVolume);
-		menuMusic.play();
+		menuMusic.play();*/
 
 		settings = new settingsWindow(game.batch);
 		scoreWindow = new ScoreScreen(game.batch);
@@ -212,7 +212,7 @@ public class MainMenuScreen implements Screen{
 			if(Gdx.input.isTouched() && Gdx.input.getX() < PLAY_BUTTON_X + PLAY_BUTTON_WIDTH && Gdx.input.getX() > PLAY_BUTTON_X && Lost_In_Peril.HEIGHT - Gdx.input.getY() < PLAY_BUTTON_Y + PLAY_BUTTON_HEIGHT &&
                     Lost_In_Peril.HEIGHT - Gdx.input.getY() > PLAY_BUTTON_Y){
 				game.batch.draw(playButtonActive, PLAY_BUTTON_X, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
-				menuMusic.stop();
+				//TODO menuMusic.stop();
 				//menuMusic.dispose();
 				////ggss = new GameScreen(new Lost_In_Peril());
 				//this.dispose();
@@ -332,7 +332,7 @@ public class MainMenuScreen implements Screen{
 
 		if(showSettings) {
 			settingsWindow.stage.draw();
-			menuMusic.setVolume(musicVolume);
+			//TODO menuMusic.setVolume(musicVolume);
 		}
 
 		if(showScoreScreen){
@@ -367,7 +367,7 @@ public class MainMenuScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		menuMusic.dispose();
+		//TODO menuMusic.dispose();
 		world.dispose();
 		rayHandler.dispose();
 		game.batch.dispose();

@@ -14,9 +14,14 @@ createIPA.dependsOn build
 
 robovm {
 	archs = "thumbv7:arm64"
-    iosSignIdentity = "iPhone Developer: heavygamer54@yahoo.com (JPL5X36FFC)"
-    iosProvisioningProfile = "iOS Team Provisioning Profile: testingxcode.test1UITests"
+    //iosSignIdentity = "Apple Development: Billy Gretty (JPL5X36FFC)"
+    iosSignIdentity = "Apple Distribution: Billy Gretty (U9XL4P644C)"
+    //iosProvisioningProfile = "Apple Distribution: Billy Gretty (U9XL4P644C)"
+    //iosProvisioningProfile = "iOS Team Provisioning Profile: com.freebandz.Lost-in-Peril"
+    iosProvisioningProfile = "Distributing Provisioning Profile"
     iosSkipSigning = false
+    stdoutFifo = ""
+    stderrFifo = ""
 }
 
 eclipse.project {

@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":ios" external.linked.project.path="$MODULE_DIR$/../../../ios" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="lost_in_peril" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":ios" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+        <option name="LAST_KNOWN_AGP_VERSION" />
+      </configuration>
+    </facet>
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/../../../ios/build" />
+        <option name="BUILDABLE" value="true" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../ios/build/classes/kotlin/main" />
+          <option name="classpath" value="$MODULE_DIR$/../../../core/build/libs/core-1.0.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/de.tomgrill.gdxfacebook/gdx-facebook-ios/1.4.1/135f8eea2ed5849964e109a6e51bef97f6a87395/gdx-facebook-ios-1.4.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/de.tomgrill.gdxdialogs/gdx-dialogs-ios/1.2.5/eb54d5d545d5776dcd6cb0d237bb5b839bdf0ecf/gdx-dialogs-ios-1.2.5.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.9.6/d975efe24a3947e8dc36645b9cebb1fa4a588c42/gdx-backend-robovm-1.9.6.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-facebook-ios/2.2.1/cd24c2432d410425b3c82353bbde36ff6303e1ed/robopods-facebook-ios-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-facebook-ios-login/2.2.1/fc61a4dfc969afd7db886bbc28f1d43c8432ff79/robopods-facebook-ios-login-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-facebook-ios-share/2.2.1/2224f6d5612720750eb2844833e8670157a80359/robopods-facebook-ios-share-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-facebook-ios-core/2.2.1/3eb293db28c2049bf816142421acb2bd9adab726/robopods-facebook-ios-core-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-facebook-ios-messenger/2.2.1/c372b7ab9e2b86bc045777652a8ddbdf0ee4c294/robopods-facebook-ios-messenger-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-facebook-ios-notifications/2.2.1/b7f94dbb1187355c21756082ca646134958e1bd7/robopods-facebook-ios-notifications-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robopods-bolts-ios/2.2.1/df379837e543369a1f762c22918368752a917b6c/robopods-bolts-ios-2.2.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-rt/2.3.9/f21f5801c3f145a640789a1f07b7f5e0b5d078b1/robovm-rt-2.3.9.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-cocoatouch/2.3.9/600ebafda199e38105f800f032aa3de5b1d79879/robovm-cocoatouch-2.3.9.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-platform/1.9.6/e82237140baaf44408b1bbc79c357a71f46bea92/gdx-platform-1.9.6-natives-ios.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d-platform/1.9.6/73511c4d7d4465b410e635cb66751ff05ff07ffb/gdx-box2d-platform-1.9.6-natives-ios.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype-platform/1.9.6/afaa94344d63138b79329eb008d994932dcccf0f/gdx-freetype-platform-1.9.6-natives-ios.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-bullet-platform/1.9.6/66d8a04b78f5cc193862ce507e5d6069bba3b09/gdx-bullet-platform-1.9.6-natives-ios.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.50/b529d1738c7e98bbfa36a4134039528f2ce78ebf/kotlin-stdlib-1.3.50.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.underwaterapps.overlap2druntime/overlap2d-runtime-libgdx/0.1.0/1dd0d0808d1e44fe10c749d8216c44e5c4c99361/overlap2d-runtime-libgdx-0.1.0.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.box2dlights/box2dlights/1.4/3d77ad5b4164fb32fc67e2446e35911bb0aaf0bd/box2dlights-1.4.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/net.dermetfan.libgdx-utils/libgdx-utils-box2d/0.13.4/918d79a20ea3c898cdb3611782c5b2bfa6ec575b/libgdx-utils-box2d-0.13.4.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.6/c249ef4060a4fada952f278455c8f7b9cba3c18a/gdx-box2d-1.9.6.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.7.0/a7c4083c0a42027a3c03ba7ccecef6cbe1c5f0a4/ashley-1.7.0.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-ai/1.8.0/ec30677d8ab1a8b8aa4b853c5f4e4b1361f50bf5/gdx-ai-1.8.0.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.6/69187cc3c8062f191df435b43671b0e5ffcbf353/gdx-freetype-1.9.6.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.9.6/ea1fd4884be631d9b7cd0f496b1ab39e31eb434b/gdx-controllers-1.9.6.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.kotcrab.vis/vis-ui/1.3.0/639741faa66a560197ee06a9412949402c831796/vis-ui-1.3.0.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/net.dermetfan.libgdx-utils/libgdx-utils/0.13.4/27affad2873d1c9c366a2290fc51f3927f3a5f83/libgdx-utils-0.13.4.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/de.tomgrill.gdxfacebook/gdx-facebook-core/1.4.1/1b5d4948b033a4b9a8f360d0fa76c49e6e17baec/gdx-facebook-core-1.4.1.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/de.tomgrill.gdxdialogs/gdx-dialogs-core/1.2.5/c55ef7e82d013ea7d99a66dcbdc24cfa7127337e/gdx-dialogs-core-1.2.5.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-bullet/1.9.6/13a6f83e5ae513c469b9998ed09409ae3667fed/gdx-bullet-1.9.6.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.6/47d1e9b890e364ec28f128e9bb3b9a12a94c164/gdx-1.9.6.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-objc/2.3.9/dae0cf0b38652acdef8e6f0cc155801a8cea4942/robovm-objc-2.3.9.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.50/3d9cd3e1bc7b92e95f43d45be3bfbcf38e36ab87/kotlin-stdlib-common-1.3.50.jar:/Users/tim/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="ios" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.50/b499f22fd7c3e9c2e5b6c4005221fa47fc7f9a7a/kotlin-reflect-1.3.50.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.50/59492b8dfb92522ba0ddb5dd1c4d0ef0a4fca1af/kotlin-script-runtime-1.3.50.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.3.50/b8e0110c386c08f46a8c5e45b8c64aece1914867/kotlin-scripting-common-1.3.50.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.3.50/53f579e1bee3dab3df915d923ad1bb43bc37cd18/kotlin-scripting-jvm-1.3.50.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.50/3d9cd3e1bc7b92e95f43d45be3bfbcf38e36ab87/kotlin-stdlib-common-1.3.50.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.50/b529d1738c7e98bbfa36a4134039528f2ce78ebf/kotlin-stdlib-1.3.50.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.1.1/3d2b7321cdef9ebf9cb7729ea4f75a6f6457df86/kotlinx-coroutines-core-1.1.1.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../ios/build/classes/java/main" />
     <output-test url="file://$MODULE_DIR$/../../../ios/build/classes/java/test" />
@@ -11,6 +60,7 @@
     </content>
     <orderEntry type="jdk" jdkName="RoboVM SDK 2.3.12" jdkType="RoboVM SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: lost_in_peril.ios.ios-1.0" level="project" />
     <orderEntry type="module" module-name="lost_in_peril.core" />
     <orderEntry type="library" name="Gradle: de.tomgrill.gdxfacebook:gdx-facebook-ios:1.4.1" level="project" />
     <orderEntry type="library" name="Gradle: de.tomgrill.gdxdialogs:gdx-dialogs-ios:1.2.5" level="project" />
@@ -28,6 +78,7 @@
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-box2d-platform:1.9.6:natives-ios" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype-platform:1.9.6:natives-ios" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-bullet-platform:1.9.6:natives-ios" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.50" level="project" />
     <orderEntry type="library" name="Gradle: com.underwaterapps.overlap2druntime:overlap2d-runtime-libgdx:0.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.box2dlights:box2dlights:1.4" level="project" />
     <orderEntry type="library" name="Gradle: net.dermetfan.libgdx-utils:libgdx-utils-box2d:0.13.4" level="project" />
@@ -43,5 +94,11 @@
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-bullet:1.9.6" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.9.6" level="project" />
     <orderEntry type="library" name="Gradle: com.mobidevelop.robovm:robovm-objc:2.3.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.51" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.51" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.51" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.51" level="project" />
   </component>
 </module>

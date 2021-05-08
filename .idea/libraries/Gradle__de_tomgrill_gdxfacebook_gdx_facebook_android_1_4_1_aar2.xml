@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: de.tomgrill.gdxfacebook:gdx-facebook-android:1.4.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gdx-facebook-android-1.4.1.aar/003ee861c85e188464420fd528b6b77d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gdx-facebook-android-1.4.1.aar/96af38430ce1cecf1cd410d1831caf9e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gdx-facebook-android-1.4.1.aar/e1be9aa77d8f3f0709b0b11e69775a8e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gdx-facebook-android-1.4.1.aar/dcaa3b71a8428e3d8c963257fb01f3ed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gdx-facebook-android-1.4.1.aar/dcaa3b71a8428e3d8c963257fb01f3ed/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/gdx-facebook-android-1.4.1.aar/dcaa3b71a8428e3d8c963257fb01f3ed/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.tomgrill.gdxfacebook/gdx-facebook-android/1.4.1/ed7ccfbc8aa8b74764f351371e6ac29db92e1101/gdx-facebook-android-1.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

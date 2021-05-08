@@ -143,7 +143,7 @@ public class GameScreen implements Screen{
     public InputMultiplexer inputMultiplexer = new InputMultiplexer();
 
     //music input
-	Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_INFECTED_05.ogg"));
+	//TODO Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("PM_INFECTED_05.ogg"));
 
 	//getters and setters
 	public TiledMap getMap() {
@@ -173,9 +173,12 @@ public class GameScreen implements Screen{
 		atlas = new TextureAtlas(Gdx.files.internal("SpaceAssets.atlas"));
 		boolPause = false;
 		// = false;
+		/*
 		gameMusic.setLooping(true);
 		gameMusic.setVolume(MainMenuScreen.musicVolume);
 		gameMusic.play();
+		TODO
+		 */
 
 		//random coins like chests
 		//negative points
@@ -692,19 +695,25 @@ public class GameScreen implements Screen{
 			}
 		}
 
+		/*Does not work...
 		if(Lost_In_Peril.platformName.equals("android")) {
 			controller.draw();
-		}
+		}*/
 		if(Gdx.app.getType() == Application.ApplicationType.Android){
 			controller.draw();
 		}
-
+		if(Gdx.app.getType() == Application.ApplicationType.iOS) {
+			controller.draw();
+		}
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		gamePort.update(width, height);
-		if(Lost_In_Peril.platformName.equals("android")) {
+		if(Gdx.app.getType() == Application.ApplicationType.Android) {
+			controller.resize(width, height);
+		}
+		if(Gdx.app.getType() == Application.ApplicationType.iOS) {
 			controller.resize(width, height);
 		}
 	}
@@ -738,7 +747,7 @@ public class GameScreen implements Screen{
 		System.out.println("Disposing hud... ");
 		hud.dispose();
 		System.out.println("Disposing gameMusic... ");
-		gameMusic.dispose();
+		// TODO gameMusic.dispose();
 		System.out.println("Disposing game.batch... ");
 		game.batch.dispose();
 		rayHandler.dispose();
