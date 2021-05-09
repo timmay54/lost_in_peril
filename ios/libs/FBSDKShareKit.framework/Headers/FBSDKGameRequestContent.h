@@ -16,44 +16,24 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+#import "TargetConditionals.h"
+
+#if !TARGET_OS_TV
+
 #import <Foundation/Foundation.h>
 
-#import <FBSDKCoreKit/FBSDKCopying.h>
+#import "FBSDKCoreKitImport.h"
 
-/**
- NS_ENUM(NSUInteger, FBSDKGameRequestActionType)
-  Additional context about the nature of the request.
- */
-typedef NS_ENUM(NSUInteger, FBSDKGameRequestActionType)
-{
-  /** No action type */
-  FBSDKGameRequestActionTypeNone = 0,
-  /** Send action type: The user is sending an object to the friends. */
-  FBSDKGameRequestActionTypeSend,
-  /** Ask For action type: The user is asking for an object from friends. */
-  FBSDKGameRequestActionTypeAskFor,
-  /** Turn action type: It is the turn of the friends to play against the user in a match. (no object) */
-  FBSDKGameRequestActionTypeTurn,
-};
+#import "FBSDKSharingValidation.h"
+#import "FBSDKGameRequestURLProvider.h"
 
-/**
- NS_ENUM(NSUInteger, FBSDKGameRequestFilters)
-  Filter for who can be displayed in the multi-friend selector.
- */
-typedef NS_ENUM(NSUInteger, FBSDKGameRequestFilter)
-{
-  /** No filter, all friends can be displayed. */
-  FBSDKGameRequestFilterNone = 0,
-  /** Friends using the app can be displayed. */
-  FBSDKGameRequestFilterAppUsers,
-  /** Friends not using the app can be displayed. */
-  FBSDKGameRequestFilterAppNonUsers,
-};
+NS_ASSUME_NONNULL_BEGIN
 
 /**
   A model for a game request.
  */
-@interface FBSDKGameRequestContent : NSObject <FBSDKCopying, NSSecureCoding>
+NS_SWIFT_NAME(GameRequestContent)
+@interface FBSDKGameRequestContent : NSObject <FBSDKCopying, FBSDKSharingValidation, NSSecureCoding>
 
 /**
   Used when defining additional context about the nature of the request.
@@ -67,8 +47,8 @@ typedef NS_ENUM(NSUInteger, FBSDKGameRequestFilter)
 
 /**
   Compares the receiver to another game request content.
- - Parameter content: The other content
- - Returns: YES if the receiver's values are equal to the other content's values; otherwise NO
+ @param content The other content
+ @return YES if the receiver's values are equal to the other content's values; otherwise NO
  */
 - (BOOL)isEqualToGameRequestContent:(FBSDKGameRequestContent *)content;
 
@@ -76,7 +56,7 @@ typedef NS_ENUM(NSUInteger, FBSDKGameRequestFilter)
   Additional freeform data you may pass for tracking. This will be stored as part of
  the request objects created. The maximum length is 255 characters.
  */
-@property (nonatomic, copy) NSString *data;
+@property (nonatomic, copy, nullable) NSString *data;
 
 /**
   This controls the set of friends someone sees if a multi-friend selector is shown.
@@ -109,7 +89,7 @@ typedef NS_ENUM(NSUInteger, FBSDKGameRequestFilter)
 
  This is equivalent to the "to" parameter when using the web game request dialog.
  */
-@property (nonatomic, copy) NSArray *recipients;
+@property (nonatomic, copy) NSArray<NSString *> *recipients;
 
 /**
   An array of user IDs that will be included in the dialog as the first suggested friends.
@@ -117,13 +97,7 @@ typedef NS_ENUM(NSUInteger, FBSDKGameRequestFilter)
 
  This is equivalent to the "suggestions" parameter when using the web game request dialog.
 */
-@property (nonatomic, copy) NSArray *recipientSuggestions;
-
-/**
-
-- Warning:Use `recipientSuggestions` instead.
-*/
-@property (nonatomic, copy) NSArray *suggestions __attribute__ ((deprecated("use recipientSuggestions instead")));
+@property (nonatomic, copy) NSArray<NSString *> *recipientSuggestions;
 
 /**
   The title for the dialog.
@@ -131,9 +105,12 @@ typedef NS_ENUM(NSUInteger, FBSDKGameRequestFilter)
 @property (nonatomic, copy) NSString *title;
 
 /**
-
-- Warning:Use `recipients` instead.
+  The call to action for the dialog.
  */
-@property (nonatomic, copy) NSArray *to __attribute__ ((deprecated("use recipients instead")));
+@property (nonatomic, copy) NSString *cta;
 
 @end
+
+NS_ASSUME_NONNULL_END
+
+#endif
