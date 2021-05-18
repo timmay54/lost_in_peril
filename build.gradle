@@ -13,7 +13,7 @@ buildscript {
         classpath 'org.wisepersist:gwt-gradle-plugin:1.0.6'
         classpath 'com.android.tools.build:gradle:3.2.0'
         classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.9'
-
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.52"
     }
 }
 
@@ -180,10 +180,6 @@ project(":tests") {
     
     sourceSets.test.java.srcDirs = ["src/"]
     
-    ext {
-        kotlinVersion = "1.3.52"
-    }
-    
     dependencies {
         compile project(":core")
         
@@ -192,7 +188,6 @@ project(":tests") {
         
         compile "com.badlogicgames.gdx:gdx-backend-headless:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
         testCompile 'junit:junit:4.+'
         testCompile "org.mockito:mockito-all:1.9.+"
