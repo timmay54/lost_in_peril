@@ -180,6 +180,10 @@ project(":tests") {
     
     sourceSets.test.java.srcDirs = ["src/"]
     
+    ext {
+        kotlinVersion = "1.3.52"
+    }
+    
     dependencies {
         compile project(":core")
         
@@ -187,7 +191,8 @@ project(":tests") {
         compile "org.mockito:mockito-all:1.9.+"
         
         compile "com.badlogicgames.gdx:gdx-backend-headless:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx:$gdxVersion"        
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
         testCompile 'junit:junit:4.+'
         testCompile "org.mockito:mockito-all:1.9.+"
