@@ -20,7 +20,6 @@ buildscript {
 allprojects {
     apply plugin: "eclipse"
     apply plugin: "idea"
-    apply plugin: "kotlin"
 
     version = '1.0'
     ext {
@@ -179,6 +178,7 @@ project(":android") {
 
 project(":tests") {
     apply plugin: "java"
+    apply plugin: "kotlin"
     
     sourceSets.test.java.srcDirs = ["src/"]
     
