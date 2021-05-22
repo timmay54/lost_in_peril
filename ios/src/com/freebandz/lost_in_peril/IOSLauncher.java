@@ -5,8 +5,8 @@ import org.robovm.apple.foundation.NSURL;
 import org.robovm.apple.uikit.UIApplication;
 import org.robovm.apple.uikit.UIApplicationLaunchOptions;
 import org.robovm.apple.uikit.UIApplicationOpenURLOptions;
-import org.robovm.pods.facebook.core.FBSDKAppEvents;
-import org.robovm.pods.facebook.core.FBSDKApplicationDelegate;
+//import org.robovm.pods.facebook.core.FBSDKAppEvents;
+//import org.robovm.pods.facebook.core.FBSDKApplicationDelegate;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;

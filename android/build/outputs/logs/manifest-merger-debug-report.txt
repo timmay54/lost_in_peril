@@ -1,0 +1,79 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.5] /Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/136713a935f333e4243c96fe550daf7a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:multidex:1.0.3] /Users/tim/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/bc94ecc464b4dcce88fdf964accdadf4/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:3:5-42
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:5:5-22:19
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.5] /Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/136713a935f333e4243c96fe550daf7a/AndroidManifest.xml:9:5-20
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.5] /Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/136713a935f333e4243c96fe550daf7a/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:10:9-38
+	android:appCategory
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:9:9-35
+	android:icon
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:11:9-40
+	android:isGame
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:8:9-30
+activity#com.freebandz.lost_in_peril.AndroidLauncher
+ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:12:9-21:20
+	android:screenOrientation
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:15:13-50
+	android:label
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:14:13-42
+	android:configChanges
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:16:13-107
+	android:name
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:13:13-71
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.5] /Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/136713a935f333e4243c96fe550daf7a/AndroidManifest.xml:5:5-7:41
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.5] /Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/136713a935f333e4243c96fe550daf7a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.3] /Users/tim/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/bc94ecc464b4dcce88fdf964accdadf4/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /Users/tim/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/bc94ecc464b4dcce88fdf964accdadf4/AndroidManifest.xml:20:5-43
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		ADDED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml
+		INJECTED from /Users/tim/Desktop/git/lost_in_peril/android/AndroidManifest.xml

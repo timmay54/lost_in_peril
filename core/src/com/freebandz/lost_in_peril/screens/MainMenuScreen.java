@@ -24,22 +24,22 @@ import box2dLight.RayHandler;
 
 public class MainMenuScreen implements Screen{
 
-	private static final int EXIT_BUTTON_WIDTH = 300 *(Lost_In_Peril.WIDTH / 1163);
-	private static final int EXIT_BUTTON_HEIGHT = 150 *(Lost_In_Peril.HEIGHT / 720);
-	private static final int PLAY_BUTTON_WIDTH = 330 *(Lost_In_Peril.WIDTH / 1163);
-	private static final int PLAY_BUTTON_HEIGHT = 150 *(Lost_In_Peril.HEIGHT / 720);
-	private static final int SCORE_BUTTON_WIDTH = 270 *(Lost_In_Peril.WIDTH / 1163);
-	private static final int SCORE_BUTTON_HEIGHT = 90 *(Lost_In_Peril.HEIGHT / 720);
-	private static final int SETTINGS_BUTTON_WIDTH = 100 *(Lost_In_Peril.WIDTH / 1163);
-	private static final int SETTINGS_BUTTON_HEIGHT = (100* (Lost_In_Peril.HEIGHT / 720));
-	private static int EXIT_BUTTON_X = 250;
-	private static int EXIT_BUTTON_Y = 75;
-	private static int PLAY_BUTTON_Y = 350;
-	private static int PLAY_BUTTON_X = 300;
-	private static int SCORE_BUTTON_X = 250;
-	private static int SCORE_BUTTON_Y = 220;
-	private static int SETTINGS_BUTTON_X = 400;
-	private static int SETTINGS_BUTTON_Y = 50;
+	private static final int EXIT_BUTTON_WIDTH = Lost_In_Peril.WIDTH / 4;
+	private static final int EXIT_BUTTON_HEIGHT = Lost_In_Peril.HEIGHT / 4;
+	private static final int PLAY_BUTTON_WIDTH = Lost_In_Peril.WIDTH / 4;
+	private static final int PLAY_BUTTON_HEIGHT = Lost_In_Peril.HEIGHT / 4;
+	private static final int SCORE_BUTTON_WIDTH = Lost_In_Peril.WIDTH / 4;
+	private static final int SCORE_BUTTON_HEIGHT = Lost_In_Peril.HEIGHT / 4;
+	private static final int SETTINGS_BUTTON_WIDTH = Lost_In_Peril.WIDTH / 6;
+	private static final int SETTINGS_BUTTON_HEIGHT = Lost_In_Peril.HEIGHT / 6;
+	private static int PLAY_BUTTON_X = Lost_In_Peril.WIDTH / 4;
+	private static int PLAY_BUTTON_Y = 3 * Lost_In_Peril.HEIGHT / 5;
+	private static int SCORE_BUTTON_X = 2 * Lost_In_Peril.WIDTH / 7;
+	private static int SCORE_BUTTON_Y = 2 * Lost_In_Peril.HEIGHT / 7;
+	private static int EXIT_BUTTON_X = Lost_In_Peril.WIDTH / 5;
+	private static int EXIT_BUTTON_Y = Lost_In_Peril.HEIGHT / 10;
+	private static int SETTINGS_BUTTON_X = Lost_In_Peril.WIDTH / 3;
+	private static int SETTINGS_BUTTON_Y = Lost_In_Peril.HEIGHT / 7;
 	public static float musicVolume = .5f;
 	public static boolean godMode = false;
 	public static boolean showSettings = false;
@@ -67,10 +67,8 @@ public class MainMenuScreen implements Screen{
 	private float DISTANCE;
 	int timeCount;
 
-
 	//Sound mainMenuScreenSound = Gdx.audio.newSound(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));	//only ogg works from zip https://www.omgubuntu.co.uk/2017/05/simple-sound-converter-ubuntu
 	//Music menuMusic;
-
 
 	public MainMenuScreen(Lost_In_Peril game) {
 		font = new BitmapFont();
@@ -140,7 +138,6 @@ public class MainMenuScreen implements Screen{
         rayHandler.setShadows(false);
 
         light = new box2dLight.PointLight(rayHandler, 1000,new Color(.95f,.95f,.95f,.95f),100000,578413,380100);
-
 	}
 
 	@Override
@@ -312,6 +309,15 @@ public class MainMenuScreen implements Screen{
 
 		game.batch.end();
 
+		//TEST STUFF TODO
+		if(Gdx.input.isKeyPressed(Input.Keys.SPACE) || Gdx.input.isTouched()){
+			System.out.println("Play Button Dimensions: "+PLAY_BUTTON_WIDTH+", "+PLAY_BUTTON_HEIGHT);
+			System.out.println("Play Button Location: "+PLAY_BUTTON_X+", "+PLAY_BUTTON_Y);
+			System.out.println("Screen Dimensions: " +Lost_In_Peril.WIDTH+", "+Lost_In_Peril.HEIGHT);
+			System.out.println(Gdx.graphics.getDisplayMode());
+			System.out.println("Tapped: "+Gdx.input.getX() + ", " + Gdx.input.getY());
+		}
+
 		//PLAY WITH CONTROLLER
 		if(pad != null) {
 			if(pad.getButton(Xbox.START)) {
@@ -342,7 +348,6 @@ public class MainMenuScreen implements Screen{
 		if(Gdx.input.isKeyJustPressed(Input.Keys.ENTER)){
 			game.setScreen(new GameScreen(game));
 		}
-
 	}
 
 	@Override
@@ -371,7 +376,6 @@ public class MainMenuScreen implements Screen{
 		world.dispose();
 		rayHandler.dispose();
 		game.batch.dispose();
-
 	}
 
 }

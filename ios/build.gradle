@@ -6,7 +6,15 @@ sourceCompatibility = '1.7'
 ext {
 	mainClassName = "com.freebandz.lost_in_peril.IOSLauncher"
 }
+/*
+//   <pattern>de.tomgrill.gdxfacebook.ios.IOSFacebookLoader</pattern>
 
+    <framework>FBSDKCoreKit</framework>
+    <framework>FBSDKShareKit</framework>
+    <framework>FBSDKLoginKit</framework>
+
+robovm.xml
+ */
 launchIPhoneSimulator.dependsOn build
 launchIPadSimulator.dependsOn build
 launchIOSDevice.dependsOn build

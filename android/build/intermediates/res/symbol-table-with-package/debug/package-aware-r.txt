@@ -1,0 +1,15 @@
+com.freebandz.lost_in_peril
+color ic_background_color
+color ic_launcher_background
+drawable ic_launcher
+drawable ic_launcher_foreground
+id gdxDialogsEditTextInput
+id gdxDialogsEnterMessage
+id gdxDialogsEnterTitle
+id layout_root
+layout gdxdialogs_inputtext
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style GdxTheme

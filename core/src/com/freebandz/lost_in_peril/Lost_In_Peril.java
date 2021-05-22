@@ -3,6 +3,7 @@ package com.freebandz.lost_in_peril;
 import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -37,10 +38,18 @@ public class Lost_In_Peril extends Game {
 	public void create () {
 
 		if(Gdx.app.getType() == Application.ApplicationType.Android) {
+			System.out.println("Did this work? Top Block");
 			platformName = "android";
+		}
+		else if (Gdx.app.getType() == Application.ApplicationType.iOS){
+			System.out.println("This works! IOS TYPE");
+			platformName = "ios";
+			WIDTH = Gdx.graphics.getWidth();
+			HEIGHT = Gdx.graphics.getHeight();
 		}
 
 		if(platformName.equals("android")){
+			System.out.println("Bottom block for android");
 			WIDTH = Gdx.graphics.getWidth();
 			HEIGHT = Gdx.graphics.getHeight();
 		}

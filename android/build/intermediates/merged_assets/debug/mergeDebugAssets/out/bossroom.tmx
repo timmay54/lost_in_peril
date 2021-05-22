@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" nextobjectid="12">
+ <tileset firstgid="1" source="untitled.tsx"/>
+ <tileset firstgid="171" name="dungeon_1" tilewidth="16" tileheight="16" tilecount="0" columns="20">
+  <image source="../../core/assets/dungeon_1.png" width="320" height="192"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmEFOw0AMRecMlVJxgnCB0FbZV03VGwB7JAoHAEGPUPYsclamIhZfH3syAo8aCRZPhsbCP/b3NKEKIcwj1URjHbmccFxGVhOOXWQ74Xhuf/0F/z1FriM3iZi6ZsXnjPo5Pmgj95F95MHx5yajfo4PdpGXAqwz6uf4oC2kr8mon+M/rX+vP+AwgP3z8l8JfSX959W/Uv7z6t+//6bnv4Nj/0r4z0tfKf959s/bf1Jjqv57c8Dbf3fh8xlrjAPQZ+Q/ZtTP8d8Cfr8y8i5IX2PkbWB2Xu8frE/L6wddx4G1kYf6vN4/WJ+W15K+3shbkEYP/6E+K29H+hojb0P6vP1nRW2+5/DfysjT5nsO/wmcp81X+3uo7zfvvxVg6UO0+XJOFfTdsPxXJeZeA5q+mmhBm8yXc+rwfTdQ+xzqyGfW3JcA74fGjvQ1Rh7vx9yAdXPsANTXGfSkb03XNf9th1lqiLbU+ZPqH/tKmy/3RGpzDzWwd2M9Rn14XwjPd6b0RGpzDy20/cL71PZDPmNfyf4KM6UnUpfPGOwHR+4DasX5CpYP+flFzmdEmy/2NzVLDdwP/t5kWN8s2P6y/Gftyhjadzr2+3Qvp+fNffj639lt4l4srF0ZQzsneC9P194B6xxKoWn+AN5SpDM=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" x="144" y="112" width="368" height="16"/>
+  <object id="2" x="496" y="128" width="16" height="224"/>
+  <object id="4" x="144" y="128" width="16" height="224"/>
+  <object id="5" x="160" y="336" width="144" height="16"/>
+  <object id="7" x="352" y="336" width="144" height="16"/>
+  <object id="8" x="352" y="352" width="16" height="272"/>
+  <object id="10" x="288" y="608" width="64" height="16"/>
+  <object id="11" x="288" y="352" width="16" height="256"/>
+ </objectgroup>
+</map>

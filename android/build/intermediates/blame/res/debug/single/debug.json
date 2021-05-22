@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-anydpi-v26_ic_launcher_foreground.xml.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-anydpi-v26/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/layout-v14_gdxdialogs_inputtext.xml.flat",
+        "source": "/Users/tim/.gradle/caches/transforms-1/files-1.1/gdx-dialogs-android-1.2.5.aar/136713a935f333e4243c96fe550daf7a/res/layout-v14/gdxdialogs_inputtext.xml"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/mipmap-hdpi/ic_launcher_foreground.png"
+    }
+]

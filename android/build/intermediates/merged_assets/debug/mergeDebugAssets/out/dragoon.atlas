@@ -1,0 +1,13 @@
+
+dragoon.png
+size: 256,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+AH_SpriteSheet_Dragoon
+  rotate: false
+  xy: 2, 2
+  size: 144, 192
+  orig: 144, 192
+  offset: 0, 0
+  index: -1

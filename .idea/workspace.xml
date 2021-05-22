@@ -23,115 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98627d-7f63-4232-93d7-c71b6c16dd1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAuthenticationToken.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAuthenticationTokenClaims.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnecting.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestProtocol.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKLoggingBehavior.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKURL.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKUserAgeRange.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/arm.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/arm64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/armv7.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/Project/x86_64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm64.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/armv7-apple-ios.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/armv7.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/armv7.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/armv7.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/x86_64.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/FBSDKCoreKit.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginConfiguration.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKReferralCode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/arm.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/arm64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/armv7.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/Project/x86_64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm64.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/armv7-apple-ios.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/armv7.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/armv7.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/armv7.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/x86_64.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/FBSDKLoginKit.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKCoreKitImport.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKGameRequestURLProvider.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareKit-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharingScheme.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharingValidation.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/arm.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/arm64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/armv7.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/Project/x86_64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm64.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/armv7-apple-ios.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/armv7.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/armv7.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/armv7.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/x86_64.swiftinterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/FBSDKShareKit.swiftmodule/x86_64.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__lost_in_peril_core_core_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__lost_in_peril_ios_ios_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/data/Media.xcassets/iTunesArtwork@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/data/Media.xcassets/iTunesArtwork@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/data/Media.xcassets/iTunesArtwork@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -141,383 +41,135 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_0_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_0_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_4_18_0_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_4_18_0_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_cocoatouch_2_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_cocoatouch_2_3_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_objc_2_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_objc_2_3_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_rt_2_3_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robovm_rt_2_3_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_android_1_2_5_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxdialogs_gdx_dialogs_android_1_2_5_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_android_1_4_1_aar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_android_1_4_1_aar2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__lost_in_peril_core_core_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__lost_in_peril_ios_ios_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_25_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_0_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_4_18_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_4_18_0_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_bolts_ios_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_core_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_login_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_messenger_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_notifications_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mobidevelop_robovm_robopods_facebook_ios_share_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_android_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_applinks_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_android_1_4_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_android_1_4_1_aar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_core_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_core_1_4_1_sources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_desktop_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_html_1_4_1_sources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_tomgrill_gdxfacebook_gdx_facebook_ios_1_4_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/android/lost_in_peril.android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/android/lost_in_peril.android.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/core/lost_in_peril.core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/lost_in_peril.core.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/desktop/lost_in_peril.desktop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/desktop/lost_in_peril.desktop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/html/lost_in_peril.html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/html/lost_in_peril.html.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/ios/lost_in_peril.ios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ios/lost_in_peril.ios.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/META-INF/core.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Lost_In_Peril.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/BadGuy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Chest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Coin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Dragon$State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Dragon$WhenMappings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Dragon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/InteractiveTileObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Mine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy$State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Randy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Teleporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Torch$State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/Torch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter$State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Sprites/enemyFighter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/B2WorldCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/WorldContactListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/Tools/Xbox360Pad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/GameScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/HUD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/MainMenuScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/ScoreScreen$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/ScoreScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/SettingsScreen2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/gameOver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/introSlides.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/pauseMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/freebandz/lost_in_peril/screens/settingsWindow.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/core10jar-classes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/8169E8EA-5051-3C20-8383-570C079810D8.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/D7313A98-DD2C-3F75-8687-35ABAE0F8E76.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework.dSYM/Contents/Resources/DWARF/FBSDKCoreKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/FBSDKCoreKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKCopying.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKProfile.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKSettings.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKURL.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKUtility.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/iOS/FBSDKCoreKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/37E558F4-DE4A-3A4D-97E4-DABBC96F96CE.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework.dSYM/Contents/Resources/DWARF/FBSDKCoreKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/FBSDKCoreKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKCopying.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKDeviceButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKDeviceViewControllerBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKSettings.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Headers/FBSDKUtility.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 2/Build/tvOS/FBSDKCoreKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/E59B1325-17F8-320A-8AD6-6369FAFAF7FE.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/EA0A997F-27F0-324C-9ACA-79EF85D69CF0.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework.dSYM/Contents/Resources/DWARF/FBSDKPlacesKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework/FBSDKPlacesKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKitConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework/Headers/FBSDKPlacesManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 3/Build/iOS/FBSDKPlacesKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/063976C8-CE46-37D8-BBD9-5ADECEF6AE69.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/2FA4D8F0-F45C-35B1-8449-67B50B66F1E8.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework.dSYM/Contents/Resources/DWARF/FBSDKShareKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/FBSDKShareKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKAppGroupAddDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKAppGroupContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKAppGroupJoinDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKAppInviteContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKAppInviteDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKCameraEffectArguments.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKCameraEffectTextures.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKGameRequestContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKGameRequestDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKHashtag.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKLikeButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKLikeControl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKLikeObjectType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKLiking.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKMessageDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSendButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareAPI.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareCameraEffectContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareDialogMode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareLinkContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMediaContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerActionButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateElement.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerMediaTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerOpenGraphMusicTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerURLActionButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphAction.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphValueContainer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharePhoto.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharePhotoContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareVideo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKShareVideoContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharing.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharingButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharingContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharingScheme.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Headers/FBSDKSharingValidation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/iOS/FBSDKShareKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/9D1B75FD-7CAB-319B-8D89-D0DD26598799.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework.dSYM/Contents/Resources/DWARF/FBSDKShareKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/FBSDKShareKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKDeviceShareButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKDeviceShareViewController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKHashtag.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareAPI.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareLinkContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMediaContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerActionButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateElement.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerMediaTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerOpenGraphMusicTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerURLActionButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphAction.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphValueContainer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKSharePhoto.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKSharePhotoContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareVideo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKShareVideoContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKSharing.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKSharingContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Headers/FBSDKSharingValidation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage 4/Build/tvOS/FBSDKShareKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/27F9D63E-C379-317A-AC25-CEB24883B677.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/3BE20830-8B3C-38D0-9203-C39231430B97.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework.dSYM/Contents/Resources/DWARF/FBSDKLoginKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/FBSDKLoginKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/iOS/FBSDKLoginKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/26BFEF2D-D863-3CBA-9EA3-B031F3FA72E2.bcsymbolmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework.dSYM/Contents/Resources/DWARF/FBSDKLoginKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/FBSDKLoginKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/Carthage/Build/tvOS/FBSDKLoginKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/FBNotifications" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/Headers/FBNCardViewController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/Headers/FBNConstants.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/Headers/FBNotifications.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/Headers/FBNotificationsManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBNotifications.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/FBSDKCoreKit" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/FBSDKCoreKit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKButton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKConstants.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKConstants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKCopying.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKCopying.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKProfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKProfile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKSettings.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKSettings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKUtility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Modules/module.modulemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/FBSDKLoginKit" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/FBSDKLoginKit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Modules/module.modulemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/FBSDKMessengerShareKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerBroadcastContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestHTTPMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection+GraphRequestConnecting.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerShareKit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKCoreKitImport.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerShareOptions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerSharer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandler.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerCancelContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKDeviceButton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerOpenFromComposerContext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerReplyContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKMessengerShareKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework/FBSDKPlacesKit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKitConstants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework/Headers/FBSDKPlacesManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKPlacesKit.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/FBSDKShareKit" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/FBSDKShareKit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppGroupAddDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppGroupContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppGroupContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppGroupJoinDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppInviteContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppInviteContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKAppInviteDialog.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKCameraEffectArguments.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKCameraEffectArguments.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKCameraEffectTextures.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKCameraEffectTextures.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKGameRequestContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKGameRequestContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKGameRequestDialog.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKGameRequestDialog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKHashtag.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKHashtag.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKLikeButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKReferralManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKLikeControl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKLikeObjectType.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKLikeObjectType.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKLiking.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKLiking.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKMessageDialog.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKMessageDialog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSendButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSendButton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareAPI.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareButton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareCameraEffectContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareCameraEffectContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareConstants.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareConstants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareDialog.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareDialog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareDialogMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareDialogMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareKit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareKit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareLinkContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareLinkContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMediaContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMediaContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMessengerActionButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKDeviceViewControllerBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateElement.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMessengerMediaTemplateContent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMessengerOpenGraphMusicTemplateContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolverRequestBuilder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareMessengerURLActionButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphAction.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKLoginKit.framework/Headers/FBSDKReferralManagerResult.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphValueContainer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharePhoto.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharePhoto.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharePhotoContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharePhotoContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareVideo.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareVideo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareVideoContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKShareVideoContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharing.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharingButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharingButton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharingContent.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Headers/FBSDKSharingContent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/ios/libs/FBSDKShareKit.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/core101jar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/core101jar-classes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/freebandz/lost_in_peril/Lost_In_Peril.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/freebandz/lost_in_peril/Lost_In_Peril.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/freebandz/lost_in_peril/screens/MainMenuScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/freebandz/lost_in_peril/screens/MainMenuScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default-1024w-1366h@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default-375w-667h@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default-414w-736h@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default-568h@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Default~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/app-store-icon-1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-app-icon-76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-app-icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-notifications-icon-20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-notifications-icon-20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-pro-app-icon-83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-settings-icon-29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-settings-icon-29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-spotlight-icon-40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/ipad-spotlight-icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-app-icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-app-icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-notification-icon-20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-notification-icon-20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-spotlight-icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-spotlight-icon-40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-spotlight-settings-icon-29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/AppIcon.appiconset/iphone-spotlight-settings-icon-29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/data/Media.xcassets/Contents.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/robovm.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ios/robovm.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lost_in_peril.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lost_in_peril.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/robovm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ios/robovm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ios/src/com/freebandz/lost_in_peril/IOSLauncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/tim/.android/avd/Pixel_3a_API_30_x86.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -535,6 +187,12 @@
         <task path="$PROJECT_DIR$/html">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/desktop">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/android">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -545,7 +203,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="lost_in_peril" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="desktop" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="desktop" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -556,7 +220,14 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="lost_in_peril" type="f1a62948:ProjectNode" />
                 <item name="ios" type="2d1252cf:ModuleNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lost_in_peril" type="f1a62948:ProjectNode" />
+                <item name="ios" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mobivm" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -579,17 +250,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-05-13T02:06:10.749Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ios/libs" />
     <property name="robovm.ipaConfig.archs" value="All - 32-bit (thumbv7) + 64-bit (arm64)" />
     <property name="robovm.ipaConfig.destinationDir" value="$PROJECT_DIR$/../.." />
     <property name="robovm.ipaConfig.moduleName" value="lost_in_peril.ios" />
     <property name="robovm.ipaConfig.provisioningProfile" value="Distributing Provisioning Profile" />
     <property name="robovm.ipaConfig.signingIdentity" value="Apple Distribution: Billy Gretty (U9XL4P644C)" />
-    <property name="settings.editor.selected.configurable" value="memory.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ios/data/Media.xcassets" />
+      <recent name="$PROJECT_DIR$/ios/libs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ios/libs" />
+    </key>
   </component>
   <component name="RunManager" selected="Gradle.lost_in_peril:ios [createIPA]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -607,7 +290,6 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -665,25 +347,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lost_in_peril [cleanBuildCache]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="cleanBuildCache" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="lost_in_peril [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -696,6 +359,44 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lost_in_peril:android [installDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/android" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="installDebug" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lost_in_peril:desktop [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/desktop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -722,7 +423,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="lost_in_peril:ios [robovmArchive]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="lost_in_peril:ios [launchIPadSimulator]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/ios" />
@@ -733,7 +434,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="robovmArchive" />
+            <option value="launchIPadSimulator" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -761,25 +462,48 @@
         <option name="Buildr.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sim_iPad_3rdGen" type="com.robovm.idea.running.RoboVmIOSConfigurationType" factoryName="RoboVM iOS">
+      <module name="lost_in_peril.ios" />
+      <option name="targetType" value="Simulator" />
+      <option name="deviceArch" value="arm64" />
+      <option name="signingIdentityType" value="AUTO" />
+      <option name="signingIdentity" value="" />
+      <option name="provisioningProfileType" value="AUTO" />
+      <option name="provisioningProfile" value="" />
+      <option name="simArch" value="x86_64" />
+      <option name="simulatorType" value="ID" />
+      <option name="simulatorName" value="F71A401A-F8ED-431B-85B7-8589791CAF2A" />
+      <option name="simulatorSdk" value="-1" />
+      <option name="simulatorLaunchWatch" value="0" />
+      <option name="arguments" value="" />
+      <option name="workingDir" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Buildr.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Android App.android" />
       <item itemvalue="Application.Desktop" />
       <item itemvalue="Gradle.lost_in_peril:ios [createIPA]" />
-      <item itemvalue="Gradle.lost_in_peril:ios [robovmArchive]" />
       <item itemvalue="Gradle.lost_in_peril [clean]" />
-      <item itemvalue="Gradle.lost_in_peril [cleanBuildCache]" />
+      <item itemvalue="Gradle.lost_in_peril:ios [launchIPadSimulator]" />
+      <item itemvalue="Gradle.lost_in_peril:desktop [jar]" />
+      <item itemvalue="Gradle.lost_in_peril:android [installDebug]" />
       <item itemvalue="RoboVM iOS.RoboVM-Simulator" />
+      <item itemvalue="RoboVM iOS.Sim_iPad_3rdGen" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.lost_in_peril:ios [createIPA]" />
+        <item itemvalue="Gradle.lost_in_peril:android [installDebug]" />
         <item itemvalue="Gradle.lost_in_peril [clean]" />
-        <item itemvalue="Gradle.lost_in_peril [cleanBuildCache]" />
-        <item itemvalue="Gradle.lost_in_peril:ios [robovmArchive]" />
+        <item itemvalue="Gradle.lost_in_peril:ios [launchIPadSimulator]" />
+        <item itemvalue="Gradle.lost_in_peril:desktop [jar]" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -806,18 +530,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="415" y="286" key="#Notifications" timestamp="1620523886247">
+      <screen x="0" y="25" width="1440" height="789" />
+    </state>
+    <state x="415" y="286" key="#Notifications/0.25.1440.789@0.25.1440.789" timestamp="1620523886247" />
     <state x="101" y="64" key="#Plugins" timestamp="1620434241620">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
     <state x="101" y="64" key="#Plugins/0.25.1440.789@0.25.1440.789" timestamp="1620434241620" />
-    <state x="94" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620434146553">
+    <state x="94" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620872035424">
+      <screen x="0" y="25" width="1440" height="794" />
+    </state>
+    <state x="94" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.789@0.25.1440.789" timestamp="1620789465725" />
+    <state x="94" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.794@0.25.1440.794" timestamp="1620872035424" />
+    <state x="293" y="225" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620527154456">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
-    <state x="94" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.789@0.25.1440.789" timestamp="1620434146553" />
-    <state x="293" y="225" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619799412099">
-      <screen x="0" y="25" width="1440" height="789" />
-    </state>
-    <state x="293" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.789@0.25.1440.789" timestamp="1619799412099" />
+    <state x="293" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.789@0.25.1440.789" timestamp="1620527154456" />
     <state x="367" y="213" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1619754947331">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
@@ -826,26 +555,38 @@
       <screen x="0" y="25" width="1440" height="789" />
     </state>
     <state x="88" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1440.789@0.25.1440.789" timestamp="1620515508353" />
-    <state width="1295" height="181" key="GridCell.Tab.0.bottom" timestamp="1620522831788">
+    <state width="1234" height="221" key="GridCell.Tab.0.bottom" timestamp="1621118198870">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
-    <state width="1295" height="181" key="GridCell.Tab.0.bottom/0.25.1440.789@0.25.1440.789" timestamp="1620522831788" />
-    <state width="1295" height="181" key="GridCell.Tab.0.center" timestamp="1620522831788">
+    <state width="1234" height="221" key="GridCell.Tab.0.bottom/0.25.1440.789@0.25.1440.789" timestamp="1621118198870" />
+    <state width="1234" height="221" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1620874660295" />
+    <state width="1234" height="221" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1620872979958" />
+    <state width="1234" height="221" key="GridCell.Tab.0.center" timestamp="1621118198870">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
-    <state width="1295" height="181" key="GridCell.Tab.0.center/0.25.1440.789@0.25.1440.789" timestamp="1620522831788" />
-    <state width="1295" height="181" key="GridCell.Tab.0.left" timestamp="1620522831788">
+    <state width="1234" height="221" key="GridCell.Tab.0.center/0.25.1440.789@0.25.1440.789" timestamp="1621118198870" />
+    <state width="1234" height="221" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1620874660295" />
+    <state width="1234" height="221" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1620872979958" />
+    <state width="1234" height="221" key="GridCell.Tab.0.left" timestamp="1621118198869">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
-    <state width="1295" height="181" key="GridCell.Tab.0.left/0.25.1440.789@0.25.1440.789" timestamp="1620522831788" />
-    <state width="1295" height="181" key="GridCell.Tab.0.right" timestamp="1620522831788">
+    <state width="1234" height="221" key="GridCell.Tab.0.left/0.25.1440.789@0.25.1440.789" timestamp="1621118198869" />
+    <state width="1234" height="221" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1620874660295" />
+    <state width="1234" height="221" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1620872979955" />
+    <state width="1234" height="221" key="GridCell.Tab.0.right" timestamp="1621118198870">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
-    <state width="1295" height="181" key="GridCell.Tab.0.right/0.25.1440.789@0.25.1440.789" timestamp="1620522831788" />
+    <state width="1234" height="221" key="GridCell.Tab.0.right/0.25.1440.789@0.25.1440.789" timestamp="1621118198870" />
+    <state width="1234" height="221" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1620874660295" />
+    <state width="1234" height="221" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1620872979958" />
     <state x="13" y="166" key="IDE.errors.dialog" timestamp="1620508335075">
       <screen x="0" y="25" width="1440" height="789" />
     </state>
     <state x="13" y="166" key="IDE.errors.dialog/0.25.1440.789@0.25.1440.789" timestamp="1620508335075" />
+    <state x="344" y="78" key="SettingsEditor" timestamp="1620830488614">
+      <screen x="0" y="25" width="1440" height="789" />
+    </state>
+    <state x="344" y="78" key="SettingsEditor/0.25.1440.789@0.25.1440.789" timestamp="1620830488614" />
     <state x="152" y="138" width="670" height="676" key="search.everywhere.popup" timestamp="1620507329082">
       <screen x="0" y="25" width="1440" height="789" />
     </state>

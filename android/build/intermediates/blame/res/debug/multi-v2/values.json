@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/values/color.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                },
+                {
+                    "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "475"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "219",
+                        "endLines": "12",
+                        "endColumns": "12",
+                        "endOffsets": "677"
+                    }
+                },
+                {
+                    "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "143",
+                        "endColumns": "56",
+                        "endOffsets": "195"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "111",
+                        "endColumns": "56",
+                        "endOffsets": "163"
+                    }
+                },
+                {
+                    "source": "/Users/tim/Desktop/git/lost_in_peril/android/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "50",
+                        "endOffsets": "102"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "168",
+                        "endColumns": "50",
+                        "endOffsets": "214"
+                    }
+                }
+            ]
+        }
+    ]
+}
