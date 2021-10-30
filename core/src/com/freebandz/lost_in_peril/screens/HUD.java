@@ -39,7 +39,7 @@ public class HUD implements Disposable {
 		Table tableHud = new Table();
 		tableHud.top();
 		tableHud.setFillParent(true);
-		
+		// TODO below this is where the issue is broken for HTML project
 		countDownLabel = new Label(String.format("%03d", worldTimer), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
 		scoreLabel = new Label(String.format("%03d", score), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
 		

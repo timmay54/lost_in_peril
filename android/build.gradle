@@ -145,3 +145,7 @@ idea {
         }
     }
 }
+
+dependencies {
+    implementation project(path: ':core')
+}

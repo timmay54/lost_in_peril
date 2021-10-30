@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tim/Desktop/git/lost_in_peril/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/Users/tim/.gradle/caches/transforms-1/files-1.1/appcompat-1.2.0.aar/6a2be0df3301832c69ae0a117ab95a5e/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
+                    }
+                }
+            ]
+        }
+    ]
+}
