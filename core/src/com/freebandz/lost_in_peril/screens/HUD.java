@@ -40,8 +40,10 @@ public class HUD implements Disposable {
 		tableHud.top();
 		tableHud.setFillParent(true);
 		// TODO below this is where the issue is broken for HTML project
-		countDownLabel = new Label(String.format("%03d", worldTimer), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
-		scoreLabel = new Label(String.format("%03d", score), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+		countDownLabel = new Label(worldTimer.toString(), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+		scoreLabel = new Label(worldTimer.toString(), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+		//countDownLabel = new Label(String.format("%03d", worldTimer), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+		//scoreLabel = new Label(String.format("%03d", score), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
 		
 		tableHud.add(countDownLabel).expandX().padTop(10);
 		tableHud.add(scoreLabel).expandX().pad(10, 10, 0, 0);
@@ -70,15 +72,15 @@ public class HUD implements Disposable {
 		timeCount += dt;
 		if(timeCount >= 2 && !GameScreen.boolPause){
 			worldTimer--;
-			countDownLabel.setText(String.format("%03d", worldTimer));
+			countDownLabel.setText(worldTimer.toString());
 			timeCount = 0;
 		}
-		scoreLabel.setText(String.format("%03d", score));
+		scoreLabel.setText(score.toString());
 	}
 
 	public void addScore(int value){
 		score += value;
-		scoreLabel.setText(String.format("%03d", score));
+		scoreLabel.setText(score.toString());
 	}
 
 	public void dispose(){

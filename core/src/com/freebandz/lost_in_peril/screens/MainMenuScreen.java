@@ -328,7 +328,7 @@ public class MainMenuScreen implements Screen{
 			//testing values of API
 			if(pad.getAxis(Xbox.L_STICK_HORIZONTAL_AXIS) != 0) {
 				System.out.println(pad.getButton((Xbox.L_BUMPER)));
-				System.out.println(pad.getButton(Xbox.L_STICK));
+				//System.out.println(pad.getButton(Xbox.L_STICK));
 				System.out.println(pad.getAxis(Xbox.R_STICK_HORIZONTAL_AXIS));
 			}
 		}
@@ -376,6 +376,7 @@ public class MainMenuScreen implements Screen{
 		world.dispose();
 		rayHandler.dispose();
 		game.batch.dispose();
+		this.dispose();
 	}
 
 }
