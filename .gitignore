@@ -7,7 +7,7 @@ ios/build/
 local.properties
 # Ignore Gradle GUI config
 gradle-app.setting
-*html/build*
+html/build/
 .DS_Store
 
 # Local file should only be used per computer, breaks things for different OS's

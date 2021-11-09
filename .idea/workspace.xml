@@ -22,15 +22,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/update-ios-deps" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:update-ios-deps" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc98627d-7f63-4232-93d7-c71b6c16dd1b" name="Default Changelist" comment="">
+    <list default="true" id="fc98627d-7f63-4232-93d7-c71b6c16dd1b" name="Default Changelist" comment="squash! closer to html platform success">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,7 +417,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/update-ios-deps" />
+                        <option value="update-ios-deps" />
                       </list>
                     </value>
                   </entry>
@@ -443,6 +443,10 @@
       <screen x="0" y="25" width="1440" height="792" />
     </state>
     <state x="533" y="131" key="#com.intellij.ide.util.MemberChooser/0.25.1440.792@0.25.1440.792" timestamp="1635863239371" />
+    <state x="68" y="25" key="CommitChangelistDialog2" timestamp="1636420846820">
+      <screen x="0" y="25" width="1440" height="794" />
+    </state>
+    <state x="68" y="25" key="CommitChangelistDialog2/0.25.1440.794@0.25.1440.794" timestamp="1636420846820" />
     <state width="1398" height="171" key="GridCell.Tab.0.bottom" timestamp="1635874318086">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
