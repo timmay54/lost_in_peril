@@ -29,7 +29,7 @@ public class Mine extends BadGuy{
         super(screen,x,y);
         this.x = x;
         this.y = y;
-        atlas = new TextureAtlas("dungeonPack.atlas");
+        atlas = new TextureAtlas("images/dungeonPack.atlas");
 
         Array<TextureRegion> frames = new Array<>();
         frames.add(new TextureRegion(atlas.findRegion("Dungeon Collectables"), 0,  3, 16, 16));

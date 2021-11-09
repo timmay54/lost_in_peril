@@ -33,7 +33,7 @@ public class Coin extends BadGuy{
         //super(screen,x,y);
         this.x = x;
         this.y = y;
-        atlas = new TextureAtlas("dungeonPack.atlas");
+        atlas = new TextureAtlas("images/dungeonPack.atlas");
 
         setToDestroy = false;
         destroyed = false;

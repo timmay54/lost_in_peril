@@ -170,7 +170,7 @@ public class GameScreen implements Screen{
 	//actual game screen
 	public GameScreen(Lost_In_Peril game) {
 		this.game = game;
-		atlas = new TextureAtlas(Gdx.files.internal("SpaceAssets.atlas"));
+		atlas = new TextureAtlas(Gdx.files.internal("images/SpaceAssets.atlas"));
 		boolPause = false;
 		// = false;
 		/*
@@ -203,7 +203,7 @@ public class GameScreen implements Screen{
 		inputMultiplexer.addProcessor(gameover.overStage);
 
 		mapLoader = new TmxMapLoader();
-		map = mapLoader.load("MAP2_lip.tmx");
+		map = mapLoader.load("images/MAP2_lip.tmx");
 		renderer = new OrthogonalTiledMapRenderer(map, 1 / Lost_In_Peril.PPM );
 
 		cam.position.set(gamePort.getScreenWidth()  , gamePort.getWorldHeight() , 0 );

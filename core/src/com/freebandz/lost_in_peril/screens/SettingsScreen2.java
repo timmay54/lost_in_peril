@@ -23,7 +23,7 @@ public class SettingsScreen2 implements Screen{
 	private Texture backButton;
 	public Stage stage;
 	
-	public static Skin skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
+	public static Skin skin = new Skin(Gdx.files.internal("images/skin.json"), new TextureAtlas("images/skin.atlas"));
 	Table table = new Table();
 	
 	private TextButton back1;

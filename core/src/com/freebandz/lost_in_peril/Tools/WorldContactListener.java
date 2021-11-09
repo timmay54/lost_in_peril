@@ -29,9 +29,10 @@ public class WorldContactListener implements ContactListener{
 
 			int cDef = fixA.getFilterData().categoryBits | fixB.getFilterData().categoryBits;
 
-			if(object.getUserData() != null && InteractiveTileObject.class.isAssignableFrom(object.getUserData().getClass())) {
-				((InteractiveTileObject) object.getUserData()).onHit();
-			}
+			//TODO youtube.com/watch?v=tcH6Mp03KC0 10:40 explains this piece, its not HTML compatible
+//			if(object.getUserData() != null && InteractiveTileObject.class.isAssignableFrom(object.getUserData().getClass())) {
+//				((InteractiveTileObject) object.getUserData()).onHit();
+//			}
 
 			if(fixA.getUserData() == "Wall" || fixB.getUserData() == "Wall"){
 				System.out.println("Randy + wall");

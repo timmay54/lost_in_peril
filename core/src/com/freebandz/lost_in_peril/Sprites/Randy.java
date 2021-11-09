@@ -173,7 +173,8 @@ public class Randy extends Sprite{
                 | Lost_In_Peril.CHEST_BIT
                 | Lost_In_Peril.COIN_BIT
 				| Lost_In_Peril.MINE_BIT
-                | Lost_In_Peril.TELEPORTER_BIT;
+                | Lost_In_Peril.TELEPORTER_BIT
+				| Lost_In_Peril.DRAGON_BIT;
 
 		fdef.shape = shape;
 

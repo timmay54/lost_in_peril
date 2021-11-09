@@ -35,7 +35,7 @@ public class ScoreScreen{
 
 	//creation of score screen
 	public ScoreScreen(SpriteBatch sbb) {
-		skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
+		skin = new Skin(Gdx.files.internal("images/skin.json"), new TextureAtlas("images/skin.atlas"));
 
 		viewport = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		scoreStage = new Stage(viewport, sbb);

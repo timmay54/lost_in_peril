@@ -27,6 +27,7 @@ public class Lost_In_Peril extends Game {
     public static final short DESTROYED_BIT = 16;
     public static final short TELEPORTER_BIT = 32;
     public static final short MINE_BIT = 64;
+	public static final short DRAGON_BIT = 128;
 
 
     //public static final short ;

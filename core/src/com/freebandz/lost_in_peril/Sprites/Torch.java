@@ -44,7 +44,7 @@ public class Torch extends BadGuy {
         currentState = enemyFighter.State.STANDING;
         previousState = enemyFighter.State.STANDING;
         stateTimer = 0;
-        atlas = new TextureAtlas(Gdx.files.internal("specialEffects.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("images/specialEffects.atlas"));
 
         //ANIMATION INITIALIZATION
         //DOWN

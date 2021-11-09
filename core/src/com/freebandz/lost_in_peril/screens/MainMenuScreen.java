@@ -58,7 +58,7 @@ public class MainMenuScreen implements Screen{
 	public static Controller pad;
 	private settingsWindow settings;
 	private ScoreScreen scoreWindow;
-	BitmapFont font;
+	//BitmapFont font;
 	Vector2 touchLogic;
 	InputMultiplexer inputMultiplexer;
 	RayHandler rayHandler;
@@ -71,17 +71,17 @@ public class MainMenuScreen implements Screen{
 	//Music menuMusic;
 
 	public MainMenuScreen(Lost_In_Peril game) {
-		font = new BitmapFont();
+		//font = new BitmapFont();
 		this.game = game;
 		cam = new OrthographicCamera();
 		viewport = new FitViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, cam);
-		mainBackground = new Texture("mainBackground1.png");
-		playButtonActive = new Texture("play_button_active.png");
-		playButtonInactive = new Texture("play_button_inactive.png");
-		exitButtonActive = new Texture("exit_button_active.png");
-		exitButtonInactive = new Texture("exit_button_inactive.png");
-		scoreButton = new Texture("score.png");
-		settingsButton= new Texture("settingsButton.png");
+		mainBackground = new Texture("images/mainBackground1.png");
+		playButtonActive = new Texture("images/play_button_active.png");
+		playButtonInactive = new Texture("images/play_button_inactive.png");
+		exitButtonActive = new Texture("images/exit_button_active.png");
+		exitButtonInactive = new Texture("images/exit_button_inactive.png");
+		scoreButton = new Texture("images/score.png");
+		settingsButton= new Texture("images/settingsButton.png");
 		System.out.println("Platform: " + Lost_In_Peril.platformName);
 		/*TODO menuMusic= Gdx.audio.newMusic(Gdx.files.internal("PM_AR_125_Fm_A.ogg"));
 		musicVolume = .5f;

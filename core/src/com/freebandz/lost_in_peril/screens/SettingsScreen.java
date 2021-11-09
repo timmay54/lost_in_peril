@@ -35,7 +35,7 @@ public class SettingsScreen implements Screen{
 		// TODO Auto-generated method stub
 		Gdx.gl.glClearColor(0, 1, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		backButton = new Texture("backButton.png");
+		backButton = new Texture("images/backButton.png");
 		
 		game.batch.begin();
 

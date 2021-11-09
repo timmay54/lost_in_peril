@@ -31,7 +31,7 @@ public class gameOver {
     private Skin skin;
 
     public gameOver(SpriteBatch sbb){
-        skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
+        skin = new Skin(Gdx.files.internal("images/skin.json"), new TextureAtlas("images/skin.atlas"));
         viewportOver = new StretchViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
         overStage = new Stage(viewportOver, sbb);
 
@@ -75,7 +75,7 @@ public class gameOver {
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                Gdx.app.exit();
-               System.exit(0);
+               //System.exit(0);
 
             }
             @Override

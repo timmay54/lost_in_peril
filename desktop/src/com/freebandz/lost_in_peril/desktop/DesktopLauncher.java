@@ -43,10 +43,10 @@ public class DesktopLauncher {
 		config.foregroundFPS = 60;
 		config.backgroundFPS = 0;
 		config.vSyncEnabled = false;
-		config.addIcon("badlogic.jpg", FileType.Internal);//256
-		config.addIcon("badlogic128.jpg", FileType.Internal);//128
-		config.addIcon("badlogic32.jpg", FileType.Internal);//32
-		config.addIcon("badlogic16.jpg", FileType.Internal);//16
+		config.addIcon("images/badlogic.jpg", FileType.Internal);//256
+		config.addIcon("images/badlogic128.jpg", FileType.Internal);//128
+		config.addIcon("images/badlogic32.jpg", FileType.Internal);//32
+		config.addIcon("images/badlogic16.jpg", FileType.Internal);//16
 
 		new LwjglApplication(new Lost_In_Peril(), config);
 		

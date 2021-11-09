@@ -20,10 +20,10 @@ public class introSlides implements Screen{
 	public introSlides(Lost_In_Peril game) {
 		this.game = game;
 		//slides[5] = new Array<Texture>();
-		slide1 = new Texture("485_550x550_Front_Color-NA.jpg");
-		slide2 = new Texture("wiu.jpg");
-		slide3 = new Texture("nullpointer.jpg");
-		slide4 = new Texture("indiegamething.png");
+		slide1 = new Texture("images/485_550x550_Front_Color-NA.jpg");
+		slide2 = new Texture("images/wiu.jpg");
+		slide3 = new Texture("images/nullpointer.jpg");
+		slide4 = new Texture("images/indiegamething.png");
 		slides.add(slide1);
 		slides.add(slide2);
 		slides.add(slide3);

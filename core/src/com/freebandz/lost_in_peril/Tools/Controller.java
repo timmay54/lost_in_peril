@@ -41,7 +41,7 @@ public class Controller {
         Table table = new Table();
         table.left().bottom();
 
-        Image upImg = new Image(new Texture("up.png"));
+        Image upImg = new Image(new Texture("images/up.png"));
         upImg.setSize(btnSize, btnSize);
         upImg.addListener(new InputListener(){
             @Override
@@ -59,7 +59,7 @@ public class Controller {
         });
 
         //DOWN BUTTON
-        Image downImg = new Image(new Texture("down.png"));
+        Image downImg = new Image(new Texture("images/down.png"));
         downImg.setSize(btnSize, btnSize);
         downImg.addListener(new InputListener(){
             @Override
@@ -77,7 +77,7 @@ public class Controller {
         });
 
         //LEFT BUTTON
-        Image leftImg = new Image(new Texture("left.png"));
+        Image leftImg = new Image(new Texture("images/left.png"));
         leftImg.setSize(btnSize, btnSize);
         leftImg.addListener(new InputListener(){
             @Override
@@ -95,7 +95,7 @@ public class Controller {
         });
 
         //RIGHT BUTTON
-        Image rightImg = new Image(new Texture("right.png"));
+        Image rightImg = new Image(new Texture("images/right.png"));
         rightImg.setSize(btnSize, btnSize);
         rightImg.addListener(new InputListener(){
             @Override

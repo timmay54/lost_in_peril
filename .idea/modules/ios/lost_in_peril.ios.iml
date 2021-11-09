@@ -60,7 +60,6 @@
     </content>
     <orderEntry type="jdk" jdkName="RoboVM SDK 2.3.12" jdkType="RoboVM SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: lost_in_peril.ios.ios-1.0.1" level="project" />
     <orderEntry type="module" module-name="lost_in_peril.core" />
     <orderEntry type="library" name="Gradle: de.tomgrill.gdxdialogs:gdx-dialogs-ios:1.2.5" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-backend-robovm:1.9.6" level="project" />

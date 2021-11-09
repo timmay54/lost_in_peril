@@ -30,7 +30,7 @@ public class pauseMenu {
 	private Skin skin;
 
 	public pauseMenu(SpriteBatch sbb){
-		skin = new Skin(Gdx.files.internal("skin.json"), new TextureAtlas("skin.atlas"));
+		skin = new Skin(Gdx.files.internal("images/skin.json"), new TextureAtlas("images/skin.atlas"));
 		viewportPause = new FitViewport(Lost_In_Peril.WIDTH, Lost_In_Peril.HEIGHT, new OrthographicCamera());
 		pauseStage = new Stage(viewportPause, sbb);
 		Gdx.input.setInputProcessor(pauseStage);

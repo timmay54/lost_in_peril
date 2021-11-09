@@ -7,7 +7,7 @@ ios/build/
 local.properties
 # Ignore Gradle GUI config
 gradle-app.setting
-
+*html/build*
 .DS_Store
 
 # Local file should only be used per computer, breaks things for different OS's
@@ -26,3 +26,4 @@ ios/build/robovm/IOSLauncher.app/IOSLauncher
 ios/build/robovm.tmp/IOSLauncher
 ios/build/robovm.tmp/arm64/IOSLauncher
 /ios/robovm-build/*
+/html/war/
