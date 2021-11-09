@@ -8,8 +8,10 @@ local.properties
 # Ignore Gradle GUI config
 gradle-app.setting
 html/build/
+html/build
 .DS_Store
-
+*/build
+**/build/**
 # Local file should only be used per computer, breaks things for different OS's
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
@@ -21,7 +23,6 @@ gradle-wrapper.jar
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-ios/build.gradle
 ios/build/robovm/IOSLauncher.app/IOSLauncher
 ios/build/robovm.tmp/IOSLauncher
 ios/build/robovm.tmp/arm64/IOSLauncher

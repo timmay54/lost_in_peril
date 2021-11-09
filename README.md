@@ -30,6 +30,9 @@ Run around the map to gather coins, but watch out for landmines! Hurry before th
 3. Use Gradle to build a distrbutable JAR file: `./gradlew desktop:dist`
   this will output to build/libs directory.
 
+To build HTML
+- cd html/build/dist
+- static -p 8011
 
 
 
